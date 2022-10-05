@@ -10,7 +10,7 @@ import ms from 'ms.macro'
 import { colorsDark } from 'theme/colors'
 
 import { SupportedChainId, SupportedL1ChainId, SupportedL2ChainId } from './chains'
-import { ARBITRUM_LIST, CELO_LIST, OPTIMISM_LIST } from './lists'
+import { ARBITRUM_LIST, CELO_LIST, OPTIMISM_LIST, TMY_LIST } from './lists'
 
 export enum NetworkType {
   L1,
@@ -215,6 +215,17 @@ const CHAIN_INFO: ChainInfoMap = {
     logoUrl: celoLogo,
     nativeCurrency: { name: 'Celo', symbol: 'CELO', decimals: 18 },
     defaultListUrl: CELO_LIST,
+  },
+  [SupportedChainId.TMY_MAINNET]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    docs: 'https://tmychain.org/docs',
+    explorer: 'https://tmyscan.com/',
+    infoLink: 'https://tmychain.org',
+    label: 'TMY',
+    logoUrl: 'https://tmychain.org/images/landing/wallet-logo.svg',
+    nativeCurrency: { name: 'ToTheMoney', symbol: 'TMY', decimals: 18 },
+    defaultListUrl: TMY_LIST,
   },
 }
 

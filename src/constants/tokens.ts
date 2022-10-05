@@ -67,6 +67,13 @@ export const USDC_ARBITRUM_RINKEBY = new Token(
   'USDC',
   'USD//C'
 )
+export const USDC_TMY = new Token(
+  SupportedChainId.TMY_MAINNET,
+  '0x9AA8D88A5F02DA23DbCb0722FB349b04882262e6',
+  6,
+  'USDC',
+  'USDC_TMY'
+)
 export const USDC_POLYGON = new Token(
   SupportedChainId.POLYGON,
   '0x2791bca1f2de4661ed88a30c99a7a9449aa84174',
@@ -137,6 +144,7 @@ export const USDC: { [chainId in SupportedChainId]: Token } = {
   [SupportedChainId.RINKEBY]: USDC_RINKEBY,
   [SupportedChainId.KOVAN]: USDC_KOVAN,
   [SupportedChainId.ROPSTEN]: USDC_ROPSTEN,
+  [SupportedChainId.TMY_MAINNET]: USDC_TMY,
 }
 export const DAI_POLYGON = new Token(
   SupportedChainId.POLYGON,
@@ -402,6 +410,13 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'CELO',
     'Celo native asset'
   ),
+  [SupportedChainId.TMY_MAINNET]: new Token(
+    SupportedChainId.TMY_MAINNET,
+    '0x471EcE3750Da237f93B8E339c536989b8978a438',
+    18,
+    'WETH',
+    'WETH9'
+  ),
 }
 
 export function isCelo(chainId: number): chainId is SupportedChainId.CELO | SupportedChainId.CELO_ALFAJORES {
@@ -441,6 +456,20 @@ class MaticNativeCurrency extends NativeCurrency {
   }
 }
 
+class ExtendedNative extends NativeCurrency {
+  public constructor(chainId: number, decimals: number, symbol?: string, name?: string) {
+    super(chainId, decimals, symbol, name)
+  }
+  public equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+  get wrapped(): Token {
+    const wrapped = WRAPPED_NATIVE_CURRENCY[SupportedChainId.TMY_MAINNET]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+}
+
 export class ExtendedEther extends Ether {
   public get wrapped(): Token {
     const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
@@ -463,6 +492,8 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = new MaticNativeCurrency(chainId)
   } else if (isCelo(chainId)) {
     nativeCurrency = getCeloNativeCurrency(chainId)
+  } else if (chainId === SupportedChainId.TMY_MAINNET) {
+    nativeCurrency = new ExtendedNative(SupportedChainId.TMY_MAINNET, 18, 'TMY', 'ToTheMoney')
   } else {
     nativeCurrency = ExtendedEther.onChain(chainId)
   }
@@ -484,5 +515,6 @@ export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in SupportedCha
     [SupportedChainId.RINKEBY]: USDC_RINKEBY.address,
     [SupportedChainId.KOVAN]: USDC_KOVAN.address,
     [SupportedChainId.ROPSTEN]: USDC_ROPSTEN.address,
+    [SupportedChainId.TMY_MAINNET]: USDC_TMY.address,
   },
 }
