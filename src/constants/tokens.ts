@@ -412,7 +412,7 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
   ),
   [SupportedChainId.TMY_MAINNET]: new Token(
     SupportedChainId.TMY_MAINNET,
-    '0x471EcE3750Da237f93B8E339c536989b8978a438',
+    '0x2cAFe4F36F6EAb174830d3d988E6F70433CCCefB',
     18,
     'WETH',
     'WETH9'
