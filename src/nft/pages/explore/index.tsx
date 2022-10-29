@@ -1,13 +1,15 @@
+import { PageName } from 'analytics/constants'
+import { Trace } from 'analytics/Trace'
 import Banner from 'nft/components/explore/Banner'
 import TrendingCollections from 'nft/components/explore/TrendingCollections'
-import ValueProp from 'nft/components/explore/ValueProp'
 
 const NftExplore = () => {
   return (
     <>
-      <Banner />
-      <ValueProp />
-      <TrendingCollections />
+      <Trace page={PageName.NFT_EXPLORE_PAGE} shouldLogImpression>
+        <Banner />
+        <TrendingCollections />
+      </Trace>
     </>
   )
 }
