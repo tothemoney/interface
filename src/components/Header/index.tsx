@@ -85,10 +85,10 @@ const HeaderElement = styled.div`
     align-items: center;
   `};
 `
-
+// old background-color: ${({ theme }) => theme.deprecated_bg0};
 const HeaderLinks = styled(Row)`
   justify-self: center;
-  background-color: ${({ theme }) => theme.deprecated_bg0};
+  background-color: 'transparent';
   width: max-content;
   padding: 2px;
   border-radius: 16px;
@@ -192,28 +192,37 @@ const activeClassName = 'active'
 const StyledNavLink = styled(NavLink)`
   ${({ theme }) => theme.flexRowNoWrap}
   align-items: left;
-  border-radius: 3rem;
+  border-radius: 12px;
   outline: none;
   cursor: pointer;
   text-decoration: none;
   color: ${({ theme }) => theme.deprecated_text2};
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 11px 15px !important;
   word-break: break-word;
   overflow: hidden;
   white-space: nowrap;
+  line-height: 18px;
+  transition: all 0.3s ease-in-out;
+
   &.${activeClassName} {
-    border-radius: 14px;
-    font-weight: 600;
+    border-radius: 12px;
     justify-content: center;
     color: ${({ theme }) => theme.deprecated_text1};
-    background-color: ${({ theme }) => theme.deprecated_bg1};
+    padding: 11px 15px !important;
+    background: linear-gradient(90deg, rgba(109, 0, 243, 0.05) 0%, rgba(255, 0, 82, 0.05) 100%),
+      rgba(255, 255, 255, 0.1) !important;
   }
 
   :hover,
   :focus {
-    color: ${({ theme }) => darken(0.1, theme.deprecated_text1)};
+    border-radius: 12px;
+    justify-content: center;
+    color: ${({ theme }) => theme.deprecated_text1};
+    padding: 11px 15px !important;
+    background: linear-gradient(90deg, rgba(109, 0, 243, 0.05) 0%, rgba(255, 0, 82, 0.05) 100%),
+      rgba(255, 255, 255, 0.1) !important;
   }
 `
 
