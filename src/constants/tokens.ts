@@ -69,7 +69,7 @@ export const USDC_ARBITRUM_RINKEBY = new Token(
 )
 export const USDC_TMY = new Token(
   SupportedChainId.TMY_MAINNET,
-  '0x9AA8D88A5F02DA23DbCb0722FB349b04882262e6',
+  '0x7045d9FF8C6a73889859f1e079B30DDaEcc9F96D',
   6,
   'USDC',
   'USDC_TMY'
@@ -412,7 +412,7 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
   ),
   [SupportedChainId.TMY_MAINNET]: new Token(
     SupportedChainId.TMY_MAINNET,
-    '0x2cAFe4F36F6EAb174830d3d988E6F70433CCCefB',
+    '0xb5bd9471ee91Ade13AC33B10aeF25Bd8e49131A9',
     18,
     'WETH',
     'WETH9'
