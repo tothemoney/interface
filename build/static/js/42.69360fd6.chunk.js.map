@@ -1,1 +1,0 @@
-{"version":3,"sources":["nft/pages/collection/index.tsx"],"names":["Collection"],"mappings":"+LAAaA,EAAa,WACxB,OAAO,mDAGMA","file":"static/js/42.69360fd6.chunk.js","sourcesContent":["export const Collection = () => {\n  return <div>Collection Page</div>\n}\n\nexport default Collection\n"],"sourceRoot":""}
