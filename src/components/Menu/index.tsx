@@ -8,18 +8,7 @@ import { LOCALE_LABEL, SUPPORTED_LOCALES, SupportedLocale } from 'constants/loca
 import { useActiveLocale } from 'hooks/useActiveLocale'
 import { useLocationLinkProps } from 'hooks/useLocationLinkProps'
 import { FunctionComponent, PropsWithChildren, useEffect, useRef, useState } from 'react'
-import {
-  BookOpen,
-  Check,
-  ChevronLeft,
-  Coffee,
-  FileText,
-  Flag,
-  Globe,
-  HelpCircle,
-  Info,
-  MessageCircle,
-} from 'react-feather'
+import { BookOpen, Check, ChevronLeft, Coffee, Flag, Globe, HelpCircle, Info, MessageCircle } from 'react-feather'
 import { Link } from 'react-router-dom'
 import { useDarkModeManager } from 'state/user/hooks'
 import styled, { css } from 'styled-components/macro'
@@ -263,7 +252,7 @@ export default function Menu() {
                         <Trans>Request Features</Trans>
                       </div>
                     </MenuItem>
-                    <MenuItem href="https://discord.gg/FCfyBSbCU5">
+                    <MenuItem href="https://discord.gg/EQHqDab8Mj">
                       <MessageCircle opacity={0.6} size={16} />
                       <div>
                         <Trans>Discord</Trans>
@@ -285,12 +274,12 @@ export default function Menu() {
                         <Trans>Docs</Trans>
                       </div>
                     </MenuItem>
-                    <ToggleMenuItem onClick={() => togglePrivacyPolicy()}>
+                    {/* <ToggleMenuItem onClick={() => togglePrivacyPolicy()}>
                       <FileText opacity={0.6} size={16} />
                       <div>
                         <Trans>Legal & Privacy</Trans>
                       </div>
-                    </ToggleMenuItem>
+                    </ToggleMenuItem> */}
                     {(isDevelopmentEnv() || isStagingEnv()) && (
                       <ToggleMenuItem onClick={openFeatureFlagsModal}>
                         <Flag opacity={0.6} size={16} /> Feature Flags
