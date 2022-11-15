@@ -6,8 +6,10 @@ import { ChartEntry } from './types'
 
 const Path = styled.path<{ fill: string | undefined }>`
   opacity: 0.7;
-  fill: ${({ fill, theme }) => theme.deprecated_red1};
+  fill: ${({ fill, theme }) => 'url(#linear-gradient)'};
 `
+
+//linear-gradient(90.39deg,#6d00f3 0.66%,#ff0052 50.34%)
 
 export const Area = ({
   series,
@@ -26,21 +28,27 @@ export const Area = ({
 }) =>
   useMemo(
     () => (
-      <Path
-        fill={fill}
-        d={
-          area()
-            .curve(curveStepAfter)
-            .x((d: unknown) => xScale(xValue(d as ChartEntry)))
-            .y1((d: unknown) => yScale(yValue(d as ChartEntry)))
-            .y0(yScale(0))(
-            series.filter((d) => {
-              const value = xScale(xValue(d))
-              return value > 0 && value <= window.innerWidth
-            }) as Iterable<[number, number]>
-          ) ?? undefined
-        }
-      />
+      <>
+        <linearGradient id="linear-gradient" gradientTransform="rotate(90)">
+          <stop offset="0.66%" stopColor="#6d00f3" />
+          <stop offset="50.34%" stopColor="#ff0052" />
+        </linearGradient>
+        <Path
+          fill={fill}
+          d={
+            area()
+              .curve(curveStepAfter)
+              .x((d: unknown) => xScale(xValue(d as ChartEntry)))
+              .y1((d: unknown) => yScale(yValue(d as ChartEntry)))
+              .y0(yScale(0))(
+              series.filter((d) => {
+                const value = xScale(xValue(d))
+                return value > 0 && value <= window.innerWidth
+              }) as Iterable<[number, number]>
+            ) ?? undefined
+          }
+        />
+      </>
     ),
     [fill, series, xScale, xValue, yScale, yValue]
   )
