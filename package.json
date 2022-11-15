@@ -1,7 +1,7 @@
 {
-  "name": "@uniswap/interface",
+  "name": "tmy_swap",
   "version": "1.0.7",
-  "description": "Uniswap Interface",
+  "description": "TMY SWAP",
   "homepage": ".",
   "license": "GPL-3.0-or-later",
   "scripts": {
