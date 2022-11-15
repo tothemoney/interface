@@ -35,7 +35,7 @@ const fetchQuery = (params: RequestParameters, variables: Variables): Observable
   const chainId = (store.getState() as AppState).application.chainId
 
   const subgraphUrl =
-    chainId && CHAIN_SUBGRAPH_URL[chainId] ? CHAIN_SUBGRAPH_URL[chainId] : CHAIN_SUBGRAPH_URL[SupportedChainId.MAINNET]
+    chainId && CHAIN_SUBGRAPH_URL[chainId] ? CHAIN_SUBGRAPH_URL[chainId] : CHAIN_SUBGRAPH_URL[SupportedChainId.TMY_MAINNET]
 
   const body = JSON.stringify({
     query: params.text, // GraphQL text from input
