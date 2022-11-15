@@ -288,6 +288,9 @@ export default function AddLiquidity() {
       provider
         .getSigner()
         .estimateGas(txn)
+        .catch((e) => {
+          return Promise.resolve(BigNumber.from(200000))
+        })
         .then((estimate) => {
           const newTxn = {
             ...txn,
