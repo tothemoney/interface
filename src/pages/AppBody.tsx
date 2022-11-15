@@ -7,7 +7,7 @@ export const BodyWrapper = styled.main<{ margin?: string; maxWidth?: string; red
   position: relative;
   margin-top: ${({ margin }) => margin ?? '0px'};
   max-width: ${({ maxWidth, redesignFlag }) => maxWidth ?? (redesignFlag ? '420px' : '480px')};
-  width: 100%;
+  width: 90%;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(14px);
   border-radius: 20px;
