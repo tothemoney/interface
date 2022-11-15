@@ -286,7 +286,7 @@ export default function Menu() {
                       </div>
                     </MenuItem>
                     <ToggleMenuItem onClick={() => togglePrivacyPolicy()}>
-                      <FileText opacity={0.6} size={46} />
+                      <FileText opacity={0.6} size={16} />
                       <div>
                         <Trans>Legal & Privacy</Trans>
                       </div>
