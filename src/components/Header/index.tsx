@@ -122,11 +122,11 @@ const AccountElement = styled.div<{ active: boolean }>`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: ${({ theme, active }) => (!active ? theme.deprecated_bg0 : theme.deprecated_bg0)};
-  border-radius: 16px;
+  background-color: #3b3c4e !important;
+  border-radius: 12px;
   white-space: nowrap;
   width: 100%;
-  height: 40px;
+  height: 45px;
 
   :focus {
     border: 1px solid blue;
@@ -206,10 +206,13 @@ const StyledNavLink = styled(NavLink)`
   white-space: nowrap;
   line-height: 18px;
   transition: all 0.3s ease-in-out;
+  opacity: 0.5;
+
   &.${activeClassName} {
     border-radius: 12px;
     font-weight: 400;
     justify-content: center;
+    opacity: 1 !important;
     color: ${({ theme }) => theme.deprecated_text1};
     background: linear-gradient(90deg, rgba(109, 0, 243, 0.05) 0%, rgba(255, 0, 82, 0.05) 100%),
       rgba(255, 255, 255, 0.1);
@@ -217,6 +220,7 @@ const StyledNavLink = styled(NavLink)`
 
   :hover,
   :focus {
+    opacity: 1 !important;
     background: linear-gradient(90deg, rgba(109, 0, 243, 0.05) 0%, rgba(255, 0, 82, 0.05) 100%),
       rgba(255, 255, 255, 0.1);
   }
@@ -238,11 +242,13 @@ const StyledExternalLink = styled(ExternalLink)`
   white-space: nowrap;
   line-height: 18px;
   transition: all 0.3s ease-in-out;
+  opacity: 0.5;
 
   &.${activeClassName} {
     border-radius: 12px;
     font-weight: 400;
     justify-content: center;
+    opacity: 1 !important;
     color: ${({ theme }) => theme.deprecated_text1};
     background: linear-gradient(90deg, rgba(109, 0, 243, 0.05) 0%, rgba(255, 0, 82, 0.05) 100%),
       rgba(255, 255, 255, 0.1);

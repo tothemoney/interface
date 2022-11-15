@@ -4,7 +4,6 @@ import { getChainInfo } from 'constants/chainInfo'
 import { SupportedChainId } from 'constants/chains'
 import useSelectChain from 'hooks/useSelectChain'
 import useSyncChainQuery from 'hooks/useSyncChainQuery'
-import { darken } from 'polished'
 import { useRef } from 'react'
 import { AlertTriangle, ArrowDownCircle, ChevronDown } from 'react-feather'
 import { useCloseModal, useModalIsOpen, useOpenModal, useToggleModal } from 'state/application/hooks'
@@ -134,14 +133,14 @@ const NetworkAlertLabel = styled(NetworkLabel)`
 // background-color: ${({ theme }) => theme.deprecated_bg0}; => before
 const SelectorControls = styled.div<{ supportedChain: boolean }>`
   align-items: center;
-  background: red !important;
+  background: #3b3c4e !important;
   border: none;
-  border-radius: 16px;
+  border-radius: 12px;
   color: ${({ theme }) => theme.deprecated_text1};
   display: flex;
   font-weight: 300;
   justify-content: space-between;
-  padding: 8px;
+  padding: 6px 8px;
   font-size: 14px;
   line-height: 24px;
   ${({ supportedChain, theme }) =>
@@ -151,9 +150,9 @@ const SelectorControls = styled.div<{ supportedChain: boolean }>`
     background: #3B3C4E !important;
     border: none;
   `}
-  cursor: default;
+  cursor: pointer;
   :focus {
-    background-color: ${({ theme }) => darken(0.1, theme.deprecated_red1)};
+    background: #3b3c4e !important;
   }
 `
 const SelectorLogo = styled(Logo)`
