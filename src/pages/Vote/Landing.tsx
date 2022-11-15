@@ -154,14 +154,14 @@ export default function Landing() {
                 <AutoColumn gap="md">
                   <RowBetween>
                     <ThemedText.DeprecatedWhite fontWeight={600}>
-                      <Trans>Uniswap Governance</Trans>
+                      <Trans>TMY Swap Governance</Trans>
                     </ThemedText.DeprecatedWhite>
                   </RowBetween>
                   <RowBetween>
                     <ThemedText.DeprecatedWhite fontSize={14}>
                       <Trans>
-                        UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself
-                        or delegate your votes to a third party.
+                        UNI tokens represent voting shares in TMY Swap governance. You can vote on each proposal
+                        yourself or delegate your votes to a third party.
                       </Trans>
                     </ThemedText.DeprecatedWhite>
                   </RowBetween>
@@ -174,7 +174,7 @@ export default function Landing() {
                     target="_blank"
                   >
                     <ThemedText.DeprecatedWhite fontSize={14}>
-                      <Trans>Read more about Uniswap governance</Trans>
+                      <Trans>Read more about TMY Swap governance</Trans>
                     </ThemedText.DeprecatedWhite>
                   </ExternalLink>
                 </AutoColumn>

@@ -101,7 +101,7 @@ export default function SurveyPopup() {
             fontSize="12px"
             color={theme.deprecated_black}
           >
-            <Trans>Take a 10 minute survey to help us improve your experience in the Uniswap app.</Trans>
+            <Trans>Take a 10 minute survey to help us improve your experience in the TMY Swap app.</Trans>
           </ThemedText.DeprecatedBlack>
         </Wrapper>
       )}

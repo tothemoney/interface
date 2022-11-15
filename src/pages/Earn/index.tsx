@@ -68,13 +68,13 @@ export default function Earn() {
             <AutoColumn gap="md">
               <RowBetween>
                 <ThemedText.DeprecatedWhite fontWeight={600}>
-                  <Trans>Uniswap liquidity mining</Trans>
+                  <Trans>TMY Swap liquidity mining</Trans>
                 </ThemedText.DeprecatedWhite>
               </RowBetween>
               <RowBetween>
                 <ThemedText.DeprecatedWhite fontSize={14}>
                   <Trans>
-                    Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token.
+                    Deposit your Liquidity Provider tokens to receive UNI, the TMY Swap protocol governance token.
                   </Trans>
                 </ThemedText.DeprecatedWhite>
               </RowBetween>{' '}

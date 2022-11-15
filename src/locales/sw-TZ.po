@@ -144,8 +144,8 @@ msgid "Add"
 msgstr "Ongeza"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Uniswap V2"
-msgstr "Ongeza <0/> na <1/> kwenye Uniswap V2"
+msgid "Add <0/> and <1/> to  V2"
+msgstr "Ongeza <0/> na <1/> kwenye  V2"
 
 #: src/components/vote/DelegateModal.tsx
 msgid "Add Delegate +"
@@ -205,8 +205,8 @@ msgid "Allow high price impact trades and skip the confirm screen. Use at your o
 msgstr "Ruhusu biashara ya athari za bei ya juu na uruke skrini ya thibitisho. Tumia kwa hatari yako mwenyewe."
 
 #: src/pages/Swap/index.tsx
-msgid "Allow the Uniswap Protocol to use your {0}"
-msgstr "Ruhusu Itifaki ya Uniswap kutumia {0}"
+msgid "Allow the  Protocol to use your {0}"
+msgstr "Ruhusu Itifaki ya  kutumia {0}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -217,8 +217,8 @@ msgid "Amount"
 msgstr "Kiasi"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Hitilafu ilitokea wakati wa kujaribu kutekeleza ubadilishaji huu. Unaweza kuhitaji kuongeza uvumilivu wako wa kuteleza. Ikiwa hiyo haifanyi kazi, kunaweza kuwa na kutokubaliana na ishara unayofanya biashara. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Uniswap V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with  V3."
+msgstr "Hitilafu ilitokea wakati wa kujaribu kutekeleza ubadilishaji huu. Unaweza kuhitaji kuongeza uvumilivu wako wa kuteleza. Ikiwa hiyo haifanyi kazi, kunaweza kuwa na kutokubaliana na ishara unayofanya biashara. Kumbuka: ada ya uhamishaji na toa rehani haziendani na  V3."
 
 #: src/components/earn/StakingModal.tsx
 #: src/pages/RemoveLiquidity/index.tsx
@@ -270,8 +270,8 @@ msgid "Are you sure?"
 msgstr "Una uhakika?"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
-msgstr "Kama mwanachama wa jamii ya Uniswap unaweza kudai UNI kutumika kwa kupiga kura na utawala. <0 /> <1 /> <2> Soma zaidi kuhusu UNI</2>"
+msgid "As a member of the  community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
+msgstr "Kama mwanachama wa jamii ya  unaweza kudai UNI kutumika kwa kupiga kura na utawala. <0 /> <1 /> <2> Soma zaidi kuhusu UNI</2>"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "At least {0} {1} and {2} {3} will be refunded to your wallet due to selected price range."
@@ -342,8 +342,8 @@ msgid "By adding this list you are implicitly trusting that the data is correct.
 msgstr "Kwa kuongeza orodha hii unaamini kabisa kuwa data ni sahihi. Mtu yeyote anaweza kuunda orodha, pamoja na kuunda matoleo bandia ya orodha zilizopo na orodha ambazo zinadai kuwakilisha miradi ambayo haina moja."
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Uniswap <1>Protocol Disclaimer</1>."
-msgstr "Kwa kuunganisha mkoba, unakubaliana na Uniswap Labs ' <0>Masharti ya Huduma</0> na kutambua kwamba umesoma na kuelewa Uniswap <1>Itifaki Kanusho</1>."
+msgid "By connecting a wallet, you agree to  Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the  <1>Protocol Disclaimer</1>."
+msgstr "Kwa kuunganisha mkoba, unakubaliana na  Labs ' <0>Masharti ya Huduma</0> na kutambua kwamba umesoma na kuelewa  <1>Itifaki Kanusho</1>."
 
 #: src/pages/Vote/styled.tsx
 msgid "Canceled"
@@ -649,8 +649,8 @@ msgid "Deposit tokens to the {label} network."
 msgstr "Weka alama kwenye mtandao {label}"
 
 #: src/pages/Earn/index.tsx
-msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
-msgstr "Weka ishara zako za Mtoaji wa Liquidity kupokea UNI, ishara ya utawala wa itifaki ya Uniswap."
+msgid "Deposit your Liquidity Provider tokens to receive UNI, the  protocol governance token."
+msgstr "Weka ishara zako za Mtoaji wa Liquidity kupokea UNI, ishara ya utawala wa itifaki ya ."
 
 #: src/components/earn/UnstakingModal.tsx
 msgid "Deposited liquidity:"
@@ -697,8 +697,8 @@ msgid "Don’t see one of your v2 positions? <0>Import it.</0>"
 msgstr "Je! Huoni moja ya nafasi zako za v2? <0> Ingiza.</0>"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Uniswap governance."
-msgstr "Ishara zilizopatikana za UNI zinawakilisha hisa za kupiga kura katika utawala wa Uniswap."
+msgid "Earned UNI tokens represent voting shares in  governance."
+msgstr "Ishara zilizopatikana za UNI zinawakilisha hisa za kupiga kura katika utawala wa ."
 
 #: src/components/FeeSelector/index.tsx
 msgid "Edit"
@@ -823,12 +823,12 @@ msgid "Expired"
 msgstr "Imeisha muda"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Uniswap Analytics."
-msgstr "Gundua Takwimu za Uniswap."
+msgid "Explore  Analytics."
+msgstr "Gundua Takwimu za ."
 
 #: src/components/Popups/FailedNetworkSwitchPopup.tsx
-msgid "Failed to switch networks from the Uniswap Interface. In order to use Uniswap on {0}, you must change the network in your wallet."
-msgstr "Imeshindwa kubadilisha mitandao kutoka kwa Kiolesura cha Uniswap. Ili kutumia Uniswap kwenye {0}, lazima ubadilishe mtandao kwenye pochi yako."
+msgid "Failed to switch networks from the  Interface. In order to use  on {0}, you must change the network in your wallet."
+msgstr "Imeshindwa kubadilisha mitandao kutoka kwa Kiolesura cha . Ili kutumia  kwenye {0}, lazima ubadilishe mtandao kwenye pochi yako."
 
 #: src/components/PositionPreview/index.tsx
 msgid "Fee Tier"
@@ -847,8 +847,8 @@ msgid "For"
 msgstr "Kwa maana"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "Kwa kila dimbwi lililoonyeshwa hapa chini, bonyeza hamisha ili kuondoa ukwasi wako kutoka kwa Uniswap V2 na uweke kwenye Uniswap V3."
+msgid "For each pool shown below, click migrate to remove your liquidity from  V2 and deposit it into  V3."
+msgstr "Kwa kila dimbwi lililoonyeshwa hapa chini, bonyeza hamisha ili kuondoa ukwasi wako kutoka kwa  V2 na uweke kwenye  V3."
 
 #: src/pages/Swap/index.tsx
 msgid "From"
@@ -1116,8 +1116,8 @@ msgid "Migrate V2 Liquidity"
 msgstr "Hamisha Kioevu cha V2"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "Hamisha ishara zako za ukwasi kutoka kwa Uniswap V2 hadi Uniswap V3."
+msgid "Migrate your liquidity tokens from  V2 to  V3."
+msgstr "Hamisha ishara zako za ukwasi kutoka kwa  V2 hadi  V3."
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1429,8 +1429,8 @@ msgid "Read more about UNI"
 msgstr "Soma zaidi kuhusu UNI"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Read more about Uniswap governance"
-msgstr "Soma zaidi kuhusu Uniswap utawala"
+msgid "Read more about  governance"
+msgstr "Soma zaidi kuhusu  utawala"
 
 #: src/pages/Pool/v2.tsx
 msgid "Read more about providing liquidity"
@@ -1646,23 +1646,23 @@ msgid "Swapping {0} {1} for {2} {3}"
 msgstr "Kubadilisha {0} {1} kwa {2} {3}"
 
 #: src/components/Popups/SurveyPopup.tsx
-msgid "Take a 10 minute survey to help us improve your experience in the Uniswap app."
-msgstr "Fanya utafiti wa dakika 10 ili utusaidie kuboresha matumizi yako katika programu ya Uniswap."
+msgid "Take a 10 minute survey to help us improve your experience in the  app."
+msgstr "Fanya utafiti wa dakika 10 ili utusaidie kuboresha matumizi yako katika programu ya ."
 
 #: src/components/Popups/SurveyPopup.tsx
 msgid "Tell us what you think ↗"
 msgstr "Tuambie unachofikiria ↗"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Uniswap community <0/>"
-msgstr "Asante kwa kuwa sehemu ya jamii ya Uniswap <0 />"
+msgid "Thanks for being part of the  community <0/>"
+msgstr "Asante kwa kuwa sehemu ya jamii ya  <0 />"
 
 #: src/components/FeeSelector/index.tsx
 msgid "The % you will earn in fees."
 msgstr "% Utakayopata katika ada."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgid "The  invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
 msgstr "Kiasi kisichobadilika x * y = k hakiridhika na ubadilishaji. Hii kawaida inamaanisha moja ya ishara unazobadilisha zinajumuisha tabia ya kawaida kwenye uhamishaji."
 
 #: src/components/swap/AdvancedSwapDetails.tsx
@@ -1678,8 +1678,8 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "Programu huchota data ya mtandaoni na kuunda simu za mkataba kwa kutumia API ya Infura."
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Uniswap Labs server."
-msgstr "Programu hutafuta njia mojawapo ya biashara kutoka kwa seva ya Uniswap Labs."
+msgid "The app fetches the optimal trade route from a  Labs server."
+msgstr "Programu hutafuta njia mojawapo ya biashara kutoka kwa seva ya  Labs."
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -1734,8 +1734,8 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "Ishara ya pato haiwezi kuhamishwa. Kunaweza kuwa na shida na ishara ya pato."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Ishara ya pato haiwezi kuhamishwa. Kunaweza kuwa na shida na ishara ya pato. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Uniswap V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with  V3."
+msgstr "Ishara ya pato haiwezi kuhamishwa. Kunaweza kuwa na shida na ishara ya pato. Kumbuka: ada ya uhamishaji na toa rehani haziendani na  V3."
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1762,8 +1762,8 @@ msgid "There was an error loading your {tokenSymbol} balance"
 msgstr "Kulikuwa na hitilafu katika kupakia salio lako {tokenSymbol}"
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
-msgstr "Anwani hii imezuiwa kwenye kiolesura cha Uniswap Labs kwa sababu inahusishwa na moja au zaidi"
+msgid "This address is blocked on the  Labs interface because it is associated with one or more"
+msgstr "Anwani hii imezuiwa kwenye kiolesura cha  Labs kwa sababu inahusishwa na moja au zaidi"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "This app uses the following third-party APIs:"
@@ -1786,16 +1786,16 @@ msgid "This token doesn't appear on the active token list(s). Make sure this is 
 msgstr "Ishara hii haionekani kwenye orodha (s) zinazotumika. Hakikisha hii ndio ishara kwamba unataka kufanya biashara."
 
 #: src/components/SearchModal/BlockedToken.tsx
-msgid "This token is not supported in the Uniswap Labs app"
-msgstr "Tokeni hii haitumiki katika programu ya Uniswap Labs"
+msgid "This token is not supported in the  Labs app"
+msgstr "Tokeni hii haitumiki katika programu ya  Labs"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "This tool will safely migrate your {0} liquidity to V3. The process is completely trustless thanks to the"
 msgstr "Chombo hiki kitahamisha {0} kwa V3. Mchakato huo hauna shukrani kabisa kwa"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Uuzaji huu hautafaulu kwa sababu ya harakati za bei. Jaribu kuongeza uvumilivu wako wa kuteleza. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Uniswap V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with  V3."
+msgstr "Uuzaji huu hautafaulu kwa sababu ya harakati za bei. Jaribu kuongeza uvumilivu wako wa kuteleza. Kumbuka: ada ya uhamishaji na toa rehani haziendani na  V3."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1893,8 +1893,8 @@ msgid "UNI has arrived"
 msgstr "UNI imefika"
 
 #: src/pages/Vote/Landing.tsx
-msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "Ishara za UNI zinawakilisha hisa za kupiga kura katika utawala wa Uniswap. Unaweza kupiga kura kwa kila pendekezo mwenyewe au kupeana kura zako kwa mtu wa tatu."
+msgid "UNI tokens represent voting shares in  governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr "Ishara za UNI zinawakilisha hisa za kupiga kura katika utawala wa . Unaweza kupiga kura kwa kila pendekezo mwenyewe au kupeana kura zako kwa mtu wa tatu."
 
 #: src/pages/RemoveLiquidity/index.tsx
 msgid "UNI {0}/{1} Burned"
@@ -1930,27 +1930,27 @@ msgid "Unexpected issue with estimating the gas. Please try again."
 msgstr "Suala lisilotarajiwa na kukadiria gesi. Tafadhali jaribu tena."
 
 #: src/pages/Vote/Landing.tsx
-msgid "Uniswap Governance"
+msgid " Governance"
 msgstr "Utawala usiobadilika"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Uniswap Labs' Terms of Service"
-msgstr "Sheria na Masharti ya Uniswap Labs"
+msgid " Labs' Terms of Service"
+msgstr "Sheria na Masharti ya  Labs"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Uniswap available in: <0>{0}</0>"
+msgid " available in: <0>{0}</0>"
 msgstr "Kubadilisha kunapatikana katika: <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgid " governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
 msgstr "Utawala usiobadilishwa unapatikana tu kwenye Tabaka la 1. Badilisha mtandao wako uwe Ethereum Mainnet ili uone Mapendekezo na Kura."
 
 #: src/pages/Earn/index.tsx
-msgid "Uniswap liquidity mining"
+msgid " liquidity mining"
 msgstr "Uchimbaji wa ukwasi usiobadilika"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Uniswap migration contract↗"
+msgid " migration contract↗"
 msgstr "Mkataba wa uhamiaji usiobadilika↗"
 
 #: src/components/SearchModal/TokenImportCard.tsx
@@ -1958,8 +1958,8 @@ msgid "Unknown Source"
 msgstr "Chanzo kisichojulikana"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Hitilafu isiyojulikana{0}. Jaribu kuongeza uvumilivu wako wa kuteleza. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Uniswap V3."
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with  V3."
+msgstr "Hitilafu isiyojulikana{0}. Jaribu kuongeza uvumilivu wako wa kuteleza. Kumbuka: ada ya uhamishaji na toa rehani haziendani na  V3."
 
 #: src/pages/Vote/Landing.tsx
 #: src/pages/Vote/VotePage.tsx
@@ -2005,8 +2005,8 @@ msgid "Update list"
 msgstr "Sasisha orodha"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Uniswap Labs API to get faster quotes."
-msgstr "Tumia API ya Uniswap Labs kupata manukuu haraka zaidi."
+msgid "Use the  Labs API to get faster quotes."
+msgstr "Tumia API ya  Labs kupata manukuu haraka zaidi."
 
 #: src/components/claim/ClaimModal.tsx
 msgid "User"
@@ -2185,7 +2185,7 @@ msgid "You are creating a pool"
 msgstr "Unaunda dimbwi"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
+msgid "You are the first liquidity provider for this  V3 pool. Your liquidity will migrate at the current {0} price."
 msgstr "Wewe ndiye mtoaji wa kwanza wa ukwasi wa dimbwi hili la V3 lisilobadilishwa. Ukwasi wako kuhamia kwa bei {0}"
 
 #: src/pages/AddLiquidityV2/index.tsx
@@ -2225,16 +2225,16 @@ msgid "You must connect an account."
 msgstr "Lazima uunganishe akaunti."
 
 #: src/pages/Swap/index.tsx
-msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
-msgstr "Lazima upe Mkataba wa Uniswap ruhusa ya kutumia {0}yako. Lazima ufanye hivi mara moja tu kwa ishara."
+msgid "You must give the  smart contracts permission to use your {0}. You only have to do this once per token."
+msgstr "Lazima upe Mkataba wa  ruhusa ya kutumia {0}yako. Lazima ufanye hivi mara moja tu kwa ishara."
 
 #: src/pages/CreateProposal/index.tsx
 msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "Lazima uwe na {formattedProposalThreshold} ili kuwasilisha pendekezo"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "Unapaswa kuweka tu ukwasi kwenye Uniswap V3 kwa bei unayoamini ni sahihi. <0 /> Ikiwa bei inaonekana si sahihi, unaweza kubadilisha kwa kuhamisha bei au subiri mtu mwingine afanye hivyo."
+msgid "You should only deposit liquidity into  V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "Unapaswa kuweka tu ukwasi kwenye  V3 kwa bei unayoamini ni sahihi. <0 /> Ikiwa bei inaonekana si sahihi, unaweza kubadilisha kwa kuhamisha bei au subiri mtu mwingine afanye hivyo."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2389,8 +2389,8 @@ msgid "{0, plural, =1 {This token isn't verified} other {These tokens aren't ver
 msgstr "{0, plural, =1 {Tokeni hii haijathibitishwa} other {Tokeni hizi hazijathibitishwa}}"
 
 #: src/constants/tokenSafety.tsx
-msgid "{0, plural, =1 {You can't trade this token using the Uniswap App.} other {You can't trade these tokens using the Uniswap App.}}"
-msgstr "{0, plural, =1 {Huwezi kufanya biashara ya tokeni hii kwa kutumia Programu ya Uniswap.} other {Huwezi kufanya biashara ya tokeni hizi kwa kutumia Programu ya Uniswap.}}"
+msgid "{0, plural, =1 {You can't trade this token using the  App.} other {You can't trade these tokens using the  App.}}"
+msgstr "{0, plural, =1 {Huwezi kufanya biashara ya tokeni hii kwa kutumia Programu ya .} other {Huwezi kufanya biashara ya tokeni hizi kwa kutumia Programu ya .}}"
 
 #: src/components/RateToggle/index.tsx
 #: src/components/RateToggle/index.tsx

@@ -144,8 +144,8 @@ msgid "Add"
 msgstr "Legg til"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Uniswap V2"
-msgstr "Legg til <0/> og <1/> i Uniswap V2"
+msgid "Add <0/> and <1/> to  V2"
+msgstr "Legg til <0/> og <1/> i  V2"
 
 #: src/components/vote/DelegateModal.tsx
 msgid "Add Delegate +"
@@ -205,8 +205,8 @@ msgid "Allow high price impact trades and skip the confirm screen. Use at your o
 msgstr "Tillat høyprispåvirkede handel og hopp over bekreftelsesskjermen. Bruk på egen risiko."
 
 #: src/pages/Swap/index.tsx
-msgid "Allow the Uniswap Protocol to use your {0}"
-msgstr "Tillat Uniswap-protokollen å bruke din {0}"
+msgid "Allow the  Protocol to use your {0}"
+msgstr "Tillat -protokollen å bruke din {0}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -217,8 +217,8 @@ msgid "Amount"
 msgstr "Beløp"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Det oppstod en feil under forsøket på å utføre dette byttet. Det kan hende du må øke glidetoleransen. Hvis det ikke fungerer, kan det være en inkompatibilitet med symbolet du handler. Merk: gebyr ved overføring og rebase-tokens er inkompatibelt med Uniswap V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with  V3."
+msgstr "Det oppstod en feil under forsøket på å utføre dette byttet. Det kan hende du må øke glidetoleransen. Hvis det ikke fungerer, kan det være en inkompatibilitet med symbolet du handler. Merk: gebyr ved overføring og rebase-tokens er inkompatibelt med  V3."
 
 #: src/components/earn/StakingModal.tsx
 #: src/pages/RemoveLiquidity/index.tsx
@@ -270,8 +270,8 @@ msgid "Are you sure?"
 msgstr "Er du sikker?"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
-msgstr "Som medlem av Uniswap-fellesskapet kan du hevde at UNI skal brukes til stemmegivning og styring. <0/><1/><2>Les mer om UNI</2>"
+msgid "As a member of the  community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
+msgstr "Som medlem av -fellesskapet kan du hevde at UNI skal brukes til stemmegivning og styring. <0/><1/><2>Les mer om UNI</2>"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "At least {0} {1} and {2} {3} will be refunded to your wallet due to selected price range."
@@ -342,8 +342,8 @@ msgid "By adding this list you are implicitly trusting that the data is correct.
 msgstr "Ved å legge til denne listen stoler du implisitt på at dataene er riktige. Hvem som helst kan opprette en liste, inkludere å lage falske versjoner av eksisterende lister og lister som påstår å representere prosjekter som ikke har et."
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Uniswap <1>Protocol Disclaimer</1>."
-msgstr "Ved å koble til en lommebok godtar du Uniswap Labs' <0>vilkår for bruk</0> og erkjenner at du har lest og forstått Uniswap <1>Protocol Ansvarsfraskrivelse</1>."
+msgid "By connecting a wallet, you agree to  Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the  <1>Protocol Disclaimer</1>."
+msgstr "Ved å koble til en lommebok godtar du  Labs' <0>vilkår for bruk</0> og erkjenner at du har lest og forstått  <1>Protocol Ansvarsfraskrivelse</1>."
 
 #: src/pages/Vote/styled.tsx
 msgid "Canceled"
@@ -649,8 +649,8 @@ msgid "Deposit tokens to the {label} network."
 msgstr "Sett inn tokens til {label} nettverket."
 
 #: src/pages/Earn/index.tsx
-msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
-msgstr "Sett inn din likviditetsleverandørs polletter for å motta UNI, the Uniswap-protokollens styrende pollett."
+msgid "Deposit your Liquidity Provider tokens to receive UNI, the  protocol governance token."
+msgstr "Sett inn din likviditetsleverandørs polletter for å motta UNI, the -protokollens styrende pollett."
 
 #: src/components/earn/UnstakingModal.tsx
 msgid "Deposited liquidity:"
@@ -697,8 +697,8 @@ msgid "Don’t see one of your v2 positions? <0>Import it.</0>"
 msgstr "Ser du ikke en av dine v2-posisjoner? <0>Importer den.</0>"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Uniswap governance."
-msgstr "Opptjent UNI-polletter representerer stemmeaksjer i Uniswap-styring."
+msgid "Earned UNI tokens represent voting shares in  governance."
+msgstr "Opptjent UNI-polletter representerer stemmeaksjer i -styring."
 
 #: src/components/FeeSelector/index.tsx
 msgid "Edit"
@@ -823,12 +823,12 @@ msgid "Expired"
 msgstr "Utløpt"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Uniswap Analytics."
-msgstr "Utforsk Uniswap Analytics."
+msgid "Explore  Analytics."
+msgstr "Utforsk  Analytics."
 
 #: src/components/Popups/FailedNetworkSwitchPopup.tsx
-msgid "Failed to switch networks from the Uniswap Interface. In order to use Uniswap on {0}, you must change the network in your wallet."
-msgstr "Kunne ikke bytte nettverk fra Uniswap-grensesnittet. For å bruke Uniswap på {0}må du endre nettverket i lommeboken."
+msgid "Failed to switch networks from the  Interface. In order to use  on {0}, you must change the network in your wallet."
+msgstr "Kunne ikke bytte nettverk fra -grensesnittet. For å bruke  på {0}må du endre nettverket i lommeboken."
 
 #: src/components/PositionPreview/index.tsx
 msgid "Fee Tier"
@@ -847,8 +847,8 @@ msgid "For"
 msgstr "For"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "For hver pott vist nedenfor, klikker du på migrering for å fjernee likviditeten fra Uniswap V2 og sette den til Uniswap V3."
+msgid "For each pool shown below, click migrate to remove your liquidity from  V2 and deposit it into  V3."
+msgstr "For hver pott vist nedenfor, klikker du på migrering for å fjernee likviditeten fra  V2 og sette den til  V3."
 
 #: src/pages/Swap/index.tsx
 msgid "From"
@@ -1116,8 +1116,8 @@ msgid "Migrate V2 Liquidity"
 msgstr "Migrer V2-likviditet"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "Overføre likviditetspolletten din fra Uniswap V2 til Uniswap V3."
+msgid "Migrate your liquidity tokens from  V2 to  V3."
+msgstr "Overføre likviditetspolletten din fra  V2 til  V3."
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1429,8 +1429,8 @@ msgid "Read more about UNI"
 msgstr "Les mer om UNI"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Read more about Uniswap governance"
-msgstr "Les mer om Uniswap-styring"
+msgid "Read more about  governance"
+msgstr "Les mer om -styring"
 
 #: src/pages/Pool/v2.tsx
 msgid "Read more about providing liquidity"
@@ -1646,24 +1646,24 @@ msgid "Swapping {0} {1} for {2} {3}"
 msgstr "Bytte {0} {1} mot {2} {3}"
 
 #: src/components/Popups/SurveyPopup.tsx
-msgid "Take a 10 minute survey to help us improve your experience in the Uniswap app."
-msgstr "Ta en 10-minutters spørreundersøkelse for å hjelpe oss med å forbedre opplevelsen din i Uniswap-appen."
+msgid "Take a 10 minute survey to help us improve your experience in the  app."
+msgstr "Ta en 10-minutters spørreundersøkelse for å hjelpe oss med å forbedre opplevelsen din i -appen."
 
 #: src/components/Popups/SurveyPopup.tsx
 msgid "Tell us what you think ↗"
 msgstr "Fortell oss hva du synes ↗"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Uniswap community <0/>"
-msgstr "Takk for at du er en del av Uniswap-fellesskapet <0/>"
+msgid "Thanks for being part of the  community <0/>"
+msgstr "Takk for at du er en del av -fellesskapet <0/>"
 
 #: src/components/FeeSelector/index.tsx
 msgid "The % you will earn in fees."
 msgstr "% Du vil tjene i gebyrer."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
-msgstr "Uniswap-invarianten x * y = k ble ikke tilfreds med byttet. Dette betyr vanligvis at en av pollettene du bytter inneholder tilpasset oppførsel ved overføring."
+msgid "The  invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgstr "-invarianten x * y = k ble ikke tilfreds med byttet. Dette betyr vanligvis at en av pollettene du bytter inneholder tilpasset oppførsel ved overføring."
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "The amount you expect to receive at the current market price. You may receive less or more if the market price changes while your transaction is pending."
@@ -1678,8 +1678,8 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "Appen henter kjededata og konstruerer kontraktanrop med et Infura API."
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Uniswap Labs server."
-msgstr "Appen henter den optimale handelsruten fra en Uniswap Labs-server."
+msgid "The app fetches the optimal trade route from a  Labs server."
+msgstr "Appen henter den optimale handelsruten fra en  Labs-server."
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -1734,8 +1734,8 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "Utgangspolletten kan ikke overføres. Det kan være et problem med utgangspolletten."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Utgangstokenet kan ikke overføres. Det kan være et problem med utgangstokenet. Merk: gebyr ved overføring og rebase-tokens er inkompatibelt med Uniswap V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with  V3."
+msgstr "Utgangstokenet kan ikke overføres. Det kan være et problem med utgangstokenet. Merk: gebyr ved overføring og rebase-tokens er inkompatibelt med  V3."
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1762,8 +1762,8 @@ msgid "There was an error loading your {tokenSymbol} balance"
 msgstr "Det oppsto en feil ved innlasting av {tokenSymbol} -saldoen din"
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
-msgstr "Denne adressen er blokkert på Uniswap Labs-grensesnittet fordi den er knyttet til en eller flere"
+msgid "This address is blocked on the  Labs interface because it is associated with one or more"
+msgstr "Denne adressen er blokkert på  Labs-grensesnittet fordi den er knyttet til en eller flere"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "This app uses the following third-party APIs:"
@@ -1786,16 +1786,16 @@ msgid "This token doesn't appear on the active token list(s). Make sure this is 
 msgstr "Denne polletten vises ikke på den / de aktive pollettlistene. Forsikre deg om at dette er polletten du vil handle."
 
 #: src/components/SearchModal/BlockedToken.tsx
-msgid "This token is not supported in the Uniswap Labs app"
-msgstr "Dette tokenet støttes ikke i Uniswap Labs-appen"
+msgid "This token is not supported in the  Labs app"
+msgstr "Dette tokenet støttes ikke i  Labs-appen"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "This tool will safely migrate your {0} liquidity to V3. The process is completely trustless thanks to the"
 msgstr "Dette verktøyet vil trygt migrere din {0} likviditeten til V3. Prosessen er fullstendig pålitelig takket være"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Denne transaksjonen vil ikke lykkes på grunn av prisbevegelse. Prøv å øke glidetoleransen. Merk: gebyr ved overføring og rebase-tokens er inkompatibelt med Uniswap V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with  V3."
+msgstr "Denne transaksjonen vil ikke lykkes på grunn av prisbevegelse. Prøv å øke glidetoleransen. Merk: gebyr ved overføring og rebase-tokens er inkompatibelt med  V3."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1893,8 +1893,8 @@ msgid "UNI has arrived"
 msgstr "UNI har kommet"
 
 #: src/pages/Vote/Landing.tsx
-msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "UNI-polleter representerer stemmeaksjer i Uniswap-styring. Du kan stemme på hvert forslag selv eller delegere dine stemmer til en tredjepart."
+msgid "UNI tokens represent voting shares in  governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr "UNI-polleter representerer stemmeaksjer i -styring. Du kan stemme på hvert forslag selv eller delegere dine stemmer til en tredjepart."
 
 #: src/pages/RemoveLiquidity/index.tsx
 msgid "UNI {0}/{1} Burned"
@@ -1930,36 +1930,36 @@ msgid "Unexpected issue with estimating the gas. Please try again."
 msgstr "Uventet problem med estimering av gassen. Vær så snill, prøv på nytt."
 
 #: src/pages/Vote/Landing.tsx
-msgid "Uniswap Governance"
-msgstr "Uniswap-styring"
+msgid " Governance"
+msgstr "-styring"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Uniswap Labs' Terms of Service"
-msgstr "Uniswap Labs sine vilkår for bruk"
+msgid " Labs' Terms of Service"
+msgstr " Labs sine vilkår for bruk"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Uniswap available in: <0>{0}</0>"
-msgstr "Uniswap er tilgjengelig om: <0>{0}</0>"
+msgid " available in: <0>{0}</0>"
+msgstr " er tilgjengelig om: <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
-msgstr "Uniswap-styring er bare tilgjengelig i lag 1. Bytt nettverket til Ethereum Mainnet for å se forslag og stemme."
+msgid " governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgstr "-styring er bare tilgjengelig i lag 1. Bytt nettverket til Ethereum Mainnet for å se forslag og stemme."
 
 #: src/pages/Earn/index.tsx
-msgid "Uniswap liquidity mining"
+msgid " liquidity mining"
 msgstr "Ikke-velfungerende likviditetsmining"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Uniswap migration contract↗"
-msgstr "Uniswap-migrasjonskontrakt↗"
+msgid " migration contract↗"
+msgstr "-migrasjonskontrakt↗"
 
 #: src/components/SearchModal/TokenImportCard.tsx
 msgid "Unknown Source"
 msgstr "Ukjent kilde"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Ukjent feil{0}. Prøv å øke glattoleransen. Merk: gebyr ved overføring og rebase -tokens er inkompatibelt med Uniswap V3."
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with  V3."
+msgstr "Ukjent feil{0}. Prøv å øke glattoleransen. Merk: gebyr ved overføring og rebase -tokens er inkompatibelt med  V3."
 
 #: src/pages/Vote/Landing.tsx
 #: src/pages/Vote/VotePage.tsx
@@ -2005,8 +2005,8 @@ msgid "Update list"
 msgstr "Oppdater liste"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Uniswap Labs API to get faster quotes."
-msgstr "Bruk Uniswap Labs API for å få raskere tilbud."
+msgid "Use the  Labs API to get faster quotes."
+msgstr "Bruk  Labs API for å få raskere tilbud."
 
 #: src/components/claim/ClaimModal.tsx
 msgid "User"
@@ -2185,8 +2185,8 @@ msgid "You are creating a pool"
 msgstr "Du lager en pott"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
-msgstr "Du er den første likviditetsleverandøren til denne Uniswap V3-potten. Likviditeten din vil migrere til gjeldende {0}-pris."
+msgid "You are the first liquidity provider for this  V3 pool. Your liquidity will migrate at the current {0} price."
+msgstr "Du er den første likviditetsleverandøren til denne  V3-potten. Likviditeten din vil migrere til gjeldende {0}-pris."
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "You are the first liquidity provider."
@@ -2225,16 +2225,16 @@ msgid "You must connect an account."
 msgstr "Du må koble til en konto."
 
 #: src/pages/Swap/index.tsx
-msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
-msgstr "Du må gi Uniswap smartkontrakter tillatelse til å bruke din {0}. Du må bare gjøre dette en gang per pollett."
+msgid "You must give the  smart contracts permission to use your {0}. You only have to do this once per token."
+msgstr "Du må gi  smartkontrakter tillatelse til å bruke din {0}. Du må bare gjøre dette en gang per pollett."
 
 #: src/pages/CreateProposal/index.tsx
 msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "Du må ha {formattedProposalThreshold} stemmer for å sende inn et forslag"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "Du bør kun sette likviditeten inn i Uniswap V3 til en pris du mener er korrekt. <0/>Hvis prisen virker feil kan du enten bytte prisen for å bevege deg på pris, eller vente til noen andre gjør det."
+msgid "You should only deposit liquidity into  V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "Du bør kun sette likviditeten inn i  V3 til en pris du mener er korrekt. <0/>Hvis prisen virker feil kan du enten bytte prisen for å bevege deg på pris, eller vente til noen andre gjør det."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2389,8 +2389,8 @@ msgid "{0, plural, =1 {This token isn't verified} other {These tokens aren't ver
 msgstr "{0, plural, =1 {Dette tokenet er ikke bekreftet} other {Disse tokenene er ikke verifisert}}"
 
 #: src/constants/tokenSafety.tsx
-msgid "{0, plural, =1 {You can't trade this token using the Uniswap App.} other {You can't trade these tokens using the Uniswap App.}}"
-msgstr "{0, plural, =1 {Du kan ikke bytte dette tokenet ved å bruke Uniswap-appen.} other {Du kan ikke bytte disse tokenene ved å bruke Uniswap-appen.}}"
+msgid "{0, plural, =1 {You can't trade this token using the  App.} other {You can't trade these tokens using the  App.}}"
+msgstr "{0, plural, =1 {Du kan ikke bytte dette tokenet ved å bruke -appen.} other {Du kan ikke bytte disse tokenene ved å bruke -appen.}}"
 
 #: src/components/RateToggle/index.tsx
 #: src/components/RateToggle/index.tsx
