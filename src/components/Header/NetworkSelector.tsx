@@ -112,6 +112,7 @@ const NetworkLabel = styled.div`
 `
 const SelectorLabel = styled(NetworkLabel)`
   display: none;
+  padding: 5px;
   @media screen and (min-width: ${MEDIA_WIDTHS.upToSmall}px) {
     display: block;
     margin-right: 8px;
@@ -130,22 +131,25 @@ const NetworkAlertLabel = styled(NetworkLabel)`
     display: block;
   }
 `
+// background-color: ${({ theme }) => theme.deprecated_bg0}; => before
 const SelectorControls = styled.div<{ supportedChain: boolean }>`
   align-items: center;
-  background-color: ${({ theme }) => theme.deprecated_bg0};
-  border: 2px solid ${({ theme }) => theme.deprecated_bg0};
+  background: red !important;
+  border: none;
   border-radius: 16px;
   color: ${({ theme }) => theme.deprecated_text1};
   display: flex;
-  font-weight: 500;
+  font-weight: 300;
   justify-content: space-between;
-  padding: 6px 8px;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 24px;
   ${({ supportedChain, theme }) =>
     !supportedChain &&
     `
     color: ${theme.deprecated_white};
-    background-color: ${theme.deprecated_red1};
-    border: 2px solid ${theme.deprecated_red1};
+    background: #3B3C4E !important;
+    border: none;
   `}
   cursor: default;
   :focus {

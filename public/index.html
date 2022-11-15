@@ -82,8 +82,12 @@
         pointer-events: none;
         width: 200vw;
         height: 200vh;
-        background: radial-gradient(50% 50% at 50% 50%, #fc077d10 0%, rgba(255, 255, 255, 0) 100%);
-        transform: translate(-50vw, -100vh);
+        /* background: radial-gradient(50% 50% at 50% 50%, #fc077d10 0%, rgba(255, 255, 255, 0) 100%); */
+        background: url(./images/bg.png) #14161D no-repeat;
+        background-size: cover;
+        padding-top: 140px;
+        padding-bottom: 50px;
+        /* transform: translate(-50vw, -100vh); */
         z-index: -1;
       }
 
@@ -93,12 +97,14 @@
 
       @media (prefers-color-scheme: dark) {
         html {
-          background-color: #212429;
+          /* background-color: #212429; */
+          background: url('./images/bg.png') #14161D no-repeat;
         }
       }
       @media (prefers-color-scheme: light) {
         html {
-          background-color: #f7f8fa;
+          /* background-color: #f7f8fa; */
+          background: url('./images/bg.png') #14161D no-repeat;    
         }
       }
     </style>

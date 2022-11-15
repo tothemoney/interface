@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="landing" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="images/logotype.png" />
+    <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>TITLE</title>
+</head>
+
+<body>
+    <div class="header-toolbar">
+        <a href="/" class="header-toolbar__logo">
+            <img src="images/logo.png" alt="">
+        </a>
+        <nav class="header-toolbar__menu">
+            <ul>
+                <li><a href="/?a=route&s=scswap" class="active-menu-item" data-router-link>Swap</a></li>
+                <li><a href="/?a=route&s=scpools" data-router-link>Pool</a></li>
+                <li><a href="#">Vote</a></li>
+                <li><a href="#">Charts <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.125 0.875L0.875 9.125" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.33325 0.833344L9.12492 0.874177L9.16659 6.66668" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg> </a></li>
+            </ul>
+        </nav>
+        <div class="header-toolbar__elements">
+            <div class="element-wrap hover-dropdown dropdown-styling p-rel">
+                <img src="images/eth.svg" alt="">
+                <span>Ethereum </span>
+                <div class="element-dropdown-wrap">
+                    <div class="element-dropdown ct-wrapper element-dropdown-wide">
+                        <div class="element-dropdown-heading ct-wrapper__heading">Select a network</div>
+                        <div class="scan-box">
+                            <div class="scan-box-item">
+                                <div class="scan-box-token"><img src="images/eth.svg" alt=""> Ethereum </div>
+                                <div class="scan-box-status-box">
+                                    <span class="scan-box-status"></span>
+                                    Active
+                                </div>
+                            </div>
+                            <a href="#" class="link-item">Etherscan <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.125 0.875L0.875 9.125" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 0.833344L9.12492 0.874177L9.16659 6.66668" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg></a>
+                        </div>
+                        <ul class="element-dropdown-list element-dropdown-list-scan">
+                            <li><a href="#"> <img src="images/eth.svg" alt=""> Ethereum </a></li>
+                            <li><a href="#"> <img src="images/eth.svg" alt=""> Optimism </a></li>
+                            <li><a href="#"> <img src="images/eth.svg" alt=""> Arbitrum </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button data-modal="#connect" style="display: none;" class="btn-element header-toolbar_element btn-type">Connect Wallet</button>
+            <div class="element-wrap header-toolbar_element wallet-info">
+                <span class="wallet-info__amount">0 ETH</span>
+                <span class="wallet-address">0xBAD7...E116</span>
+            </div>
+            <div class="p-rel header-toolbar_element">
+                <div class="element-wrap dropdown-click-toggle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.8334 8.33332C17.5001 8.33332 18.3334 7.49999 18.3334 5.83332V4.16666C18.3334 2.49999 17.5001 1.66666 15.8334 1.66666H14.1667C12.5001 1.66666 11.6667 2.49999 11.6667 4.16666V5.83332C11.6667 7.49999 12.5001 8.33332 14.1667 8.33332H15.8334Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.83341 18.3333C7.50008 18.3333 8.33341 17.5 8.33341 15.8333V14.1667C8.33341 12.5 7.50008 11.6667 5.83341 11.6667H4.16675C2.50008 11.6667 1.66675 12.5 1.66675 14.1667V15.8333C1.66675 17.5 2.50008 18.3333 4.16675 18.3333H5.83341Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00008 8.33332C3.15913 8.33332 1.66675 6.84094 1.66675 4.99999C1.66675 3.15904 3.15913 1.66666 5.00008 1.66666C6.84103 1.66666 8.33341 3.15904 8.33341 4.99999C8.33341 6.84094 6.84103 8.33332 5.00008 8.33332Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0001 18.3333C13.1591 18.3333 11.6667 16.8409 11.6667 15C11.6667 13.159 13.1591 11.6667 15.0001 11.6667C16.841 11.6667 18.3334 13.159 18.3334 15C18.3334 16.8409 16.841 18.3333 15.0001 18.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                </div>
+                <div class="element-dropdown-wrap settings-dropdown dp-right">
+                    <div class="element-dropdown ct-wrapper o-hidden">
+                        <div class="dropdown-menu-nav">
+                            <ul class="element-dropdown-list element-dropdown-list-gray">
+                                <li><a href="javascript:;" data-modal="#account"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0001 18.3334C14.6025 18.3334 18.3334 14.6024 18.3334 10C18.3334 5.39765 14.6025 1.66669 10.0001 1.66669C5.39771 1.66669 1.66675 5.39765 1.66675 10C1.66675 14.6024 5.39771 18.3334 10.0001 18.3334Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 13.3333V10" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 6.66669H10.01" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg> Account </a></li>
+                                <li><a href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0001 18.3334C14.6025 18.3334 18.3334 14.6024 18.3334 10C18.3334 5.39765 14.6025 1.66669 10.0001 1.66669C5.39771 1.66669 1.66675 5.39765 1.66675 10C1.66675 14.6024 5.39771 18.3334 10.0001 18.3334Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 13.3333V10" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 6.66669H10.01" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg> About </a></li>
+                                <li><a href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0001 18.3334C14.6025 18.3334 18.3334 14.6024 18.3334 10C18.3334 5.39765 14.6025 1.66669 10.0001 1.66669C5.39771 1.66669 1.66675 5.39765 1.66675 10C1.66675 14.6024 5.39771 18.3334 10.0001 18.3334Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.57495 7.49999C7.77087 6.94304 8.15758 6.47341 8.66658 6.17426C9.17558 5.87512 9.77403 5.76577 10.3559 5.86558C10.9378 5.96539 11.4656 6.26792 11.8458 6.71959C12.2261 7.17126 12.4342 7.74292 12.4333 8.33332C12.4333 9.99999 9.93328 10.8333 9.93328 10.8333" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 14.1667H10.01" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg> Help center </a></li>
+                                <li><a href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29175 18.225C7.73341 17.375 4.99175 16.475 3.27508 16.25L3.03341 16.2167C1.94175 16.0834 1.04175 15.0584 1.04175 13.95V3.88338C1.04175 3.22505 1.30008 2.62505 1.77508 2.19171C2.25008 1.75838 2.86675 1.55005 3.51675 1.60838C5.35008 1.75005 8.11675 2.66671 9.68342 3.65005L9.88341 3.76671C9.94175 3.80005 10.0667 3.80005 10.1167 3.77505L10.2501 3.69171C11.8167 2.70838 14.5834 1.77505 16.4251 1.61671C16.4417 1.61671 16.5084 1.61671 16.5251 1.61671C17.1334 1.55838 17.7584 1.77505 18.2251 2.20838C18.7001 2.64171 18.9584 3.24171 18.9584 3.90005V13.9584C18.9584 15.075 18.0584 16.0917 16.9584 16.225L16.6834 16.2584C14.9667 16.4834 12.2167 17.3917 10.6917 18.2334C10.4917 18.35 10.2501 18.4 10.0001 18.4C9.75008 18.4 9.50008 18.3417 9.29175 18.225ZM2.61675 3.11671C2.40841 3.30838 2.29175 3.58338 2.29175 3.88338V13.95C2.29175 14.4417 2.71675 14.9167 3.19175 14.9834L3.44175 15.0167C5.31675 15.2667 8.19175 16.2084 9.85842 17.1167C9.93342 17.15 10.0417 17.1584 10.0834 17.1417C11.7501 16.2167 14.6417 15.2667 16.5251 15.0167L16.8084 14.9834C17.2834 14.925 17.7084 14.4417 17.7084 13.95V3.89171C17.7084 3.58338 17.5917 3.31671 17.3834 3.11671C17.1667 2.92505 16.8917 2.83338 16.5834 2.85005C16.5667 2.85005 16.5001 2.85005 16.4834 2.85005C14.8917 2.99171 12.3251 3.85005 10.9251 4.72505L10.7917 4.81671C10.3334 5.10005 9.68342 5.10005 9.24175 4.82505L9.04175 4.70838C7.61675 3.83338 5.05008 2.98338 3.41675 2.85005C3.38341 2.85005 3.35008 2.85005 3.31675 2.85005C3.05008 2.85005 2.80841 2.94171 2.61675 3.11671Z" fill="white" />
+                                            <path d="M9.375 17.0749V4.57495C9.375 4.23328 9.65833 3.94995 10 3.94995C10.3417 3.94995 10.625 4.23328 10.625 4.57495V17.0749C10.625 17.4249 10.3417 17.6999 10 17.6999C9.65833 17.6999 9.375 17.4166 9.375 17.0749Z" fill="white" />
+                                            <path d="M4.58325 7.69995C4.24159 7.69995 3.95825 7.41662 3.95825 7.07495C3.95825 6.73328 4.24159 6.44995 4.58325 6.44995H6.45825C6.79992 6.44995 7.08325 6.73328 7.08325 7.07495C7.08325 7.41662 6.79992 7.69995 6.45825 7.69995H4.58325Z" fill="white" />
+                                            <path d="M4.58325 10.2C4.24159 10.2 3.95825 9.91662 3.95825 9.57495C3.95825 9.23328 4.24159 8.94995 4.58325 8.94995H7.08325C7.42492 8.94995 7.70825 9.23328 7.70825 9.57495C7.70825 9.91662 7.42492 10.2 7.08325 10.2H4.58325Z" fill="white" /> </svg> Docs </a></li>
+                                <li><a href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.76674 2.43469C6.71072 2.42586 6.65378 2.42451 6.59741 2.43069C5.47607 2.55202 3.76941 3.15735 2.76141 3.70402C2.69483 3.74033 2.63524 3.78819 2.58541 3.84535C2.16674 4.32402 1.78674 5.10402 1.48941 5.84269C1.18274 6.60002 0.929406 7.40002 0.786739 7.97869C0.314739 9.85869 0.0574058 12.116 0.0227392 14.2574C0.0216363 14.3642 0.0473058 14.4696 0.0974058 14.564C0.497406 15.328 1.36007 16.036 2.22407 16.5534C3.09741 17.0774 4.11741 17.4907 4.93874 17.5707C5.03715 17.5801 5.13639 17.5665 5.22869 17.5312C5.32099 17.4958 5.40384 17.4395 5.47074 17.3667C5.67607 17.144 6.02541 16.624 6.28941 16.22C6.40941 16.036 6.52274 15.86 6.61074 15.72C7.49341 15.88 8.60007 15.9734 10.0001 15.9734C11.3974 15.9734 12.5041 15.88 13.3867 15.72C13.4747 15.8614 13.5867 16.036 13.7067 16.2187C13.9707 16.624 14.3201 17.144 14.5267 17.3667C14.5936 17.4395 14.6765 17.4958 14.7688 17.5312C14.8611 17.5665 14.9603 17.5801 15.0587 17.5707C15.8801 17.4907 16.8987 17.0774 17.7721 16.5534C18.6361 16.036 19.4987 15.328 19.9001 14.564C19.9497 14.4695 19.9749 14.3641 19.9734 14.2574C19.9401 12.116 19.6814 9.85735 19.2121 7.97735C19.0235 7.25126 18.7879 6.5382 18.5067 5.84269C18.2094 5.10402 17.8294 4.32269 17.4121 3.84535C17.3618 3.78806 17.3018 3.7402 17.2347 3.70402C16.2281 3.15735 14.5214 2.55202 13.3987 2.43069C13.3428 2.42463 13.2863 2.42597 13.2307 2.43469C12.9795 2.48305 12.7437 2.59197 12.5441 2.75202C12.0968 3.11206 11.7352 3.56704 11.4854 4.08402C10.9913 4.04526 10.4957 4.02613 10.0001 4.02669C9.46407 4.02669 8.96807 4.04669 8.51074 4.08269C8.26077 3.56619 7.89917 3.11168 7.45207 2.75202C7.25278 2.59217 7.01756 2.48325 6.76674 2.43469ZM14.6907 15.384C14.8784 15.673 15.0709 15.9588 15.2681 16.2414C15.7961 16.1214 16.4694 15.8414 17.1147 15.4547C17.8387 15.0214 18.4134 14.5214 18.6907 14.0987C18.6467 12.0907 18.3987 10.0054 17.9707 8.28802C17.7964 7.61914 17.5791 6.96222 17.3201 6.32135C17.0534 5.65735 16.7667 5.09469 16.5174 4.77202C15.6507 4.32269 14.2841 3.84802 13.3934 3.71869C13.3666 3.73494 13.3408 3.75275 13.3161 3.77202C13.2056 3.85894 13.1046 3.95726 13.0147 4.06535C12.9622 4.12794 12.9119 4.19243 12.8641 4.25869C13.2707 4.33335 13.6334 4.42269 13.9547 4.52135C14.8667 4.80135 15.5241 5.18802 15.8454 5.61602C15.9473 5.75181 15.991 5.9225 15.967 6.09053C15.943 6.25856 15.8532 6.41018 15.7174 6.51202C15.6502 6.56245 15.5737 6.59914 15.4922 6.62C15.4108 6.64085 15.3261 6.64547 15.2429 6.63359C15.0749 6.60958 14.9233 6.51981 14.8214 6.38402C14.7427 6.28002 14.4001 5.99735 13.5787 5.74402C12.7854 5.50135 11.6187 5.30669 10.0001 5.30669C8.38141 5.30669 7.21341 5.50135 6.42141 5.74535C5.60007 5.99869 5.25741 6.27869 5.17874 6.38402C5.12831 6.45126 5.06514 6.5079 4.99282 6.55072C4.9205 6.59354 4.84045 6.6217 4.75725 6.63359C4.58922 6.65759 4.41853 6.61386 4.28274 6.51202C4.2155 6.46159 4.15886 6.39841 4.11604 6.32609C4.07322 6.25377 4.04506 6.17373 4.03317 6.09053C4.00917 5.9225 4.0529 5.75181 4.15474 5.61602C4.47607 5.18669 5.13341 4.80269 6.04541 4.52269C6.36541 4.42269 6.72807 4.33469 7.13341 4.26002C7.08548 4.19304 7.03477 4.12809 6.98141 4.06535C6.89197 3.95733 6.79141 3.85901 6.68141 3.77202C6.65626 3.75271 6.62999 3.7349 6.60274 3.71869C5.71341 3.84802 4.34674 4.32269 3.48007 4.77202C3.22941 5.09602 2.94407 5.65735 2.67607 6.32135C2.39207 7.02802 2.15607 7.77069 2.02674 8.28802C1.59741 10.0054 1.34941 12.0907 1.30674 14.0987C1.58407 14.5227 2.15741 15.0214 2.88141 15.456C3.52807 15.8427 4.20007 16.1227 4.72941 16.2414C4.92861 15.9602 5.12111 15.6743 5.30674 15.384C4.26007 15.012 3.69874 14.5014 3.33341 13.9547C3.28683 13.8846 3.25451 13.8061 3.23828 13.7236C3.22205 13.6411 3.22224 13.5561 3.23883 13.4737C3.25542 13.3912 3.28809 13.3128 3.33497 13.243C3.38186 13.1732 3.44203 13.1133 3.51207 13.0667C3.58211 13.0201 3.66064 12.9878 3.74317 12.9716C3.8257 12.9553 3.91062 12.9555 3.99308 12.9721C4.07553 12.9887 4.15392 13.0214 4.22375 13.0683C4.29358 13.1151 4.3535 13.1753 4.40007 13.2454C4.74674 13.768 5.65874 14.6934 10.0001 14.6934C14.3427 14.6934 15.2534 13.768 15.6001 13.2454C15.6941 13.1039 15.8405 13.0056 16.0071 12.9721C16.1736 12.9386 16.3466 12.9726 16.4881 13.0667C16.6295 13.1607 16.7278 13.3071 16.7613 13.4737C16.7948 13.6402 16.7608 13.8132 16.6667 13.9547C16.3014 14.5014 15.7387 15.0134 14.6907 15.384ZM5.44007 9.34935C5.76541 9.00002 6.20674 8.80269 6.66674 8.80002C7.12674 8.80269 7.56807 9.00002 7.89341 9.34935C8.21741 9.70002 8.40007 10.1734 8.40007 10.6667C8.40007 11.16 8.21741 11.6334 7.89341 11.984C7.56807 12.3334 7.12674 12.5307 6.66674 12.5334C6.43551 12.5309 6.20727 12.4809 5.99623 12.3864C5.78518 12.2919 5.59587 12.1549 5.44007 11.984C5.11155 11.6242 4.93064 11.1539 4.93341 10.6667C4.93341 10.1734 5.11607 9.70002 5.44007 9.34935ZM13.3334 8.80002C12.8734 8.80269 12.4321 9.00002 12.1067 9.34935C11.7827 9.70002 11.6001 10.1734 11.6001 10.6667C11.6001 11.16 11.7827 11.6334 12.1067 11.984C12.4321 12.3334 12.8734 12.5307 13.3334 12.5334C13.7934 12.5307 14.2347 12.3334 14.5601 11.984C14.8841 11.6334 15.0667 11.16 15.0667 10.6667C15.0667 10.1734 14.8841 9.70002 14.5601 9.34935C14.4043 9.17847 14.215 9.04151 14.0039 8.947C13.7929 8.85249 13.5646 8.80246 13.3334 8.80002Z" fill="#B2B2B2" /> </svg> Discord </a></li>
+                                <li class="has-submenus"><a class="lang-menu" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.04175 9.99996C1.04175 5.05829 5.05841 1.04163 10.0001 1.04163C14.9417 1.04163 18.9584 5.05829 18.9584 9.99996C18.9584 14.9416 14.9417 18.9583 10.0001 18.9583C5.05841 18.9583 1.04175 14.9416 1.04175 9.99996ZM2.29175 9.99996C2.29175 14.25 5.75008 17.7083 10.0001 17.7083C14.2501 17.7083 17.7084 14.25 17.7084 9.99996C17.7084 5.74996 14.2501 2.29163 10.0001 2.29163C5.75008 2.29163 2.29175 5.74996 2.29175 9.99996Z" fill="#B2B2B2" />
+                                            <path d="M6.66686 18.125C6.3252 18.125 6.04186 17.8417 6.04186 17.5C6.04186 17.1583 6.30853 16.8833 6.6502 16.875C5.34186 12.4083 5.34186 7.59167 6.6502 3.125C6.30853 3.11667 6.04186 2.84167 6.04186 2.5C6.04186 2.15833 6.3252 1.875 6.66686 1.875H7.5002C7.7002 1.875 7.89186 1.975 8.00853 2.13333C8.1252 2.3 8.15853 2.50833 8.09186 2.7C6.5252 7.40833 6.5252 12.5917 8.09186 17.3083C8.15853 17.5 8.1252 17.7083 8.00853 17.875C7.89186 18.025 7.7002 18.125 7.5002 18.125H6.66686Z" fill="#B2B2B2" />
+                                            <path d="M12.3002 18.0918C11.9752 17.9834 11.7919 17.6251 11.9086 17.3001C13.4752 12.5918 13.4752 7.40844 11.9086 2.69178C11.8002 2.36678 11.9752 2.00844 12.3002 1.90011C12.6336 1.79178 12.9836 1.96678 13.0919 2.29178C14.7503 7.25844 14.7503 12.7251 13.0919 17.6834C13.0086 17.9584 12.7586 18.1251 12.5002 18.1251C12.4336 18.1251 12.3669 18.1168 12.3002 18.0918Z" fill="#B2B2B2" />
+                                            <path d="M3.125 13.3498C3.11667 13.6831 2.84167 13.9581 2.5 13.9581C2.15833 13.9581 1.875 13.6748 1.875 13.3331V12.4998C1.875 12.2998 1.975 12.1081 2.13333 11.9915C2.3 11.8748 2.50833 11.8415 2.7 11.9081C7.40833 13.4748 12.6 13.4748 17.3083 11.9081C17.5 11.8415 17.7083 11.8748 17.875 11.9915C18.0417 12.1081 18.1333 12.2998 18.1333 12.4998V13.3331C18.1333 13.6748 17.85 13.9581 17.5083 13.9581C17.1667 13.9581 16.8917 13.6915 16.8833 13.3498C14.6417 14.0081 12.325 14.3331 10 14.3331C7.675 14.3331 5.35833 14.0081 3.125 13.3498Z" fill="#B2B2B2" />
+                                            <path d="M17.2999 8.09151C12.5916 6.52485 7.3999 6.52485 2.69157 8.09151C2.35823 8.19985 2.00823 8.02485 1.8999 7.69985C1.7999 7.36651 1.9749 7.01651 2.2999 6.90818C7.26657 5.24985 12.7332 5.24985 17.6916 6.90818C18.0166 7.01651 18.1999 7.37485 18.0832 7.69985C18.0082 7.95818 17.7582 8.12485 17.4999 8.12485C17.4332 8.12485 17.3666 8.11651 17.2999 8.09151Z" fill="#B2B2B2" /> </svg> <span class="lang">Language <span>English</span></span></a>
+                                    <ul>
+                                        <li><a href="">Russian</a></li>
+                                        <li><a href="">Spanish</a></li>
+                                        <li><a href="">English</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66667 18.9583C3.625 18.9583 1.875 17.2083 1.875 14.1666V5.83329C1.875 2.79163 3.625 1.04163 6.66667 1.04163H13.3333C16.375 1.04163 18.125 2.79163 18.125 5.83329V14.1666C18.125 17.2083 16.375 18.9583 13.3333 18.9583H6.66667ZM3.125 5.83329V14.1666C3.125 16.55 4.28333 17.7083 6.66667 17.7083H13.3333C15.7167 17.7083 16.875 16.55 16.875 14.1666V5.83329C16.875 3.44996 15.7167 2.29163 13.3333 2.29163H6.66667C4.28333 2.29163 3.125 3.44996 3.125 5.83329Z" fill="#B2B2B2" />
+                                            <path d="M13.7499 7.70833C12.4833 7.70833 11.4583 6.68333 11.4583 5.41667V3.75C11.4583 3.40833 11.7416 3.125 12.0833 3.125C12.4249 3.125 12.7083 3.40833 12.7083 3.75V5.41667C12.7083 5.99167 13.1749 6.45833 13.7499 6.45833H15.4166C15.7583 6.45833 16.0416 6.74167 16.0416 7.08333C16.0416 7.425 15.7583 7.70833 15.4166 7.70833H13.7499Z" fill="#B2B2B2" />
+                                            <path d="M6.66675 11.4584C6.32508 11.4584 6.04175 11.175 6.04175 10.8334C6.04175 10.4917 6.32508 10.2084 6.66675 10.2084H10.0001C10.3417 10.2084 10.6251 10.4917 10.6251 10.8334C10.6251 11.175 10.3417 11.4584 10.0001 11.4584H6.66675Z" fill="#B2B2B2" />
+                                            <path d="M6.66675 14.7916C6.32508 14.7916 6.04175 14.5083 6.04175 14.1666C6.04175 13.825 6.32508 13.5416 6.66675 13.5416H13.3334C13.6751 13.5416 13.9584 13.825 13.9584 14.1666C13.9584 14.5083 13.6751 14.7916 13.3334 14.7916H6.66675Z" fill="#B2B2B2" /> </svg> Legal Privacy </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="route-section scliquidity" id="liquidity">
+        <div class="container wide-container">
+            <div class="swap-heading">
+                <a href="/?a=route&s=scpools" data-router-link class="ui-btn btn-type ui-btn-boxed p0">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5328 15.5001L2.47446 10.4418C2.2328 10.2001 2.2328 9.8001 2.47446 9.55843L7.5328 4.5001C7.77446 4.25843 8.17446 4.25843 8.41613 4.5001C8.6578 4.74176 8.6578 5.14176 8.41613 5.38343L3.79946 10.0001L8.41613 14.6168C8.6578 14.8584 8.6578 15.2584 8.41613 15.5001C8.29946 15.6251 8.1328 15.6834 7.97446 15.6834C7.81613 15.6834 7.6578 15.6251 7.5328 15.5001Z" fill="#B2B2B2" />
+                        <path d="M3.05835 10.625C2.71668 10.625 2.43335 10.3417 2.43335 10C2.43335 9.65833 2.71668 9.375 3.05835 9.375H17.0833C17.425 9.375 17.7083 9.65833 17.7083 10C17.7083 10.3417 17.425 10.625 17.0833 10.625H3.05835Z" fill="#B2B2B2" /> </svg>
+                </a>
+                <div class="heading-element">Add Liquidity</div>
+                <div class="swap-buttons">
+                    <button class="ui-btn btn-type ui-btn-boxed ui-btn-mg-left p0"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 18.9583C7.15833 18.9583 6.875 18.675 6.875 18.3333C6.875 17.9917 7.15833 17.7083 7.5 17.7083H17.5C17.8417 17.7083 18.125 17.9917 18.125 18.3333C18.125 18.675 17.8417 18.9583 17.5 18.9583H7.5Z" fill="#B2B2B2" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.90831 18.0083L1.9833 15.0833C0.766634 13.8667 0.766634 11.8833 1.9833 10.6667L10.675 1.975C11.85 0.8 13.9166 0.8 15.0916 1.975L18.0166 4.9C19.2333 6.11666 19.2333 8.1 18.0166 9.31666L9.32497 18.0083C8.74163 18.6083 7.95828 18.925 7.11661 18.925C6.28328 18.925 5.49164 18.6 4.90831 18.0083ZM5.79164 17.1333C6.49997 17.8417 7.74163 17.8417 8.44163 17.1333L17.1333 8.44166C17.8666 7.70833 17.8666 6.52499 17.1333 5.79166L14.2083 2.86667C13.5083 2.16667 12.2666 2.15833 11.5583 2.86667L2.86663 11.5583C2.1333 12.2833 2.1333 13.475 2.86663 14.2083L5.79164 17.1333Z" fill="#B2B2B2" />
+                            <path d="M11.9506 14.5082L5.49229 8.04986C5.25062 7.8082 5.25062 7.40819 5.49229 7.16653C5.73395 6.92486 6.13395 6.92486 6.37562 7.16653L12.8339 13.6249C13.0756 13.8665 13.0756 14.2665 12.8339 14.5082C12.7089 14.6332 12.5506 14.6915 12.3923 14.6915C12.2339 14.6915 12.0756 14.6332 11.9506 14.5082Z" fill="#B2B2B2" />
+                            <path d="M2.49229 15.1583C2.25062 14.9166 2.25062 14.5166 2.49229 14.2749L7.20898 9.55828C7.45065 9.31661 7.85064 9.31661 8.09231 9.55828C8.33398 9.79995 8.33398 10.1999 8.09231 10.4416L3.37562 15.1583C3.25062 15.2833 3.09231 15.3416 2.93398 15.3416C2.77564 15.3416 2.61729 15.2833 2.49229 15.1583Z" fill="#B2B2B2" />
+                            <path d="M4.84092 17.5167C4.59925 17.275 4.59925 16.875 4.84092 16.6333L9.55756 11.9167C9.79923 11.675 10.1993 11.675 10.4409 11.9167C10.6826 12.1583 10.6826 12.5583 10.4409 12.8L5.72425 17.5167C5.60758 17.6333 5.44928 17.7 5.28261 17.7C5.12428 17.7 4.96592 17.6417 4.84092 17.5167Z" fill="#B2B2B2" /> </svg> </button>
+                    <div class="setting-btn ui-btn-mg-left p-rel">
+                        <div class="ui-btn ui-btn-boxed p-0 btn-type"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.3333 14.5833H12.5" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.16675 14.5833H1.66675" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.3333 5.41667H15.8333" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.50008 5.41667H1.66675" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.8334 12.0833C11.7501 12.0833 12.5001 12.5 12.5001 13.75V15.4167C12.5001 16.6667 11.7501 17.0833 10.8334 17.0833H5.83341C4.91675 17.0833 4.16675 16.6667 4.16675 15.4167V13.75C4.16675 12.5 4.91675 12.0833 5.83341 12.0833H10.8334Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.1667 2.91667C15.0833 2.91667 15.8333 3.33334 15.8333 4.58334V6.25001C15.8333 7.5 15.0833 7.91667 14.1667 7.91667H9.16667C8.25 7.91667 7.5 7.5 7.5 6.25001V4.58334C7.5 3.33334 8.25 2.91667 9.16667 2.91667H14.1667Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg></div>
+                        <div class="element-dropdown-wrap element-dropdown-wrap-setting">
+                            <div class="ct-wrapper">
+                                <div class="ct-wrapper__heading ct-wrapper-heading-small">Exchange settings</div>
+                                <div class="elements-box elements-box-mg">
+                                    <div class="elements-box__label">
+                                        Slippage tolerance
+                                        <div aria-label="Your transaction will revert if the price changes unfavorably by more than this percentage." data-microtip-position="right" role="tooltip">
+                                            <div class="tooltip-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="element-box-input-slider">
+                                        <div class="element-box-input-item">
+                                            <button class="input-style input-style-boxed btn-type-2 auto-btn">Auto</button>
+                                        </div>
+                                        <div class="element-box-ui-slider">
+                                            <input id="slider_1" class="slider-ui" x data-min="0" data-from="20" data-max="99" type="text" name="tolerance" required="" value=""> </div>
+                                        <div class="element-box-input-item"><input type="text" value="" placeholder="0.1%" maxlength="2" class="input-style auto-input input-style-boxed"></div>
+                                    </div>
+                                </div>
+                                <div class="elements-box">
+                                    <div class="elements-box__label">
+                                        Transaction deadline
+                                        <div aria-label="Your transaction will revert if the price changes unfavorably by more than this percentage." data-microtip-position="right" role="tooltip">
+                                            <div class="tooltip-icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="element-box-input-slider">
+                                        <div class="element-box-input-item label-inpu-item">
+                                            <input type="text" value="40" maxlength="4" class="input-style input-style-boxed">
+                                            <span>minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="ct-wrapper__heading ct-wrapper-heading-small">Interface settings</div>
+                                <div class="switch-wrap elements-box-mg">
+                                    <label class="switch" for="switch-deadline">
+                                        <input type="checkbox" checked="" id="switch-deadline">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    Transaction deadline
+                                    <div aria-label="Your transaction will revert if the price changes" data-microtip-position="right" role="tooltip">
+                                        <div class="tooltip-icon"></div>
+                                    </div>
+                                </div>
+                                <div class="switch-wrap">
+                                    <label class="switch" for="switch-expert">
+                                        <input type="checkbox" id="switch-expert">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    Expert mode
+                                    <div aria-label="Your transaction will revert if the price changes" data-microtip-position="right" role="tooltip">
+                                        <div class="tooltip-icon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-container-sep"></div>
+            <div class="lq-row lq-row-2">
+                <div class="lq-col">
+                    <div class="form-input-wrapper">
+                        <div class="form-input">
+                            <input type="number" value="1.00" step="0.01" placeholder="0.00">
+                            <div data-modal="#select" class="element-wrap form-input-element hover-dropdown dropdown-styling header-toolbar_element btn-type-2 p-rel">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#627EEA" />
+                                    <path d="M12.3735 3V9.6525L17.9963 12.165L12.3735 3Z" fill="white" fill-opacity="0.602" />
+                                    <path d="M12.3735 3L6.75 12.165L12.3735 9.6525V3Z" fill="white" />
+                                    <path d="M12.3735 16.4762V20.9964L18 13.2122L12.3735 16.4762Z" fill="white" fill-opacity="0.602" />
+                                    <path d="M12.3735 20.9964V16.4754L6.75 13.2122L12.3735 20.9964Z" fill="white" />
+                                    <path d="M12.3735 15.4298L17.9963 12.1651L12.3735 9.65405V15.4298Z" fill="white" fill-opacity="0.2" />
+                                    <path d="M6.75 12.1651L12.3735 15.4298V9.65405L6.75 12.1651Z" fill="white" fill-opacity="0.602" /> </svg> ETH
+                            </div>
+                        </div>
+                        <div class="form-input__data-info">
+                            <div class="form-input__data-info-amount">$1,756.00 <span class="amount-red">(-3.56%)</span></div>
+                            <div class="form-input__data-info-amount">Balance: <span>$1,756.00</span></div>
+                        </div>
+                    </div>
+                    <div class="form-input-convert-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0467 9.61995L8.00004 13.6666L3.95337 9.61995" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8 2.33333V13.5533" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg> </div>
+                    <div class="form-input-wrapper">
+                        <div class="form-input">
+                            <input type="number" value="1.00" step="0.01" placeholder="0.00">
+                            <div data-modal="#select" class="element-wrap form-input-element hover-dropdown dropdown-styling header-toolbar_element btn-type-2 p-rel">
+                                <img src="images/amp.svg" alt="">
+                                AMP
+                            </div>
+                        </div>
+                        <div class="form-input__data-info">
+                            <div class="form-input__data-info-amount">$1,756.00 <span class="amount-red">(-3.56%)</span></div>
+                            <div class="form-input__data-info-amount">Balance: <span>$1,756.00</span></div>
+                        </div>
+                    </div>
+                    <div class="form-input-wrapper tier-box dropdown-styling disabled-area">
+                        <div>
+                            <div class="form-input-heading m10">0.01% fee tier</div>
+                            <div class="item-box-item__pool-info--label d-iflex">
+                                0% select
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lq-col disabled-area-1">
+                    <div class="liq-area-heading flex-beetween">
+                        <div class="ct-wrapper-heading-small mg0">Set Price Range</div>
+                        <div class="liq-ui-buttons">
+                            <button id="refresh" class="ui-btn btn-type ui-btn-boxed ui-btn-mg-left p0"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.1499 11.1083C2.1499 6.78327 5.66657 3.24994 9.9999 3.24994C10.8916 3.24994 11.7582 3.37494 12.5916 3.63327C12.9249 3.73327 13.1082 4.08327 13.0082 4.41661C12.9082 4.74994 12.5582 4.93327 12.2249 4.83327C11.5166 4.61661 10.7666 4.49994 9.9999 4.49994C6.35824 4.49994 3.3999 7.45827 3.3999 11.0999C3.3999 14.7416 6.35824 17.6999 9.9999 17.6999C13.6416 17.6999 16.5999 14.7416 16.5999 11.0999C16.5999 9.78327 16.2166 8.51661 15.4916 7.43327C15.2999 7.14994 15.3749 6.75827 15.6666 6.56661C15.9499 6.37494 16.3416 6.44994 16.5332 6.74161C17.3999 8.03327 17.8582 9.54161 17.8582 11.1083C17.8499 15.4333 14.3332 18.9583 9.9999 18.9583C5.66657 18.9583 2.1499 15.4333 2.1499 11.1083Z" fill="#B2B2B2" />
+                                    <path d="M12.967 4.84182L10.5587 2.07515C10.3337 1.81682 10.3587 1.41682 10.617 1.19182C10.8754 0.96682 11.2754 0.99182 11.5004 1.25015L13.9087 4.01682C14.1337 4.27515 14.1087 4.67515 13.8504 4.90015C13.742 5.00849 13.592 5.05849 13.442 5.05849C13.267 5.05849 13.092 4.98349 12.967 4.84182Z" fill="#B2B2B2" />
+                                    <path d="M10.125 6.85019C9.92501 6.57519 9.98335 6.18352 10.2583 5.97519L13.0667 3.92519C13.3417 3.71685 13.7333 3.78352 13.9417 4.05852C14.15 4.33352 14.0833 4.72519 13.8083 4.93352L11 6.99185C10.8917 7.07519 10.7667 7.10852 10.6333 7.10852C10.4417 7.10852 10.25 7.01685 10.125 6.85019Z" fill="#B2B2B2" /> </svg> </button>
+                            <button id="zoom_in" class="ui-btn btn-type ui-btn-boxed ui-btn-mg-left p0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.66699 10.3749C7.32533 10.3749 7.04199 10.0916 7.04199 9.74994C7.04199 9.40827 7.32533 9.12494 7.66699 9.12494H11.8337C12.1753 9.12494 12.4587 9.40827 12.4587 9.74994C12.4587 10.0916 12.1753 10.3749 11.8337 10.3749H7.66699Z" fill="#B2B2B2" />
+                                    <path d="M9.125 11.8333V7.66663C9.125 7.32496 9.40833 7.04163 9.75 7.04163C10.0917 7.04163 10.375 7.32496 10.375 7.66663V11.8333C10.375 12.175 10.0917 12.4583 9.75 12.4583C9.40833 12.4583 9.125 12.175 9.125 11.8333Z" fill="#B2B2B2" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.0415 9.58335C1.0415 4.87502 4.87484 1.04169 9.58317 1.04169C14.2915 1.04169 18.1248 4.87502 18.1248 9.58335C18.1248 14.2917 14.2915 18.125 9.58317 18.125C4.87484 18.125 1.0415 14.2917 1.0415 9.58335ZM2.2915 9.58335C2.2915 13.6 5.55817 16.875 9.58317 16.875C13.6082 16.875 16.8748 13.6 16.8748 9.58335C16.8748 5.56669 13.6082 2.29169 9.58317 2.29169C5.55817 2.29169 2.2915 5.56669 2.2915 9.58335Z" fill="#B2B2B2" />
+                                    <path d="M17.8919 18.775L16.2252 17.1083C15.9835 16.8666 15.9835 16.4666 16.2252 16.225C16.4669 15.9833 16.8669 15.9833 17.1085 16.225L18.7752 17.8916C19.0169 18.1333 19.0169 18.5333 18.7752 18.775C18.6502 18.9 18.4919 18.9583 18.3335 18.9583C18.1752 18.9583 18.0169 18.9 17.8919 18.775Z" fill="#B2B2B2" /> </svg> </button>
+                            <button id="zoom_out" class="ui-btn btn-type ui-btn-boxed ui-btn-mg-left p0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 10.3749C7.15833 10.3749 6.875 10.0916 6.875 9.74994C6.875 9.40827 7.15833 9.12494 7.5 9.12494H11.6667C12.0083 9.12494 12.2917 9.40827 12.2917 9.74994C12.2917 10.0916 12.0083 10.3749 11.6667 10.3749H7.5Z" fill="#B2B2B2" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.0415 9.58335C1.0415 4.87502 4.87484 1.04169 9.58317 1.04169C14.2915 1.04169 18.1248 4.87502 18.1248 9.58335C18.1248 14.2917 14.2915 18.125 9.58317 18.125C4.87484 18.125 1.0415 14.2917 1.0415 9.58335ZM2.2915 9.58335C2.2915 13.6 5.55817 16.875 9.58317 16.875C13.6082 16.875 16.8748 13.6 16.8748 9.58335C16.8748 5.56669 13.6082 2.29169 9.58317 2.29169C5.55817 2.29169 2.2915 5.56669 2.2915 9.58335Z" fill="#B2B2B2" />
+                                    <path d="M17.8919 18.775L16.2252 17.1083C15.9835 16.8666 15.9835 16.4666 16.2252 16.225C16.4669 15.9833 16.8669 15.9833 17.1085 16.225L18.7752 17.8916C19.0169 18.1333 19.0169 18.5333 18.7752 18.775C18.6502 18.9 18.4919 18.9583 18.3335 18.9583C18.1752 18.9583 18.0169 18.9 17.8919 18.775Z" fill="#B2B2B2" /> </svg> </button>
+                        </div>
+                    </div>
+                    <div class="cur-price">Current Price: <span>0.000558678</span> ETH per AMP</div>
+                    <div class="price-range-area">
+                        <canvas id="barChart"></canvas>
+                        <div class="no-items-found">
+                            <img src="images/not-found.svg" class="no-items-found_img" alt="">
+                            <span>Your Position will appear here</span>
+                        </div>
+                        <div class="price-range-ui-wrap">
+                            <div class="lq-row">
+                                <div class="lq-col">
+                                    <div class="price-range-ui-box">
+                                        <button class="price-range-ui--button btn-type">+</button>
+                                        <div class="price-range-ui-box__range-data">
+                                            <div class="price-range-ui-box__range-data--txt">Min Price</div>
+                                            <input type="number" value="0.00027" class="price-range-ui-box__range-data--input">
+                                            <div class="price-range-ui-box__range-data--txt">ETH per AMP</div>
+                                        </div>
+                                        <button class="price-range-ui--button btn-type">-</button>
+                                    </div>
+                                </div>
+                                <div class="lq-col">
+                                    <div class="price-range-ui-box">
+                                        <button class="price-range-ui--button btn-type">+</button>
+                                        <div class="price-range-ui-box__range-data">
+                                            <div class="price-range-ui-box__range-data--txt">Max Price</div>
+                                            <input type="number" value="0.00027" class="price-range-ui-box__range-data--input">
+                                            <div class="price-range-ui-box__range-data--txt">ETH per AMP</div>
+                                        </div>
+                                        <button class="price-range-ui--button btn-type">-</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-element btn-element-lg mg0 btn-type-2">Invalid pair</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="route-section scpools" id="pools">
+        <div class="container wide-container">
+            <div class="swap-heading swap-heading-md-column">
+                <div class="heading-element">Pools Overview</div>
+                <div class="swap-buttons">
+                    <div class="hover-dropdown p-rel">
+                        <div class="ui-btn dropdown-arrow">More options</div>
+                        <div class="element-dropdown-wrap">
+                            <div class="element-dropdown ct-wrapper element-dropdown-wide">
+                                <ul class="element-dropdown-list element-dropdown-list-gray">
+                                    <li><a href="javascript:;" data-modal="#account"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.6666 8.00004C14.6666 4.33337 11.6666 1.33337 7.99992 1.33337C4.33325 1.33337 1.33325 4.33337 1.33325 8.00004C1.33325 11.6667 4.33325 14.6667 7.99992 14.6667C11.6666 14.6667 14.6666 11.6667 14.6666 8.00004Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M5.33325 8H10.6666" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M8 10.6667V5.33337" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg> Create a pool </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/?a=route&s=scliquidity" data-router-link class="ui-btn btn-element ui-btn-mg-left btn-type-2" role="button">
+                        <svg class="ui-icon-mg-btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 10.625C4.65833 10.625 4.375 10.3417 4.375 10C4.375 9.65833 4.65833 9.375 5 9.375H15C15.3417 9.375 15.625 9.65833 15.625 10C15.625 10.3417 15.3417 10.625 15 10.625H5Z" fill="white" />
+                            <path d="M9.375 15V5C9.375 4.65833 9.65833 4.375 10 4.375C10.3417 4.375 10.625 4.65833 10.625 5V15C10.625 15.3417 10.3417 15.625 10 15.625C9.65833 15.625 9.375 15.3417 9.375 15Z" fill="white" /> </svg> New position </a>
+                </div>
+            </div>
+            <div class="m-container-sep"></div>
+            <div class="pools-heading swap-heading-md-column">
+                <div class="ct-wrapper-heading-small mg0">Your Positions (5)</div>
+                <div class="switch-wrap">
+                    <label class="switch" for="switch-positions">
+                        <input type="checkbox" checked="" id="switch-positions">
+                        <span class="slider round"></span>
+                    </label>
+                    Show closed positions
+                </div>
+            </div>
+            <div class="overflow-area">
+                <div class="item-box-row">
+                    <div class="item-box-item pool-item-box-item">
+                        <div class="item-box-item__pool-info-wrap">
+                            <div class="item-box-item__pool-info">
+                                <div class="token-info-item">
+                                    <div class="item-box-item__pool-info--tokens pool-info-item">
+                                        <img src="images/coin.svg" class="item-box-item__token--item" alt="">
+                                        <img src="images/eth.svg" class="item-box-item__token--item" alt="">
+                                    </div>
+                                    <div class="item-box-item__pool-info--currency pool-info-item">USDC / ETH</div>
+                                </div>
+                                <div class="token-info-item">
+                                    <div class="item-box-item__pool-info--label pool-info-item">0.3%</div>
+                                    <div class="item-box-item__pool-info--label pool-info-item"><span class="status-element"></span> In Range</div>
+                                </div>
+                            </div>
+                            <div class="item-box-item__pool-conversion">
+                                <div class="pool-currency-conversion convert-to"><span>Min:</span> 1504.2 USDC per ETH</div>
+                                <div class="pool-currency-conversion"><span>Max:</span> 1594.2 USDC per ETH</div>
+                            </div>
+                        </div>
+                        <div class="item-box-item__pool-buttons">
+                            <button data-modal="#removeLiq" class="ui-btn btn-type ui-btn-boxed ui-btn-mg-left p0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.4329 5.60831C13.0246 5.16665 8.62456 4.99998 4.26623 5.44165L2.56623 5.60831C2.21623 5.64165 1.9079 5.39165 1.87456 5.04165C1.84123 4.69165 2.09123 4.39165 2.4329 4.35831L4.1329 4.19165C8.56623 3.74165 13.0579 3.91665 17.5579 4.35831C17.8996 4.39165 18.1496 4.69998 18.1162 5.04165C18.0912 5.36665 17.8162 5.60831 17.4996 5.60831C17.4829 5.60831 17.4579 5.60831 17.4329 5.60831Z" fill="#B2B2B2" />
+                                    <path d="M6.97578 4.75834C6.64245 4.7 6.40911 4.375 6.46745 4.04167L6.65078 2.95C6.78411 2.15 6.96745 1.04167 8.90911 1.04167H11.0924C13.0424 1.04167 13.2258 2.19167 13.3508 2.95833L13.5341 4.04167C13.5924 4.38333 13.3591 4.70834 13.0258 4.75834C12.6841 4.81667 12.3591 4.58333 12.3091 4.25L12.1258 3.16667C12.0091 2.44167 11.9841 2.3 11.1008 2.3H8.91745C8.03411 2.3 8.01745 2.41667 7.89245 3.15833L7.70078 4.24167C7.65078 4.55 7.38411 4.76667 7.08411 4.76667C7.05078 4.76667 7.01745 4.76667 6.97578 4.75834Z" fill="#B2B2B2" />
+                                    <path d="M7.32549 18.9584C4.41715 18.9584 4.30049 17.3501 4.20882 16.0501L3.66715 7.6584C3.64215 7.31673 3.90882 7.01673 4.25049 6.99173C4.60049 6.97506 4.89215 7.2334 4.91715 7.57506L5.45882 15.9667C5.55049 17.2334 5.58382 17.7084 7.32549 17.7084H12.6755C14.4255 17.7084 14.4588 17.2334 14.5422 15.9667L15.0838 7.57506C15.1088 7.2334 15.4088 6.97506 15.7505 6.99173C16.0922 7.01673 16.3588 7.3084 16.3338 7.6584L15.7922 16.0501C15.7005 17.3501 15.5838 18.9584 12.6755 18.9584H7.32549Z" fill="#B2B2B2" />
+                                    <path d="M8.6084 14.375C8.26673 14.375 7.9834 14.0917 7.9834 13.75C7.9834 13.4083 8.26673 13.125 8.6084 13.125H11.3834C11.7251 13.125 12.0084 13.4083 12.0084 13.75C12.0084 14.0917 11.7251 14.375 11.3834 14.375H8.6084Z" fill="#B2B2B2" />
+                                    <path d="M7.9165 11.0417C7.57484 11.0417 7.2915 10.7583 7.2915 10.4167C7.2915 10.075 7.57484 9.79167 7.9165 9.79167H12.0832C12.4248 9.79167 12.7082 10.075 12.7082 10.4167C12.7082 10.7583 12.4248 11.0417 12.0832 11.0417H7.9165Z" fill="#B2B2B2" /> </svg> </button>
+                            <button class="ui-btn btn-type ui-btn-boxed ui-btn-mg-left p0"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7.75C0.59 7.75 0.25 7.41 0.25 7C0.25 6.59 0.59 6.25 1 6.25H13C13.41 6.25 13.75 6.59 13.75 7C13.75 7.41 13.41 7.75 13 7.75H1Z" fill="#B2B2B2" />
+                                    <path d="M6.25 13V1C6.25 0.59 6.59 0.25 7 0.25C7.41 0.25 7.75 0.59 7.75 1V13C7.75 13.41 7.41 13.75 7 13.75C6.59 13.75 6.25 13.41 6.25 13Z" fill="#B2B2B2" /> </svg> </button>
+                        </div>
+                    </div>
+                    <div class="item-box-item pool-item-box-item">
+                        <div class="item-box-item__pool-info-wrap">
+                            <div class="item-box-item__pool-info">
+                                <div class="token-info-item">
+                                    <div class="item-box-item__pool-info--tokens pool-info-item">
+                                        <img src="images/coin.svg" class="item-box-item__token--item" alt="">
+                                        <img src="images/eth.svg" class="item-box-item__token--item" alt="">
+                                    </div>
+                                    <div class="item-box-item__pool-info--currency pool-info-item">USDC / ETH</div>
+                                </div>
+                                <div class="token-info-item">
+                                    <div class="item-box-item__pool-info--label pool-info-item">0.3%</div>
+                                    <div class="item-box-item__pool-info--label pool-info-item"><span class="status-element status-inavailable-element"></span> Closed</div>
+                                </div>
+                            </div>
+                            <div class="item-box-item__pool-conversion">
+                                <div class="pool-currency-conversion convert-to"><span>Min:</span> 1504.2 USDC per ETH</div>
+                                <div class="pool-currency-conversion"><span>Max:</span> 1594.2 USDC per ETH</div>
+                            </div>
+                        </div>
+                        <div class="item-box-item__pool-buttons">
+                            <button data-modal="#removeLiq" class="ui-btn btn-type ui-btn-boxed ui-btn-mg-left p0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.4329 5.60831C13.0246 5.16665 8.62456 4.99998 4.26623 5.44165L2.56623 5.60831C2.21623 5.64165 1.9079 5.39165 1.87456 5.04165C1.84123 4.69165 2.09123 4.39165 2.4329 4.35831L4.1329 4.19165C8.56623 3.74165 13.0579 3.91665 17.5579 4.35831C17.8996 4.39165 18.1496 4.69998 18.1162 5.04165C18.0912 5.36665 17.8162 5.60831 17.4996 5.60831C17.4829 5.60831 17.4579 5.60831 17.4329 5.60831Z" fill="#B2B2B2" />
+                                    <path d="M6.97578 4.75834C6.64245 4.7 6.40911 4.375 6.46745 4.04167L6.65078 2.95C6.78411 2.15 6.96745 1.04167 8.90911 1.04167H11.0924C13.0424 1.04167 13.2258 2.19167 13.3508 2.95833L13.5341 4.04167C13.5924 4.38333 13.3591 4.70834 13.0258 4.75834C12.6841 4.81667 12.3591 4.58333 12.3091 4.25L12.1258 3.16667C12.0091 2.44167 11.9841 2.3 11.1008 2.3H8.91745C8.03411 2.3 8.01745 2.41667 7.89245 3.15833L7.70078 4.24167C7.65078 4.55 7.38411 4.76667 7.08411 4.76667C7.05078 4.76667 7.01745 4.76667 6.97578 4.75834Z" fill="#B2B2B2" />
+                                    <path d="M7.32549 18.9584C4.41715 18.9584 4.30049 17.3501 4.20882 16.0501L3.66715 7.6584C3.64215 7.31673 3.90882 7.01673 4.25049 6.99173C4.60049 6.97506 4.89215 7.2334 4.91715 7.57506L5.45882 15.9667C5.55049 17.2334 5.58382 17.7084 7.32549 17.7084H12.6755C14.4255 17.7084 14.4588 17.2334 14.5422 15.9667L15.0838 7.57506C15.1088 7.2334 15.4088 6.97506 15.7505 6.99173C16.0922 7.01673 16.3588 7.3084 16.3338 7.6584L15.7922 16.0501C15.7005 17.3501 15.5838 18.9584 12.6755 18.9584H7.32549Z" fill="#B2B2B2" />
+                                    <path d="M8.6084 14.375C8.26673 14.375 7.9834 14.0917 7.9834 13.75C7.9834 13.4083 8.26673 13.125 8.6084 13.125H11.3834C11.7251 13.125 12.0084 13.4083 12.0084 13.75C12.0084 14.0917 11.7251 14.375 11.3834 14.375H8.6084Z" fill="#B2B2B2" />
+                                    <path d="M7.9165 11.0417C7.57484 11.0417 7.2915 10.7583 7.2915 10.4167C7.2915 10.075 7.57484 9.79167 7.9165 9.79167H12.0832C12.4248 9.79167 12.7082 10.075 12.7082 10.4167C12.7082 10.7583 12.4248 11.0417 12.0832 11.0417H7.9165Z" fill="#B2B2B2" /> </svg> </button>
+                            <button class="ui-btn btn-type ui-btn-boxed ui-btn-mg-left p0"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7.75C0.59 7.75 0.25 7.41 0.25 7C0.25 6.59 0.59 6.25 1 6.25H13C13.41 6.25 13.75 6.59 13.75 7C13.75 7.41 13.41 7.75 13 7.75H1Z" fill="#B2B2B2" />
+                                    <path d="M6.25 13V1C6.25 0.59 6.59 0.25 7 0.25C7.41 0.25 7.75 0.59 7.75 1V13C7.75 13.41 7.41 13.75 7 13.75C6.59 13.75 6.25 13.41 6.25 13Z" fill="#B2B2B2" /> </svg> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="no-items-found">
+                <img src="images/not-found.svg" class="no-items-found_img" alt="">
+                <span>Your active V3 liquidity positions will appear here.</span>
+            </div>
+        </div>
+    </div>
+    <div class="route-section route-active scswap" id="swap">
+        <div class="container">
+            <div class="swap-heading">
+                <div class="heading-element">Swap</div>
+                <div class="setting-btn p-rel">
+                    <div class="btn-type"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3333 14.5833H12.5" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.16675 14.5833H1.66675" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M18.3333 5.41667H15.8333" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.50008 5.41667H1.66675" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.8334 12.0833C11.7501 12.0833 12.5001 12.5 12.5001 13.75V15.4167C12.5001 16.6667 11.7501 17.0833 10.8334 17.0833H5.83341C4.91675 17.0833 4.16675 16.6667 4.16675 15.4167V13.75C4.16675 12.5 4.91675 12.0833 5.83341 12.0833H10.8334Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.1667 2.91667C15.0833 2.91667 15.8333 3.33334 15.8333 4.58334V6.25001C15.8333 7.5 15.0833 7.91667 14.1667 7.91667H9.16667C8.25 7.91667 7.5 7.5 7.5 6.25001V4.58334C7.5 3.33334 8.25 2.91667 9.16667 2.91667H14.1667Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg></div>
+                    <div class="element-dropdown-wrap element-dropdown-wrap-setting">
+                        <div class="ct-wrapper">
+                            <div class="ct-wrapper__heading ct-wrapper-heading-small">Exchange settings</div>
+                            <div class="elements-box elements-box-mg">
+                                <div class="elements-box__label">
+                                    Slippage tolerance
+                                    <div aria-label="Your transaction will revert if the price changes unfavorably by more than this percentage." data-microtip-position="right" role="tooltip">
+                                        <div class="tooltip-icon"></div>
+                                    </div>
+                                </div>
+                                <div class="element-box-input-slider">
+                                    <div class="element-box-input-item">
+                                        <button class="input-style input-style-boxed btn-type-2 auto-btn">Auto</button>
+                                    </div>
+                                    <div class="element-box-ui-slider">
+                                        <input id="slider_1" class="slider-ui" data-min="0" data-from="20" data-max="99" type="text" name="tolerance" required="" value=""> </div>
+                                    <div class="element-box-input-item"><input type="text" value="" placeholder="0.1%" maxlength="2" class="input-style auto-input input-style-boxed"></div>
+                                </div>
+                            </div>
+                            <div class="elements-box">
+                                <div class="elements-box__label">
+                                    Transaction deadline
+                                    <div aria-label="Your transaction will revert if the price changes unfavorably by more than this percentage." data-microtip-position="right" role="tooltip">
+                                        <div class="tooltip-icon"></div>
+                                    </div>
+                                </div>
+                                <div class="element-box-input-slider">
+                                    <div class="element-box-input-item label-inpu-item">
+                                        <input type="text" value="40" maxlength="4" class="input-style input-style-boxed">
+                                        <span>minutes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seperator"></div>
+                            <div class="ct-wrapper__heading ct-wrapper-heading-small">Interface settings</div>
+                            <div class="switch-wrap elements-box-mg">
+                                <label class="switch" for="switch-deadline-2">
+                                    <input type="checkbox" checked="" id="switch-deadline-2">
+                                    <span class="slider round"></span>
+                                </label>
+                                Transaction deadline
+                                <div aria-label="Your transaction will revert if the price changes" data-microtip-position="right" role="tooltip">
+                                    <div class="tooltip-icon"></div>
+                                </div>
+                            </div>
+                            <div class="switch-wrap">
+                                <label class="switch" for="switch-expert-2">
+                                    <input type="checkbox" id="switch-expert-2">
+                                    <span class="slider round"></span>
+                                </label>
+                                Expert mode
+                                <div aria-label="Your transaction will revert if the price changes" data-microtip-position="right" role="tooltip">
+                                    <div class="tooltip-icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-input-wrapper">
+                <div class="form-input">
+                    <input type="number" value="1.00" step="0.01" placeholder="0.00">
+                    <div data-modal="#select" class="element-wrap form-input-element hover-dropdown dropdown-styling header-toolbar_element btn-type-2 p-rel">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#627EEA" />
+                            <path d="M12.3735 3V9.6525L17.9963 12.165L12.3735 3Z" fill="white" fill-opacity="0.602" />
+                            <path d="M12.3735 3L6.75 12.165L12.3735 9.6525V3Z" fill="white" />
+                            <path d="M12.3735 16.4762V20.9964L18 13.2122L12.3735 16.4762Z" fill="white" fill-opacity="0.602" />
+                            <path d="M12.3735 20.9964V16.4754L6.75 13.2122L12.3735 20.9964Z" fill="white" />
+                            <path d="M12.3735 15.4298L17.9963 12.1651L12.3735 9.65405V15.4298Z" fill="white" fill-opacity="0.2" />
+                            <path d="M6.75 12.1651L12.3735 15.4298V9.65405L6.75 12.1651Z" fill="white" fill-opacity="0.602" /> </svg> ETH
+                    </div>
+                </div>
+                <div class="form-input__data-info">
+                    <div class="form-input__data-info-amount">$1,756.00 <span class="amount-red">(-3.56%)</span></div>
+                    <div class="form-input__data-info-amount">Balance: <span>$1,756.00</span></div>
+                </div>
+            </div>
+            <div class="form-input-convert-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.0467 9.61995L8.00004 13.6666L3.95337 9.61995" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8 2.33333V13.5533" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg> </div>
+            <div class="form-input-wrapper">
+                <div class="form-input">
+                    <input type="number" placeholder="0.00">
+                    <button data-modal="#select" class="btn-element form-input-element dropdown-arrow header-toolbar_element btn-type-2">Select a token</button>
+                </div>
+            </div>
+            <div class="transaction-output">
+                <div class="transaction-output-preview tr-mg-bottom">
+                    <div class="transaction-output-preview__amount">1 AMP = 0.00000565 ETH <span>($0.0126)</span></div>
+                    <div class="transaction-output-preview__more">View more <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg> </div>
+                </div>
+                <div class="transaction-toggle-area">
+                    <div class="transaction-box tr-mg-bottom">
+                        <div class="transaction-box__info af-sep">
+                            <div class="transaction-box__info--item">
+                                <span class="transaction-box__info--item-name">Expected Output</span>
+                                <span class="transaction-box__info--item-val">304964 AMP</span>
+                            </div>
+                            <div class="transaction-box__info--item">
+                                <span class="transaction-box__info--item-name">Price Impact</span>
+                                <span class="transaction-box__info--item-val">-0.32%</span>
+                            </div>
+                        </div>
+                        <div class="transaction-box__info gray">
+                            <div class="transaction-box__info--item">
+                                <span class="transaction-box__info--item-name">Minimum received after slippage (0.50%)</span>
+                                <span class="transaction-box__info--item-val">304964 AMP</span>
+                            </div>
+                            <div class="transaction-box__info--item">
+                                <span class="transaction-box__info--item-name">Network Fee</span>
+                                <span class="transaction-box__info--item-val">~$5.80</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transaction-box">
+                        <div class="router-heading router-toggle-btn">
+                            <div class="router-text">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 10.3333H9.402C8.86605 10.3333 8.33802 10.204 7.86266 9.95648C7.3873 9.70894 6.97865 9.35042 6.67133 8.91133L6.32867 8.422C6.02135 7.98291 5.6127 7.6244 5.13734 7.37685C4.66198 7.12931 4.13395 7.00004 3.598 7H1" stroke="url(#paint0_linear_311_2480)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M13 3.6665H9.40333C8.86704 3.66648 8.33866 3.79585 7.86305 4.04364C7.38743 4.29143 6.97863 4.65032 6.67133 5.08984L6.33133 5.5765C6.0241 6.01593 5.6154 6.37476 5.13991 6.62255C4.66442 6.87033 4.13618 6.99975 3.6 6.99984H1" stroke="url(#paint1_linear_311_2480)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11 5.66663L13 3.66663L11 1.66663" stroke="url(#paint2_linear_311_2480)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11 12.3333L13 10.3333L11 8.33325" stroke="url(#paint3_linear_311_2480)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_311_2480" x1="7" y1="7" x2="7" y2="10.3333" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6D00F3" />
+                                            <stop offset="1" stop-color="#FF0052" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_311_2480" x1="7" y1="3.6665" x2="7" y2="6.99984" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6D00F3" />
+                                            <stop offset="1" stop-color="#FF0052" />
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_311_2480" x1="12" y1="1.66663" x2="12" y2="5.66663" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6D00F3" />
+                                            <stop offset="1" stop-color="#FF0052" />
+                                        </linearGradient>
+                                        <linearGradient id="paint3_linear_311_2480" x1="12" y1="8.33325" x2="12" y2="12.3333" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6D00F3" />
+                                            <stop offset="1" stop-color="#FF0052" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                Auto Router
+                            </div>
+                            <div class="router-toggle-icon"></div>
+                        </div>
+                        <div class="router-toggle-area">
+                            <div class="router-line">
+                                <div class="router-line_start"><img src="images/eth.svg" alt=""></div>
+                                <div class="router-line-dotted">
+                                    <div class="router-line_item">100%</div>
+                                    <div class="router-line_item router-line_item-tokens" style="left: 40%">
+                                        <div class="router-line_item-icons">
+                                            <img src="images/eth.svg" alt="">
+                                            <img src="images/amp.svg" alt="">
+                                        </div>
+                                        100%
+                                    </div>
+                                </div>
+                                <div class="router-line_end"><img src="images/amp.svg" alt=""></div>
+                            </div>
+                            <div class="mini-text-box mini-text-box-router t-left"> Best price route costs <span> ~$4.75</span> in gas. This route optimizes your total output by considering split routes, multiple hops, and the gas cost of each step. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-element btn-element-lg btn-type-2" data-modal="#connect">Connect Wallet</button>
+            <button class="btn-element btn-element-disabled btn-element-lg btn-type-2">Select a Token</button>
+        </div>
+    </div>
+    <div class="mini-text-box">
+        TMY DEX available in: <a href="#">Spanish</a>
+    </div>
+    <div class="modal-overlay" id="removeLiq">
+        <div class="modal-container-box modal-container-box-wider invs-overflow ct-wrapper">
+            <div class="ct-wrapper__heading modal-heading">Remove USDC / ETH Liquidity</div>
+            <div class="seperator seperator-modal"></div>
+            <div class="elements-box elements-box-mg">
+                <div class="elements-box__label">
+                    Amount
+                    <div aria-label="Your transaction will revert" data-microtip-position="right" role="tooltip">
+                        <div class="tooltip-icon"></div>
+                    </div>
+                </div>
+                <div class="element-box-input-slider">
+                    <div class="element-box-input-item">
+                        <button class="input-style input-style-boxed btn-type-2 auto-btn active-auto-btn">Max</button>
+                    </div>
+                    <div class="element-box-ui-slider">
+                        <input id="slider_2" class="slider-ui" data-min="0" data-from="20" data-max="99" type="text" name="tolerance" required="" value=""> </div>
+                    <div class="element-box-input-item"><input type="text" value="" placeholder="100%" maxlength="2" class="input-style auto-input input-style-boxed"></div>
+                </div>
+            </div>
+            <div class="pool-liq-box">
+                <div class="pool-liq-box-heading flex-beetween">
+                    <div class="pool-liq-box-heading-title">You will receive</div>
+                    <a href="#" class="rose-link">Receive ETH</a>
+                </div>
+                <div class="pool-liq-box-info">
+                    <div class="pool-liq-box-info-item">
+                        <div class="pool-liq-box-info-item--token">
+                            <img src="images/coin.svg" class="item-token-icon" alt="">
+                            USDC
+                        </div>
+                        <div class="pool-liq-box-info-item--val">36258700</div>
+                    </div>
+                    <div class="pool-liq-box-info-item">
+                        <div class="pool-liq-box-info-item--token">
+                            <img src="images/eth.svg" class="item-token-icon" alt="">
+                            ETH
+                        </div>
+                        <div class="pool-liq-box-info-item--val">1.0293</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pool-liq-box">
+                <div class="pool-liq-box-heading">
+                    <div class="pool-liq-box-heading-title">Prices</div>
+                </div>
+                <div class="pool-liq-box-info">
+                    <div class="pool-liq-box-info-item">
+                        <div class="pool-liq-box-info-item--token">
+                            <img src="images/coin.svg" class="item-token-icon" alt="">
+                            1 USDC =
+                        </div>
+                        <div class="pool-liq-box-info-item--val">0.00487 ETH </div>
+                    </div>
+                    <div class="pool-liq-box-info-item">
+                        <div class="pool-liq-box-info-item--token">
+                            <img src="images/eth.svg" class="item-token-icon" alt="">
+                            1 ETH =
+                        </div>
+                        <div class="pool-liq-box-info-item--val">2,450.00 USDC </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-element btn-element-lg btn-type-2">Remove Liquidity</button>
+        </div>
+    </div>
+    <div class="modal-overlay" id="select">
+        <div class="modal-container-box modal-container-box-wider invs-overflow ct-wrapper">
+            <div class="modal-level modal-level-0">
+                <div class="ct-wrapper__heading modal-heading">Select a token</div>
+                <div class="ui-search">
+                    <svg class="ui-search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.04175 9.58334C1.04175 4.87501 4.87508 1.04167 9.58342 1.04167C14.2917 1.04167 18.1251 4.87501 18.1251 9.58334C18.1251 14.2917 14.2917 18.125 9.58342 18.125C4.87508 18.125 1.04175 14.2917 1.04175 9.58334ZM2.29175 9.58334C2.29175 13.6 5.55841 16.875 9.58342 16.875C13.6084 16.875 16.8751 13.6 16.8751 9.58334C16.8751 5.56667 13.6084 2.29167 9.58342 2.29167C5.55841 2.29167 2.29175 5.56667 2.29175 9.58334Z" fill="white" fill-opacity="0.5" />
+                        <path d="M17.8921 18.775L16.2254 17.1083C15.9838 16.8666 15.9838 16.4666 16.2254 16.225C16.4671 15.9833 16.8671 15.9833 17.1088 16.225L18.7754 17.8916C19.0171 18.1333 19.0171 18.5333 18.7754 18.775C18.6504 18.9 18.4921 18.9583 18.3338 18.9583C18.1754 18.9583 18.0171 18.9 17.8921 18.775Z" fill="white" fill-opacity="0.5" /> </svg>
+                    <input type="search" class="input-style" placeholder="Name, symbol or address">
+                </div>
+                <div class="elements-box elements-box-mg">
+                    <div class="elements-box__label">
+                        Common tokens
+                        <div aria-label="Your transaction will revert if the price changes unfavorably by more than this percentage." data-microtip-position="right" role="tooltip">
+                            <div class="tooltip-icon"></div>
+                        </div>
+                    </div>
+                    <div class="common-tokens">
+                        <div class="common-token-item token-btn btn-type-2" data-token="eth">
+                            <div class="common-token-item__icon"> <img src="images/amp.svg" alt=""> </div> ETH
+                        </div>
+                        <div class="common-token-item token-btn btn-type-2" data-token="dai">
+                            <div class="common-token-item__icon"> <img src="images/eth.svg" alt=""> </div> DAI
+                        </div>
+                        <div class="common-token-item token-btn btn-type-2" data-token="usdc">
+                            <div class="common-token-item__icon"> <img src="images/amp.svg" alt=""> </div> USDC
+                        </div>
+                        <div class="common-token-item token-btn btn-type-2" data-token="usdt">
+                            <div class="common-token-item__icon"> <img src="images/coin.svg" alt=""> </div> USDT
+                        </div>
+                        <div class="common-token-item token-btn btn-type-2" data-token="wbtc">
+                            <div class="common-token-item__icon"> <img src="images/eth.svg" alt=""> </div> WBTC
+                        </div>
+                        <div class="common-token-item token-btn btn-type-2" data-token="wes">
+                            <div class="common-token-item__icon"> <img src="images/amp.svg" alt=""> </div> WES
+                        </div>
+                    </div>
+                </div>
+                <div class="seperator seperator-modal"></div>
+                <div class="modal-overflow">
+                    <ul class="element-dropdown-list element-dropdown-list-modal">
+                        <li><a href="javascript:;" class="token-btn" data-token="eth" role="button">
+                                <div class="token-info"><img src="images/amp.svg" alt=""> ETH <span>Ethereum</span></div>
+                                <div class="tokens-amount">0</div>
+                            </a></li>
+                        <li><a href="javascript:;" class="token-btn" data-token="dai" role="button">
+                                <div class="token-info"><img src="images/eth.svg" alt=""> DAI <span>Ethereum</span></div>
+                                <div class="tokens-amount">0</div>
+                            </a></li>
+                        <li><a href="javascript:;" class="token-btn" data-token="usdc" role="button">
+                                <div class="token-info"><img src="images/amp.svg" alt=""> USDC <span>Ethereum</span></div>
+                                <div class="tokens-amount">0</div>
+                            </a></li>
+                        <li><a href="javascript:;" class="token-btn" data-token="usdt" role="button">
+                                <div class="token-info"><img src="images/coin.svg" alt=""> USDT <span>Ethereum</span></div>
+                                <div class="tokens-amount">0</div>
+                            </a></li>
+                        <li><a href="javascript:;" class="token-btn" data-token="wbtc" role="button">
+                                <div class="token-info"><img src="images/eth.svg" alt=""> WBTC <span>Ethereum</span></div>
+                                <div class="tokens-amount">0</div>
+                            </a></li>
+                        <li><a href="javascript:;" class="token-btn" data-token="wes" role="button">
+                                <div class="token-info"><img src="images/amp.svg" alt=""> WES <span>Ethereum</span></div>
+                                <div class="tokens-amount">0</div>
+                            </a></li>
+                    </ul>
+                </div>
+                <button class="manage-tokens modal-level-btn btn-type-2">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.29166 15.7667C2.85832 15.3584 2.64999 14.7417 2.72499 14.0751L3.03332 11.3751C3.09166 10.8667 3.39999 10.1917 3.75832 9.82505L10.6 2.58338C12.3083 0.775051 14.0917 0.725051 15.9 2.43338C17.7083 4.14172 17.7583 5.92505 16.05 7.73338L9.20832 14.9751C8.85832 15.3501 8.20832 15.7001 7.69999 15.7834L5.01666 16.2417C4.87499 16.2501 4.74999 16.2667 4.61666 16.2667C4.10832 16.2667 3.63332 16.0917 3.29166 15.7667ZM11.5083 3.42505L4.66666 10.6751C4.49999 10.8501 4.30832 11.2667 4.27499 11.5084L3.96666 14.2084C3.93332 14.4834 3.99999 14.7084 4.14999 14.8501C4.29999 14.9917 4.52499 15.0417 4.79999 15.0001L7.48332 14.5417C7.72499 14.5001 8.12499 14.2834 8.29166 14.1084L15.1333 6.86672C16.1667 5.76672 16.5417 4.75005 15.0333 3.33338C14.3667 2.69172 13.7917 2.42505 13.275 2.42505C12.6333 2.42505 12.075 2.82505 11.5083 3.42505Z" fill="#FF0052" />
+                        <path d="M14.3921 9.12488C11.7921 8.86655 9.70044 6.89155 9.30044 4.30822C9.25044 3.96655 9.48378 3.64988 9.82544 3.59155C10.1671 3.54155 10.4838 3.77488 10.5421 4.11655C10.8588 6.13322 12.4921 7.68322 14.5254 7.88322C14.8671 7.91655 15.1171 8.22488 15.0838 8.56655C15.0421 8.88322 14.7671 9.12488 14.4504 9.12488C14.4338 9.12488 14.4088 9.12488 14.3921 9.12488Z" fill="#FF0052" />
+                        <path d="M2.5 18.9583C2.15833 18.9583 1.875 18.675 1.875 18.3333C1.875 17.9917 2.15833 17.7083 2.5 17.7083H17.5C17.8417 17.7083 18.125 17.9917 18.125 18.3333C18.125 18.675 17.8417 18.9583 17.5 18.9583H2.5Z" fill="#FF0052" /> </svg> Manage Token List </button>
+            </div>
+            <div class="modal-level modal-level-1">
+                <div class="ct-wrapper__heading modal-heading">Manage</div>
+                <div class="tabs">
+                    <a href="#tab-1" class="tab-anchor active">Lists</a>
+                    <a href="#tab-2" class="tab-anchor">Tokens</a>
+                </div>
+                <div class="tab-content-wrap">
+                    <div id="tab-1" class="tab-content">
+                        <div class="ui-search">
+                            <svg class="ui-search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.04175 9.58334C1.04175 4.87501 4.87508 1.04167 9.58342 1.04167C14.2917 1.04167 18.1251 4.87501 18.1251 9.58334C18.1251 14.2917 14.2917 18.125 9.58342 18.125C4.87508 18.125 1.04175 14.2917 1.04175 9.58334ZM2.29175 9.58334C2.29175 13.6 5.55841 16.875 9.58342 16.875C13.6084 16.875 16.8751 13.6 16.8751 9.58334C16.8751 5.56667 13.6084 2.29167 9.58342 2.29167C5.55841 2.29167 2.29175 5.56667 2.29175 9.58334Z" fill="white" fill-opacity="0.5" />
+                                <path d="M17.8921 18.775L16.2254 17.1083C15.9838 16.8666 15.9838 16.4666 16.2254 16.225C16.4671 15.9833 16.8671 15.9833 17.1088 16.225L18.7754 17.8916C19.0171 18.1333 19.0171 18.5333 18.7754 18.775C18.6504 18.9 18.4921 18.9583 18.3338 18.9583C18.1754 18.9583 18.0171 18.9 17.8921 18.775Z" fill="white" fill-opacity="0.5" /> </svg>
+                            <input type="search" class="input-style" placeholder="Name, symbol or address">
+                        </div>
+                        <div class="seperator seperator-modal"></div>
+                        <div class="modal-overflow">
+                            <div class="item-box-row">
+                                <div class="item-box-item">
+                                    <div class="item-box-item__icon">
+                                        <img src="images/meta-mask.svg" alt="">
+                                    </div>
+                                    <div class="item-box-item-info">
+                                        <div class="item-box-item-info-txt">
+                                            Uniswap labs list
+                                            <span class="item-box-item-info__amount">34 tokens</span>
+                                        </div>
+                                        <label class="switch" for="switch-manage">
+                                            <input type="checkbox" checked="" id="switch-manage">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="item-box-item">
+                                    <div class="item-box-item__icon">
+                                        <img src="images/meta-mask.svg" alt="">
+                                    </div>
+                                    <div class="item-box-item-info">
+                                        <div class="item-box-item-info-txt">
+                                            Uniswap labs list
+                                            <span class="item-box-item-info__amount">34 tokens</span>
+                                        </div>
+                                        <label class="switch" for="switch-manage-1">
+                                            <input type="checkbox" id="switch-manage-1">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="item-box-item">
+                                    <div class="item-box-item__icon">
+                                        <img src="images/meta-mask.svg" alt="">
+                                    </div>
+                                    <div class="item-box-item-info">
+                                        <div class="item-box-item-info-txt">
+                                            Uniswap labs list
+                                            <span class="item-box-item-info__amount">34 tokens</span>
+                                        </div>
+                                        <label class="switch" for="switch-manage-2">
+                                            <input type="checkbox" id="switch-manage-2">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-content">
+                        <div class="ui-search">
+                            <svg class="ui-search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.04175 9.58334C1.04175 4.87501 4.87508 1.04167 9.58342 1.04167C14.2917 1.04167 18.1251 4.87501 18.1251 9.58334C18.1251 14.2917 14.2917 18.125 9.58342 18.125C4.87508 18.125 1.04175 14.2917 1.04175 9.58334ZM2.29175 9.58334C2.29175 13.6 5.55841 16.875 9.58342 16.875C13.6084 16.875 16.8751 13.6 16.8751 9.58334C16.8751 5.56667 13.6084 2.29167 9.58342 2.29167C5.55841 2.29167 2.29175 5.56667 2.29175 9.58334Z" fill="white" fill-opacity="0.5" />
+                                <path d="M17.8921 18.775L16.2254 17.1083C15.9838 16.8666 15.9838 16.4666 16.2254 16.225C16.4671 15.9833 16.8671 15.9833 17.1088 16.225L18.7754 17.8916C19.0171 18.1333 19.0171 18.5333 18.7754 18.775C18.6504 18.9 18.4921 18.9583 18.3338 18.9583C18.1754 18.9583 18.0171 18.9 17.8921 18.775Z" fill="white" fill-opacity="0.5" /> </svg>
+                            <input type="search" class="input-style" placeholder="0 x 0000">
+                        </div>
+                        <div class="seperator seperator-modal"></div>
+                        <div class="ct-wrapper-heading-small">0 custom tokens</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="account">
+        <div class="modal-container-box modal-container-box-wider invs-overflow ct-wrapper">
+            <div class="ct-wrapper__heading modal-heading">Account</div>
+            <div class="connected-wallet-box">
+                <div class="connected-wallet">
+                    <span>Connected with</span>
+                    <div class="connected-wallet__wallet"><img src="images/meta-mask.svg" alt=""> MetaMask</div>
+                </div>
+                <button class="btn-element btn-type">Change</button>
+            </div>
+            <div class="wallet-address-box">
+                <div class="wallet--address">0xBAD7...E116</div>
+                <div class="wallet-address-box__buttons">
+                    <button class="ui-btn ui-btn-mg-left ui-btn-boxed btn-type"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17H5C4.46957 17 3.96086 16.7893 3.58579 16.4142C3.21071 16.0391 3 15.5304 3 15V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H15C15.5304 3 16.0391 3.21071 16.4142 3.58579C16.7893 3.96086 17 4.46957 17 5V7" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M19.895 7H8.105C7.49472 7 7 7.49472 7 8.105V19.895C7 20.5053 7.49472 21 8.105 21H19.895C20.5053 21 21 20.5053 21 19.895V8.105C21 7.49472 20.5053 7 19.895 7Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg> </button>
+                    <button class="ui-btn ui-btn-mg-left ui-btn-boxed btn-type"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 10.8333V15.8333C15 16.2754 14.8244 16.6993 14.5118 17.0118C14.1993 17.3244 13.7754 17.5 13.3333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V6.66667C2.5 6.22464 2.67559 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H9.16667" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.5 2.5H17.5V7.5" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.33398 11.6667L17.5007 2.5" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg> </button>
+                </div>
+            </div>
+            <div class="seperator"></div>
+            <div class="transaction-heading">
+                <div class="ct-wrapper-heading-small">Recent Transactions</div>
+                <a href="#" class="clear-transaction-btn">Clear All</a>
+            </div>
+            <div class="no-items-found">
+                <img src="images/trans-404.svg" class="no-items-found_img" alt="">
+                <span>Your transactions will be here</span>
+            </div>
+            <div class="transactions-row">
+                <div class="transactions-row__item">
+                    <div class="transactions-row__item-info">
+                        <div class="tr-item">Stake</div>
+                    </div>
+                    <div class="transactions-row__item-status">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 6L8.625 18.375L3 12.75" stroke="#53F3C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                    </div>
+                </div>
+                <div class="transactions-row__item">
+                    <div class="transactions-row__item-info">
+                        <div class="tr-item">Stake</div>
+                    </div>
+                    <div class="transactions-row__item-status">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 6L8.625 18.375L3 12.75" stroke="#53F3C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                    </div>
+                </div>
+                <div class="transactions-row__item">
+                    <div class="transactions-row__item-info">
+                        <div class="tr-item">ADD Liquidity</div>
+                        <div class="tr-amount">
+                            <span>7.4812029 DEX</span>
+                            <span>5812.291025829 MTV</span>
+                        </div>
+                    </div>
+                    <div class="transactions-row__item-status">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20" stroke="#FF0052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4 20L20 4" stroke="#FF0052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                    </div>
+                </div>
+                <div class="transactions-row__item">
+                    <div class="transactions-row__item-info">
+                        <div class="tr-item">Stake</div>
+                        <div class="tr-amount">
+                            <span>0.045125 BNB to 2132.51853983 MTV</span>
+                        </div>
+                    </div>
+                    <div class="transactions-row__item-status">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20" stroke="#FF0052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4 20L20 4" stroke="#FF0052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                    </div>
+                </div>
+                <div class="transactions-row__item">
+                    <div class="transactions-row__item-info">
+                        <div class="tr-item">Stake</div>
+                        <div class="tr-amount">
+                            <span>0.045125 BNB to 2132.51853983 MTV</span>
+                        </div>
+                    </div>
+                    <div class="transactions-row__item-status">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20" stroke="#FF0052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4 20L20 4" stroke="#FF0052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                    </div>
+                </div>
+                <div class="transactions-row__item">
+                    <div class="transactions-row__item-info">
+                        <div class="tr-item">Stake</div>
+                        <div class="tr-amount">
+                            <span>0.045125 BNB to 2132.51853983 MTV</span>
+                        </div>
+                    </div>
+                    <div class="transactions-row__item-status">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20" stroke="#FF0052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4 20L20 4" stroke="#FF0052" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="connect">
+        <div class="modal-container-box invs-overflow ct-wrapper">
+            <div class="ct-wrapper__heading modal-heading">Connect Wallet</div>
+            <div class="item-box-row">
+                <a href="#" class="item-box-item">
+                    <div class="item-box-item__icon">
+                        <img src="images/meta-mask.svg" alt="">
+                    </div>
+                    <div class="item-box-item-info">
+                        Meta Mask
+                        <svg class="item-box-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 13.24V11.51C2.5 9.44001 4.18999 7.75 6.25999 7.75H17.74C19.81 7.75 21.5 9.44001 21.5 11.51V12.95H19.48C18.92 12.95 18.41 13.17 18.04 13.55C17.62 13.96 17.38 14.55 17.44 15.18C17.53 16.26 18.52 17.05 19.6 17.05H21.5V18.24C21.5 20.31 19.81 22 17.74 22H12.26" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2.5 12.4101V7.8401C2.5 6.6501 3.23 5.59006 4.34 5.17006L12.28 2.17006C13.52 1.70006 14.85 2.62009 14.85 3.95009V7.75008" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22.5588 16.0302C22.5588 16.5802 22.1188 17.0302 21.5588 17.0502H19.5988C18.5188 17.0502 17.5288 16.2602 17.4388 15.1802C17.3788 14.5502 17.6188 13.9602 18.0388 13.5502C18.4088 13.1702 18.9188 12.9502 19.4788 12.9502H21.5588C22.1188 12.9702 22.5588 13.4202 22.5588 13.9702V16.0302Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7 12H14" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3 16.5H8.34C8.98 16.5 9.5 17.02 9.5 17.66V18.94" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.22 15.28L3 16.5L4.22 17.72" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.5 21.7801H4.16C3.52 21.7801 3 21.2601 3 20.6201V19.3401" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.28125 23.0003L9.50125 21.7803L8.28125 20.5603" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                    </div>
+                </a>
+                <a href="#" class="item-box-item">
+                    <div class="item-box-item__icon">
+                        <img src="images/walletconnect.svg" alt="">
+                    </div>
+                    <div class="item-box-item-info">
+                        Wallet Connect
+                        <svg class="item-box-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 13.24V11.51C2.5 9.44001 4.18999 7.75 6.25999 7.75H17.74C19.81 7.75 21.5 9.44001 21.5 11.51V12.95H19.48C18.92 12.95 18.41 13.17 18.04 13.55C17.62 13.96 17.38 14.55 17.44 15.18C17.53 16.26 18.52 17.05 19.6 17.05H21.5V18.24C21.5 20.31 19.81 22 17.74 22H12.26" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2.5 12.4101V7.8401C2.5 6.6501 3.23 5.59006 4.34 5.17006L12.28 2.17006C13.52 1.70006 14.85 2.62009 14.85 3.95009V7.75008" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22.5588 16.0302C22.5588 16.5802 22.1188 17.0302 21.5588 17.0502H19.5988C18.5188 17.0502 17.5288 16.2602 17.4388 15.1802C17.3788 14.5502 17.6188 13.9602 18.0388 13.5502C18.4088 13.1702 18.9188 12.9502 19.4788 12.9502H21.5588C22.1188 12.9702 22.5588 13.4202 22.5588 13.9702V16.0302Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7 12H14" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3 16.5H8.34C8.98 16.5 9.5 17.02 9.5 17.66V18.94" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.22 15.28L3 16.5L4.22 17.72" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.5 21.7801H4.16C3.52 21.7801 3 21.2601 3 20.6201V19.3401" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.28125 23.0003L9.50125 21.7803L8.28125 20.5603" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                    </div>
+                </a>
+                <a href="#" class="item-box-item">
+                    <div class="item-box-item__icon">
+                        <img src="images/coinbaseWalletI.svg" alt="">
+                    </div>
+                    <div class="item-box-item-info">
+                        Coinbase wallet
+                        <svg class="item-box-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 13.24V11.51C2.5 9.44001 4.18999 7.75 6.25999 7.75H17.74C19.81 7.75 21.5 9.44001 21.5 11.51V12.95H19.48C18.92 12.95 18.41 13.17 18.04 13.55C17.62 13.96 17.38 14.55 17.44 15.18C17.53 16.26 18.52 17.05 19.6 17.05H21.5V18.24C21.5 20.31 19.81 22 17.74 22H12.26" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2.5 12.4101V7.8401C2.5 6.6501 3.23 5.59006 4.34 5.17006L12.28 2.17006C13.52 1.70006 14.85 2.62009 14.85 3.95009V7.75008" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22.5588 16.0302C22.5588 16.5802 22.1188 17.0302 21.5588 17.0502H19.5988C18.5188 17.0502 17.5288 16.2602 17.4388 15.1802C17.3788 14.5502 17.6188 13.9602 18.0388 13.5502C18.4088 13.1702 18.9188 12.9502 19.4788 12.9502H21.5588C22.1188 12.9702 22.5588 13.4202 22.5588 13.9702V16.0302Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7 12H14" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3 16.5H8.34C8.98 16.5 9.5 17.02 9.5 17.66V18.94" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.22 15.28L3 16.5L4.22 17.72" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.5 21.7801H4.16C3.52 21.7801 3 21.2601 3 20.6201V19.3401" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.28125 23.0003L9.50125 21.7803L8.28125 20.5603" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                    </div>
+                </a>
+                <a href="#" class="item-box-item">
+                    <div class="item-box-item__icon">
+                        <img src="images/fortmatic-icon.svg" alt="">
+                    </div>
+                    <div class="item-box-item-info">
+                        Fortmatic
+                        <svg class="item-box-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 13.24V11.51C2.5 9.44001 4.18999 7.75 6.25999 7.75H17.74C19.81 7.75 21.5 9.44001 21.5 11.51V12.95H19.48C18.92 12.95 18.41 13.17 18.04 13.55C17.62 13.96 17.38 14.55 17.44 15.18C17.53 16.26 18.52 17.05 19.6 17.05H21.5V18.24C21.5 20.31 19.81 22 17.74 22H12.26" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2.5 12.4101V7.8401C2.5 6.6501 3.23 5.59006 4.34 5.17006L12.28 2.17006C13.52 1.70006 14.85 2.62009 14.85 3.95009V7.75008" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22.5588 16.0302C22.5588 16.5802 22.1188 17.0302 21.5588 17.0502H19.5988C18.5188 17.0502 17.5288 16.2602 17.4388 15.1802C17.3788 14.5502 17.6188 13.9602 18.0388 13.5502C18.4088 13.1702 18.9188 12.9502 19.4788 12.9502H21.5588C22.1188 12.9702 22.5588 13.4202 22.5588 13.9702V16.0302Z" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7 12H14" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3 16.5H8.34C8.98 16.5 9.5 17.02 9.5 17.66V18.94" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.22 15.28L3 16.5L4.22 17.72" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.5 21.7801H4.16C3.52 21.7801 3 21.2601 3 20.6201V19.3401" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.28125 23.0003L9.50125 21.7803L8.28125 20.5603" stroke="#B2B2B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="mini-text-box white">
+                By connecting a wallet, you agree to TMY DEX <a href="">Terms of Service</a> and acknowledge that you have read and understand the TMY DEX <a href="">Protocol Disclaimer.</a>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/1.2.1/chartjs-plugin-zoom.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
