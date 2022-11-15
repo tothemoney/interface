@@ -211,13 +211,13 @@ export const MobileSideBar = () => {
               </Row>
               <Row justifyContent="center">
                 <IconRow>
-                  <Icon href="https://discord.com/invite/FCfyBSbCU5">
+                  <Icon href="https://discord.gg/EQHqDab8Mj">
                     <DiscordIconMenuMobile width={32} height={32} color={themeVars.colors.darkGray} />
                   </Icon>
-                  <Icon href="https://twitter.com/Uniswap">
+                  <Icon href="https://twitter.com/TMYchain">
                     <TwitterIconMenuMobile width={32} height={32} color={themeVars.colors.darkGray} />
                   </Icon>
-                  <Icon href="https://github.com/Uniswap">
+                  <Icon href="https://github.com/tothemoney/tmy">
                     <GithubIconMenuMobile width={32} height={32} color={themeVars.colors.darkGray} />
                   </Icon>
                 </IconRow>

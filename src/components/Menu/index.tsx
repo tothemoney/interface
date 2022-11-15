@@ -233,7 +233,7 @@ export default function Menu() {
               default:
                 return (
                   <MenuFlyout>
-                    <MenuItem href="https://uniswap.org/">
+                    <MenuItem href="https://tmychain.org">
                       <Info opacity={0.6} size={16} />
                       <div>
                         <Trans>About</Trans>

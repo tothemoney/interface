@@ -157,13 +157,13 @@ export const MenuDropdown = () => {
                 )}
               </Column>
               <IconRow>
-                <Icon href="https://discord.com/invite/FCfyBSbCU5">
+                <Icon href="https://discord.gg/EQHqDab8Mj">
                   <DiscordIconMenu width={24} height={24} color={themeVars.colors.darkGray} />
                 </Icon>
-                <Icon href="https://twitter.com/Uniswap">
+                <Icon href="https://twitter.com/TMYchain">
                   <TwitterIconMenu width={24} height={24} color={themeVars.colors.darkGray} />
                 </Icon>
-                <Icon href="https://github.com/Uniswap">
+                <Icon href="https://github.com/tothemoney/tmy">
                   <GithubIconMenu width={24} height={24} color={themeVars.colors.darkGray} />
                 </Icon>
               </IconRow>
