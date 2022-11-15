@@ -27,7 +27,8 @@ const FancyButton = styled.button`
   color: ${({ theme }) => theme.deprecated_text1};
   align-items: center;
   height: 2rem;
-  border-radius: 36px;
+  border: 2px solid #3a3c48;
+  border-radius: 9px;
   font-size: 1rem;
   width: auto;
   min-width: 3.5rem;
@@ -44,12 +45,16 @@ const FancyButton = styled.button`
 
 const Option = styled(FancyButton)<{ active: boolean; redesignFlag: boolean }>`
   margin-right: 8px;
-  border-radius: ${({ redesignFlag }) => redesignFlag && '12px'};
+
+  border: 2px solid #3a3c48;
+  border-radius: 9px;
   :hover {
     cursor: pointer;
   }
-  background-color: ${({ active, theme }) => active && theme.deprecated_primary1};
-  color: ${({ active, theme }) => (active ? theme.deprecated_white : theme.deprecated_text1)};
+
+  color: #b2b2b2;
+  width: 40px;
+  height: 40px;
 `
 
 const Input = styled.input<{ redesignFlag: boolean }>`
@@ -67,7 +72,8 @@ const Input = styled.input<{ redesignFlag: boolean }>`
 `
 
 const OptionCustom = styled(FancyButton)<{ active?: boolean; warning?: boolean; redesignFlag: boolean }>`
-  height: 2rem;
+  width: 40px;
+  height: 40px;
   position: relative;
   padding: 0 0.75rem;
   border-radius: ${({ redesignFlag }) => redesignFlag && '12px'};
@@ -256,7 +262,7 @@ export default function TransactionSettings({ placeholderSlippage }: Transaction
           </RowFixed>
           <RowFixed>
             <OptionCustom
-              style={{ width: '80px' }}
+              style={{ width: '40px', height: '40px' }}
               warning={!!deadlineError}
               tabIndex={-1}
               redesignFlag={redesignFlagEnabled}

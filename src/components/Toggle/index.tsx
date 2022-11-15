@@ -3,38 +3,39 @@ import { darken } from 'polished'
 import { useState } from 'react'
 import styled, { keyframes } from 'styled-components/macro'
 
-const Wrapper = styled.button<{ isActive?: boolean; activeElement?: boolean; redesignFlag: boolean }>`
+const Wrapper = styled.button<{ bgColor?: string; isActive?: boolean; activeElement?: boolean; redesignFlag: boolean }>`
   align-items: center;
-  background: ${({ isActive, theme, redesignFlag }) =>
-    redesignFlag && isActive ? theme.accentActionSoft : theme.deprecated_bg1};
+  background: ${({ isActive, theme, bgColor }) => (isActive ? bgColor ?? theme.rainbow : theme.unrainbow)};
+
   border: none;
   border-radius: 20px;
   cursor: pointer;
   display: flex;
   outline: none;
   padding: 0.4rem 0.4rem;
-  width: fit-content;
+  width: 40px;
+  height: 25px;
 `
 
 const turnOnToggle = keyframes`
   from {
     margin-left: 0em;
-    margin-right: 2.2em;
+    margin-right: 1em;
   }
   to {
-    margin-left: 2.2em;
+    margin-left: 1em;
     margin-right: 0em;
   }
 `
 
 const turnOffToggle = keyframes`
   from {
-    margin-left: 2.2em;
+    margin-left: 1em;
     margin-right: 0em;
   }
   to {
     margin-left: 0em;
-    margin-right: 2.2em;
+    margin-right: 1em;
   }
 `
 
@@ -53,15 +54,15 @@ const ToggleElement = styled.span<{ isActive?: boolean; bgColor?: string; isInit
     ${({ isActive, isInitialToggleLoad }) => (isInitialToggleLoad ? 'none' : isActive ? turnOnToggle : turnOffToggle)}
     ease-in;
   background: ${({ theme, bgColor, isActive }) =>
-    isActive ? bgColor ?? theme.deprecated_primary1 : !!bgColor ? theme.deprecated_bg4 : theme.deprecated_text3};
+    isActive ? bgColor ?? theme.deprecated_text1 : !!bgColor ? theme.deprecated_bg4 : theme.deprecated_text3};
   border-radius: 50%;
-  height: 24px;
-  :hover {
-    ${({ bgColor, theme, isActive }) => ToggleElementHoverStyle(!!bgColor, theme, isActive)}
-  }
-  margin-left: ${({ isActive }) => (isActive ? '2.2em' : '0em')};
-  margin-right: ${({ isActive }) => (!isActive ? '2.2em' : '0em')};
-  width: 24px;
+  height: 15px;
+  // :hover {
+  //   ${({ bgColor, theme, isActive }) => ToggleElementHoverStyle(!!bgColor, theme, isActive)}
+  // }
+  margin-left: ${({ isActive }) => (isActive ? '.8em' : '0em')};
+  margin-right: ${({ isActive }) => (!isActive ? '.8em' : '0em')};
+  width: 15px;
 `
 
 interface ToggleProps {

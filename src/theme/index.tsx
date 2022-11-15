@@ -60,7 +60,6 @@ const deprecated_black = ColorsPalette.black
 function uniswapThemeColors(darkMode: boolean): ThemeColors {
   return {
     userThemeColor: darkMode ? colorsDark.userThemeColor : colorsLight.userThemeColor,
-
     backgroundBackdrop: darkMode ? colorsDark.backgroundBackdrop : colorsLight.backgroundBackdrop,
     backgroundSurface: darkMode ? colorsDark.backgroundSurface : colorsLight.backgroundSurface,
     backgroundModule: darkMode ? colorsDark.backgroundModule : colorsLight.backgroundModule,
@@ -132,6 +131,11 @@ function oldColors(darkMode: boolean): Colors {
     deprecated_text4: darkMode ? '#B2B9D2' : '#C3C5CB',
     deprecated_text5: darkMode ? '#2C2F36' : '#EDEEF2',
 
+    rainbow: darkMode ? 'linear-gradient(90deg, #6D00F3 0%, #FF0052 105.14%)' : '#000',
+    unrainbow: darkMode ? '#2C2D3A' : '#2C2D3A',
+    interface: darkMode
+      ? 'linear-gradient(180deg, #262B39 0%, #1F1C2B 100%)'
+      : 'linear-gradient(180deg, #262B39 0%, #1F1C2B 100%)',
     // backgrounds / greys
     deprecated_bg0: darkMode ? '#191B1F' : '#FFF',
     deprecated_bg1: darkMode ? '#212429' : '#F7F8FA',
@@ -239,6 +243,11 @@ function oldColorsUpdated(darkMode: boolean): Colors {
     deprecated_blue4: darkMode ? '#153d6f70' : '#C4D9F8',
     // blue5: darkMode ? '#153d6f70' : '#EBF4FF',
     // deprecated_blue5: '#869EFF',
+    rainbow: darkMode ? 'linear-gradient(90deg, #6D00F3 0%, #FF0052 105.14%)' : '#666',
+    unrainbow: darkMode ? '#2C2D3A' : '#2C2D3A',
+    interface: darkMode
+      ? 'linear-gradient(180deg, #262B39 0%, #1F1C2B 100%)'
+      : 'linear-gradient(180deg, #262B39 0%, #1F1C2B 100%)',
   }
 }
 

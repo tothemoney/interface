@@ -85,11 +85,10 @@ const StyledMenu = styled.div`
 
 const MenuFlyout = styled.span<{ redesignFlag: boolean }>`
   min-width: 20.125rem;
-  background-color: ${({ theme, redesignFlag }) => (redesignFlag ? theme.backgroundSurface : theme.deprecated_bg2)};
-  border: 1px solid ${({ theme, redesignFlag }) => (redesignFlag ? theme.backgroundOutline : theme.deprecated_bg3)};
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04),
-    0px 24px 32px rgba(0, 0, 0, 0.01);
-  border-radius: 12px;
+  background: ${({ theme, redesignFlag }) => (redesignFlag ? theme.interface : theme.interface)};
+  border: '1px solid #282533';
+  box-shadow: '0px 6px 20px #0e0c14';
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
@@ -188,7 +187,7 @@ export default function SettingsTab({ placeholderSlippage }: { placeholderSlippa
         disabled={!isSupportedChainId(chainId)}
         onClick={toggle}
         id="open-settings-dialog-button"
-        aria-label={t`Transaction Settings`}
+        aria-label={t`Настройки транзакции`}
       >
         <StyledMenuIcon redesignFlag={redesignFlagEnabled} />
         {expertMode ? (
@@ -201,7 +200,7 @@ export default function SettingsTab({ placeholderSlippage }: { placeholderSlippa
       </StyledMenuButton>
       {open && (
         <MenuFlyout redesignFlag={redesignFlagEnabled}>
-          <AutoColumn gap="md" style={{ padding: '1rem' }}>
+          <AutoColumn gap="md" style={{ padding: '1rem', display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <Text fontWeight={600} fontSize={14}>
               <Trans>{redesignFlagEnabled ? 'Settings' : 'Transaction Settings'}</Trans>
             </Text>
@@ -210,7 +209,9 @@ export default function SettingsTab({ placeholderSlippage }: { placeholderSlippa
               <Trans>Interface Settings</Trans>
             </Text>
             {isSupportedChainId(chainId) && (
-              <RowBetween>
+              <RowBetween
+                sx={{ display: 'flex', flexDirection: 'row-reverse', gap: '20px', justifyContent: 'start!important' }}
+              >
                 <RowFixed>
                   <ThemedText.DeprecatedBlack fontWeight={400} fontSize={14} color={theme.deprecated_text2}>
                     <Trans>Auto Router API</Trans>
@@ -230,7 +231,9 @@ export default function SettingsTab({ placeholderSlippage }: { placeholderSlippa
                 />
               </RowBetween>
             )}
-            <RowBetween>
+            <RowBetween
+              sx={{ display: 'flex', flexDirection: 'row-reverse', gap: '20px', justifyContent: 'start!important' }}
+            >
               <RowFixed>
                 <ThemedText.DeprecatedBlack fontWeight={400} fontSize={14} color={theme.deprecated_text2}>
                   <Trans>Expert Mode</Trans>

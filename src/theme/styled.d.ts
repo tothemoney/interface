@@ -16,7 +16,6 @@ export interface ThemeColors {
   textPrimary: Color
   textSecondary: Color
   textTertiary: Color
-
   accentAction: Color
   accentActive: Color
   accentSuccess: Color
@@ -62,7 +61,9 @@ export interface ThemeColors {
 
 export interface Colors {
   darkMode: boolean
-
+  rainbow: Color
+  unrainbow: Color
+  interface: Color
   // base
   deprecated_white: Color
   deprecated_black: Color

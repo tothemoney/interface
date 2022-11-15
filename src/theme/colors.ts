@@ -4,6 +4,9 @@ import { Color } from './styled'
 import { opacify } from './utils'
 
 export interface GlobalPalette {
+  rainbow: Color
+  unrainbow: Color
+  interface: Color
   white: Color
   black: Color
   gray50: Color
@@ -85,6 +88,9 @@ export interface GlobalPalette {
 }
 
 export const colors: GlobalPalette = {
+  rainbow: 'linear-gradient(90deg, #6D00F3 0%, #FF0052 105.14%)',
+  unrainbow: '#2C2D3A',
+  interface: 'linear-gradient(180deg, #262B39 0%, #1F1C2B 100%)',
   white: '#FFFFFF',
   black: '#000000',
   gray50: '#F8F9FF',
@@ -221,14 +227,14 @@ export interface Palette {
   chain_137_background: Color
   chain_10_background: Color
   chain_42161_background: Color
-
+  unRainbow: Color
   flyoutDropShadow: Color
   deepShadow: Color
 }
 
 export const colorsLight: Palette = {
   userThemeColor: colors.magentaVibrant,
-
+  unRainbow: colors.rainbow,
   backgroundBackdrop: colors.white,
   backgroundSurface: colors.white,
   backgroundModule: colors.gray50,
@@ -288,7 +294,6 @@ export const colorsLight: Palette = {
 
 export const colorsDark: Palette = {
   userThemeColor: colors.magentaVibrant,
-
   backgroundBackdrop: colors.black,
   backgroundSurface: colors.gray900,
   backgroundModule: opacify(8, colors.gray300),
@@ -339,7 +344,7 @@ export const colorsDark: Palette = {
   chain_137_background: colors.purple900,
   chain_10_background: colors.red900,
   chain_42161_background: colors.blue900,
-
+  unRainbow: colors.rainbow,
   flyoutDropShadow:
     '0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.12);',
   deepShadow: '12px 16px 24px rgba(0, 0, 0, 0.24), 12px 8px 12px rgba(0, 0, 0, 0.24), 4px 4px 8px rgba(0, 0, 0, 0.32);',

@@ -17,20 +17,21 @@ import { Link } from 'react-router-dom'
 import { useToggleWalletModal } from 'state/application/hooks'
 import { useUserHideClosedPositions } from 'state/user/hooks'
 import styled, { css, useTheme } from 'styled-components/macro'
-import { HideSmall, ThemedText } from 'theme'
+import { ThemedText } from 'theme'
 import { PositionDetails } from 'types/position'
 
 import { V2_FACTORY_ADDRESSES } from '../../constants/addresses'
-import CTACards from './CTACards'
 import { LoadingRows } from './styleds'
 
 const PageWrapper = styled(AutoColumn)`
+  background: rgba(0, 0, 0, 0.3);
   max-width: 870px;
   width: 100%;
-
+  padding: 0px 28px;
+  border-radius: 20px;
   ${({ theme }) => theme.mediaWidth.upToMedium`
     max-width: 800px;
-    padding: 0px 8px;
+    padding: 0px 28px;
   `};
 
   ${({ theme }) => theme.mediaWidth.upToSmall`
@@ -77,11 +78,12 @@ const MenuItem = styled.div`
   font-weight: 500;
 `
 const MoreOptionsButton = styled(ButtonGray)`
-  border-radius: 12px;
+  border-radius: 10px;
   flex: 1 1 auto;
   padding: 6px 8px;
-  width: 100%;
-  background-color: ${({ theme }) => theme.deprecated_bg0};
+  width: 150px;
+  height: 35px;
+  background-color: #3b3c4e;
   margin-right: 8px;
 `
 
@@ -115,17 +117,36 @@ const InboxIcon = styled(Inbox)`
 `
 
 const ResponsiveButtonPrimary = styled(ButtonPrimary)`
-  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   padding: 6px 8px;
-  width: fit-content;
+  width: 160px;
+  height: 35px;
   ${({ theme }) => theme.mediaWidth.upToSmall`
     flex: 1 1 auto;
     width: 100%;
   `};
+  :hover {
+    background: linear-gradient(180deg, #262b39 0%, #1f1c2b 100%);
+  }
+  &::before {
+    content: '';
+    inset: 0;
+    position: absolute;
+    border-radius: 10px;
+    padding: 2px;
+    background: -o-linear-gradient(359.61deg, #6d00f3 0.66%, #ff0052 50.34%);
+    background: linear-gradient(90.39deg, #6d00f3 0.66%, #ff0052 50.34%);
+    -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box,
+      -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
 `
 
 const MainContentWrapper = styled.main`
-  background-color: ${({ theme }) => theme.deprecated_bg0};
+  background-color: transparent;
   padding: 8px;
   border-radius: 20px;
   display: flex;
@@ -260,7 +281,7 @@ export default function Pool() {
                 <ThemedText.DeprecatedBody fontSize={'20px'}>
                   <Trans>Pools Overview</Trans>
                 </ThemedText.DeprecatedBody>
-                <ButtonRow>
+                <ButtonRow sx={{ display: 'flex', flexDirection: 'row!important' }}>
                   {showV2Features && (
                     <Menu
                       menuItems={menuItems}
@@ -321,12 +342,13 @@ export default function Pool() {
                   </ErrorContainer>
                 )}
               </MainContentWrapper>
-              <HideSmall>
-                <CTACards />
-              </HideSmall>
             </AutoColumn>
           </AutoColumn>
+          {/* <HideSmall>
+            <CTACards />
+          </HideSmall> */}
         </PageWrapper>
+
         <SwitchLocaleLink />
       </>
     </Trace>

@@ -47,6 +47,7 @@ export const DynamicSection = styled(AutoColumn)<{ disabled?: boolean }>`
 
 export const CurrencyDropdown = styled(CurrencyInputPanel)`
   width: 48.5%;
+  white-space: nowrap;
 `
 
 export const StyledInput = styled(Input)`

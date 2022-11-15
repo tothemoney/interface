@@ -134,36 +134,23 @@ export const ButtonGray = styled(BaseButton)`
 `
 
 export const ButtonSecondary = styled(BaseButton)`
-  border: 1px solid ${({ theme }) => theme.deprecated_primary4};
+  border: none;
   color: ${({ theme }) => theme.deprecated_primary1};
   background-color: transparent;
   font-size: 16px;
   border-radius: 12px;
   padding: ${({ padding }) => (padding ? padding : '10px')};
-
-  &:focus {
-    box-shadow: 0 0 0 1pt ${({ theme }) => theme.deprecated_primary4};
-    border: 1px solid ${({ theme }) => theme.deprecated_primary3};
-  }
-  &:hover {
-    border: 1px solid ${({ theme }) => theme.deprecated_primary3};
-  }
-  &:active {
-    box-shadow: 0 0 0 1pt ${({ theme }) => theme.deprecated_primary4};
-    border: 1px solid ${({ theme }) => theme.deprecated_primary3};
-  }
-  &:disabled {
-    opacity: 50%;
-    cursor: auto;
-  }
+  outline: none;
   a:hover {
     text-decoration: none;
+    outline: none;
   }
 `
 
 export const ButtonOutlined = styled(BaseButton)`
   border: 1px solid ${({ theme }) => theme.deprecated_bg2};
   background-color: transparent;
+  outline: none;
   color: ${({ theme }) => theme.deprecated_text1};
   &:focus {
     box-shadow: 0 0 0 1px ${({ theme }) => theme.deprecated_bg4};
@@ -259,7 +246,7 @@ const ButtonConfirmedStyle = styled(BaseButton)`
 `
 
 const ButtonErrorStyle = styled(BaseButton)`
-  background-color: ${({ theme }) => theme.deprecated_red1};
+  background-color: transparent;
   border: 1px solid ${({ theme }) => theme.deprecated_red1};
 
   &:focus {
@@ -273,12 +260,19 @@ const ButtonErrorStyle = styled(BaseButton)`
     box-shadow: 0 0 0 1pt ${({ theme }) => darken(0.1, theme.deprecated_red1)};
     background-color: ${({ theme }) => darken(0.1, theme.deprecated_red1)};
   }
-  &:disabled {
-    opacity: 50%;
-    cursor: auto;
-    box-shadow: none;
-    background-color: ${({ theme }) => theme.deprecated_red1};
-    border: 1px solid ${({ theme }) => theme.deprecated_red1};
+  &::before {
+    content: '';
+    inset: 0;
+    position: absolute;
+    border-radius: 10px;
+    padding: 2px;
+    background: -o-linear-gradient(359.61deg, #6d00f3 0.66%, #ff0052 50.34%);
+    background: linear-gradient(90.39deg, #6d00f3 0.66%, #ff0052 50.34%);
+    -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box,
+      -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
   }
 `
 

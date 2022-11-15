@@ -112,7 +112,7 @@ const CurrencySelect = styled(ButtonGray)<{
 //  background-color: ${({ theme, selected, redesignFlag }) =>
 //    redesignFlag && (selected ? theme.backgroundModule : theme.accentAction)};
 const InputCurrencySelect = styled(CurrencySelect)<{ redesignFlag: boolean }>`
-  background-color: transparent;
+  background-color: #3b3c4e;
 
   ::before {
     -webkit-filter: drop-shadow(0px 2px 2px rgba(130, 130, 130, 1));
@@ -122,12 +122,7 @@ const InputCurrencySelect = styled(CurrencySelect)<{ redesignFlag: boolean }>`
   }
   :focus,
   :hover {
-    background-color: ${({ selected, theme, redesignFlag }) =>
-      selected
-        ? redesignFlag
-          ? theme.backgroundInteractive
-          : theme.deprecated_bg3
-        : darken(0.05, theme.deprecated_primary1)};
+    background-color: rgba(0, 0, 0, 0.2);
   }
 `
 
@@ -193,21 +188,6 @@ const StyledTokenName = styled.span<{ active?: boolean; redesignFlag: boolean }>
   margin: 0 0.25rem 0 0.25rem;
   font-size: 18px;
   font-weight: ${({ redesignFlag }) => (redesignFlag ? '600' : '500')};
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 12px;
-    padding: 2px;
-    background: -o-linear-gradient(359.61deg, #6d00f3 0.66%, #ff0052 50.34%);
-    background: linear-gradient(90.39deg, #6d00f3 0.66%, #ff0052 50.34%);
-    -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box,
-      -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-  }
 `
 
 const StyledBalanceMax = styled.button<{ disabled?: boolean; redesignFlag: boolean }>`
