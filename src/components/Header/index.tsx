@@ -14,7 +14,8 @@ import { useUserHasSubmittedClaim } from 'state/transactions/hooks'
 import { useDarkModeManager } from 'state/user/hooks'
 import styled, { useTheme } from 'styled-components/macro'
 
-import { ReactComponent as Logo } from '../../assets/svg/logo.svg'
+// import { ReactComponent as Logo } from '../../assets/svg/newLogo.svg'
+import Logo from '../../assets/images/logo.png'
 import { ExternalLink, ThemedText } from '../../theme'
 import ClaimModal from '../claim/ClaimModal'
 import { CardNoise } from '../earn/styled'
@@ -283,7 +284,8 @@ export default function Header() {
       <ClaimModal />
       <Title href=".">
         <UniIcon>
-          <Logo fill={darkMode ? deprecated_white : deprecated_black} width="24px" height="100%" title="logo" />
+          {/* <Logo width="100px" height="100%" title="logo" /> */}
+          <img src={Logo} alt="TMY DEX" style={{ width: '100%', height: 'auto' }} />
           <HolidayOrnament />
         </UniIcon>
       </Title>
