@@ -62,6 +62,7 @@ const Container = styled.div<{ hideInput: boolean; disabled: boolean; redesignFl
     :hover {
       border: 1px solid ${hideInput ? ' transparent' : theme.deprecated_bg3};
     }
+    
   `}
 `
 
@@ -98,6 +99,7 @@ const CurrencySelect = styled(ButtonGray)<{
   gap: ${({ redesignFlag }) => (redesignFlag ? '8px' : '0px')};
   justify-content: space-between;
   margin-left: ${({ hideInput }) => (hideInput ? '0' : '12px')};
+
   :focus,
   :hover {
     background-color: ${({ selected, theme, redesignFlag }) =>
@@ -188,6 +190,22 @@ const StyledTokenName = styled.span<{ active?: boolean; redesignFlag: boolean }>
   margin: 0 0.25rem 0 0.25rem;
   font-size: 18px;
   font-weight: ${({ redesignFlag }) => (redesignFlag ? '600' : '500')};
+  :nth-child(1) {
+    &::before {
+      content: '';
+      inset: 0;
+      position: absolute;
+      border-radius: 10px;
+      padding: 2px;
+      background: -o-linear-gradient(359.61deg, #6d00f3 0.66%, #ff0052 50.34%);
+      background: linear-gradient(90.39deg, #6d00f3 0.66%, #ff0052 50.34%);
+      -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box,
+        -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+  }
 `
 
 const StyledBalanceMax = styled.button<{ disabled?: boolean; redesignFlag: boolean }>`

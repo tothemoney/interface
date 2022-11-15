@@ -137,7 +137,7 @@ function oldColors(darkMode: boolean): Colors {
       ? 'linear-gradient(180deg, #262B39 0%, #1F1C2B 100%)'
       : 'linear-gradient(180deg, #262B39 0%, #1F1C2B 100%)',
     // backgrounds / greys
-    deprecated_bg0: darkMode ? '#191B1F' : '#FFF',
+    deprecated_bg0: darkMode ? 'rgba(21, 22, 29, 1.5)' : '#FFF',
     deprecated_bg1: darkMode ? '#212429' : '#F7F8FA',
     deprecated_bg2: darkMode ? '#2C2F36' : '#EDEEF2',
     deprecated_bg3: darkMode ? '#40444F' : '#CED0D9',
@@ -367,7 +367,7 @@ export const ThemedText = {
 export const ThemedGlobalStyle = createGlobalStyle`
 html {
   color: ${({ theme }) => theme.deprecated_text1};
-  background-color: ${({ theme }) => theme.deprecated_bg1} !important;
+  background-color: ${({ theme }) => theme.deprecated_bg0}  !important;
 }
 
 a {

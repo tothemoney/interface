@@ -129,6 +129,10 @@ const ResponsiveButtonPrimary = styled(ButtonPrimary)`
   :hover {
     background: linear-gradient(180deg, #262b39 0%, #1f1c2b 100%);
   }
+  :focus {
+    outline: none;
+    background: linear-gradient(180deg, #262b39 0%, #1f1c2b 100%);
+  }
   &::before {
     content: '';
     inset: 0;

@@ -50,7 +50,7 @@ const StyledProposalContainer = styled.span<{ status: ProposalState }>`
   padding: 0.5rem;
   border-radius: 8px;
   color: ${({ status, theme }) => handleColorType(status, theme)};
-  border: 1px solid ${({ status, theme }) => handleColorType(status, theme)};
+  border: 1px solid ${({ status, theme }) => 'url(#linear-gradient)'};
   width: fit-content;
   justify-self: flex-end;
   text-transform: uppercase;
@@ -60,8 +60,14 @@ const StyledProposalContainer = styled.span<{ status: ProposalState }>`
 
 export function ProposalStatus({ status }: { status: ProposalState }) {
   return (
-    <StyledProposalContainer status={status}>
-      <StatusText status={status} />
-    </StyledProposalContainer>
+    <>
+      <linearGradient id="linear-gradient" gradientTransform="rotate(90)">
+        <stop offset="0.66%" stopColor="#6d00f3" />
+        <stop offset="50.34%" stopColor="#ff0052" />
+      </linearGradient>
+      <StyledProposalContainer status={status}>
+        <StatusText status={status} />
+      </StyledProposalContainer>
+    </>
   )
 }
