@@ -13,7 +13,7 @@ import { useDarkModeManager } from 'state/user/hooks'
 import styled, { useTheme } from 'styled-components/macro'
 
 // import { ReactComponent as Logo } from '../../assets/svg/newLogo.svg'
-import Logo from '../../assets/images/logo.png'
+import Logo from '../../assets/images/logo.svg'
 import { ExternalLink, ThemedText } from '../../theme'
 import ClaimModal from '../claim/ClaimModal'
 import { CardNoise } from '../earn/styled'
@@ -70,7 +70,6 @@ const HeaderControls = styled.div`
 const HeaderElement = styled.div`
   display: flex;
   align-items: center;
-
   &:not(:first-child) {
     margin-left: 0.5em;
   }
@@ -332,10 +331,10 @@ export default function Header() {
             <Trans>Vote</Trans>
           </StyledNavLink>
         )} */}
-        <StyledExternalLink id={`charts-nav-link`} href={infoLink}>
+        {/* <StyledExternalLink id={`charts-nav-link`} href={infoLink}>
           <Trans>Charts</Trans>
           <sup>↗</sup>
-        </StyledExternalLink>
+        </StyledExternalLink> */}
       </HeaderLinks>
 
       <HeaderControls>

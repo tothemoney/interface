@@ -75,12 +75,12 @@ const MenuItem = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+
   font-weight: 500;
 `
 const MoreOptionsButton = styled(ButtonGray)`
   border-radius: 10px;
   flex: 1 1 auto;
-  padding: 6px 8px;
   width: 150px;
   height: 35px;
   background-color: #3b3c4e;
@@ -121,7 +121,6 @@ const ResponsiveButtonPrimary = styled(ButtonPrimary)`
   border-radius: 10px;
   padding: 6px 8px;
   width: 160px;
-  height: 35px;
   ${({ theme }) => theme.mediaWidth.upToSmall`
     flex: 1 1 auto;
     width: 100%;

@@ -266,8 +266,6 @@ const ButtonErrorStyle = styled(BaseButton)`
     position: absolute;
     border-radius: 10px;
     padding: 2px;
-    background: -o-linear-gradient(359.61deg, #6d00f3 0.66%, #ff0052 50.34%);
-    background: linear-gradient(90.39deg, #6d00f3 0.66%, #ff0052 50.34%);
     -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box,
       -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);

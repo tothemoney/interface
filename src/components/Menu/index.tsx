@@ -8,11 +8,10 @@ import { LOCALE_LABEL, SUPPORTED_LOCALES, SupportedLocale } from 'constants/loca
 import { useActiveLocale } from 'hooks/useActiveLocale'
 import { useLocationLinkProps } from 'hooks/useLocationLinkProps'
 import { FunctionComponent, PropsWithChildren, useEffect, useRef, useState } from 'react'
-import { BookOpen, Check, ChevronLeft, Coffee, Flag, Globe, HelpCircle, Info, MessageCircle } from 'react-feather'
+import { Check, ChevronLeft, Globe, HelpCircle, Info, MessageCircle } from 'react-feather'
 import { Link } from 'react-router-dom'
 import { useDarkModeManager } from 'state/user/hooks'
 import styled, { css } from 'styled-components/macro'
-import { isDevelopmentEnv, isStagingEnv } from 'utils/env'
 
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
@@ -246,12 +245,12 @@ export default function Menu() {
                         <Trans>Help Center</Trans>
                       </div>
                     </MenuItem>
-                    <MenuItem href="https://uniswap.canny.io/feature-requests">
+                    {/* <MenuItem href="https://uniswap.canny.io/feature-requests">
                       <Coffee opacity={0.6} size={16} />
                       <div>
                         <Trans>Request Features</Trans>
                       </div>
-                    </MenuItem>
+                    </MenuItem> */}
                     <MenuItem href="https://discord.gg/EQHqDab8Mj">
                       <MessageCircle opacity={0.6} size={16} />
                       <div>
@@ -268,24 +267,24 @@ export default function Menu() {
                       <div>{darkMode ? <Trans>Light Theme</Trans> : <Trans>Dark Theme</Trans>}</div>
                       {darkMode ? <Moon opacity={0.6} size={16} /> : <Sun opacity={0.6} size={16} />}
                     </ToggleMenuItem> */}
-                    <MenuItem href="https://docs.uniswap.org/">
+                    {/* <MenuItem href="https://docs.uniswap.org/">
                       <BookOpen opacity={0.6} size={16} />
                       <div>
                         <Trans>Docs</Trans>
                       </div>
-                    </MenuItem>
+                    </MenuItem> */}
                     {/* <ToggleMenuItem onClick={() => togglePrivacyPolicy()}>
                       <FileText opacity={0.6} size={16} />
                       <div>
                         <Trans>Legal & Privacy</Trans>
                       </div>
                     </ToggleMenuItem> */}
-                    {(isDevelopmentEnv() || isStagingEnv()) && (
+                    {/* {(isDevelopmentEnv() || isStagingEnv()) && (
                       <ToggleMenuItem onClick={openFeatureFlagsModal}>
                         <Flag opacity={0.6} size={16} /> Feature Flags
                       </ToggleMenuItem>
-                    )}
-                    {showUNIClaimOption && (
+                    )} */}
+                    {/* {showUNIClaimOption && (
                       <UNIbutton
                         onClick={openClaimModal}
                         padding="8px 16px"
@@ -295,7 +294,7 @@ export default function Menu() {
                       >
                         <Trans>Claim UNI</Trans>
                       </UNIbutton>
-                    )}
+                    )} */}
                   </MenuFlyout>
                 )
             }
