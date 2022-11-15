@@ -19,8 +19,6 @@ import {
   HelpCircle,
   Info,
   MessageCircle,
-  Moon,
-  Sun,
 } from 'react-feather'
 import { Link } from 'react-router-dom'
 import { useDarkModeManager } from 'state/user/hooks'
@@ -52,17 +50,16 @@ const StyledMenuButton = styled.button`
   background-color: transparent;
   margin: 0;
   padding: 0;
-  height: 40px;
-  background-color: ${({ theme }) => theme.deprecated_bg0};
-  border: 1px solid ${({ theme }) => theme.deprecated_bg0};
+  width: 50px;
+  height: 50px;
+  background-color: #3b3c4e;
   padding: 0.15rem 0.5rem;
-  border-radius: 16px;
+  border-radius: 12px;
 
   :hover,
   :focus {
     cursor: pointer;
     outline: none;
-    border: 1px solid ${({ theme }) => theme.deprecated_bg3};
   }
 
   svg {
@@ -87,20 +84,22 @@ const StyledMenu = styled.div`
 
 const MenuFlyout = styled.span<{ flyoutAlignment?: FlyoutAlignment }>`
   min-width: 196px;
-  max-height: 350px;
+  max-height: 400px;
   overflow: auto;
   background-color: ${({ theme }) => theme.deprecated_bg1};
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04),
-    0px 24px 32px rgba(0, 0, 0, 0.01);
-  border: 1px solid ${({ theme }) => theme.deprecated_bg0};
-  border-radius: 12px;
-  padding: 0.5rem;
+  box-shadow: 0px 6px 20px #0e0c14;
+  border: 1px solid #282533;
+  border-radius: 20px;
+  padding: 20px 15px;
   display: flex;
   flex-direction: column;
   font-size: 16px;
   position: absolute;
   top: 3rem;
   z-index: 100;
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 
   ${({ flyoutAlignment = FlyoutAlignment.RIGHT }) =>
     flyoutAlignment === FlyoutAlignment.RIGHT
@@ -123,7 +122,7 @@ const MenuItem = styled(ExternalLink)`
   flex-direction: row;
   align-items: center;
   padding: 0.5rem 0.5rem;
-  justify-content: space-between;
+  gap: 1rem;
   color: ${({ theme }) => theme.deprecated_text2};
   :hover {
     color: ${({ theme }) => theme.deprecated_text1};
@@ -151,7 +150,6 @@ const InternalLinkMenuItem = styled(InternalMenuItem)`
   flex-direction: row;
   align-items: center;
   padding: 0.5rem 0.5rem;
-  justify-content: space-between;
   text-decoration: none;
   :hover {
     color: ${({ theme }) => theme.deprecated_text1};
@@ -161,16 +159,17 @@ const InternalLinkMenuItem = styled(InternalMenuItem)`
 `
 
 const ToggleMenuItem = styled.button`
+  text-align: left;
   background-color: transparent;
   margin: 0;
   padding: 0;
   border: none;
   display: flex;
   flex: 1;
+  gap: 1rem;
   flex-direction: row;
   align-items: center;
   padding: 0.5rem 0.5rem;
-  justify-content: space-between;
   font-size: 1rem;
   font-weight: 500;
   color: ${({ theme }) => theme.deprecated_text2};
@@ -247,54 +246,54 @@ export default function Menu() {
                 return (
                   <MenuFlyout>
                     <MenuItem href="https://uniswap.org/">
+                      <Info opacity={0.6} size={16} />
                       <div>
                         <Trans>About</Trans>
                       </div>
-                      <Info opacity={0.6} size={16} />
                     </MenuItem>
                     <MenuItem href="https://help.uniswap.org/">
+                      <HelpCircle opacity={0.6} size={16} />
                       <div>
                         <Trans>Help Center</Trans>
                       </div>
-                      <HelpCircle opacity={0.6} size={16} />
                     </MenuItem>
                     <MenuItem href="https://uniswap.canny.io/feature-requests">
+                      <Coffee opacity={0.6} size={16} />
                       <div>
                         <Trans>Request Features</Trans>
                       </div>
-                      <Coffee opacity={0.6} size={16} />
                     </MenuItem>
                     <MenuItem href="https://discord.gg/FCfyBSbCU5">
+                      <MessageCircle opacity={0.6} size={16} />
                       <div>
                         <Trans>Discord</Trans>
                       </div>
-                      <MessageCircle opacity={0.6} size={16} />
                     </MenuItem>
                     <ToggleMenuItem onClick={() => setMenu('lang')}>
+                      <Globe opacity={0.6} size={16} />
                       <div>
                         <Trans>Language</Trans>
                       </div>
-                      <Globe opacity={0.6} size={16} />
                     </ToggleMenuItem>
-                    <ToggleMenuItem onClick={() => toggleDarkMode()}>
+                    {/* <ToggleMenuItem onClick={() => toggleDarkMode()}>
                       <div>{darkMode ? <Trans>Light Theme</Trans> : <Trans>Dark Theme</Trans>}</div>
                       {darkMode ? <Moon opacity={0.6} size={16} /> : <Sun opacity={0.6} size={16} />}
-                    </ToggleMenuItem>
+                    </ToggleMenuItem> */}
                     <MenuItem href="https://docs.uniswap.org/">
+                      <BookOpen opacity={0.6} size={16} />
                       <div>
                         <Trans>Docs</Trans>
                       </div>
-                      <BookOpen opacity={0.6} size={16} />
                     </MenuItem>
                     <ToggleMenuItem onClick={() => togglePrivacyPolicy()}>
+                      <FileText opacity={0.6} size={46} />
                       <div>
                         <Trans>Legal & Privacy</Trans>
                       </div>
-                      <FileText opacity={0.6} size={16} />
                     </ToggleMenuItem>
                     {(isDevelopmentEnv() || isStagingEnv()) && (
                       <ToggleMenuItem onClick={openFeatureFlagsModal}>
-                        Feature Flags <Flag opacity={0.6} size={16} />
+                        <Flag opacity={0.6} size={16} /> Feature Flags
                       </ToggleMenuItem>
                     )}
                     {showUNIClaimOption && (
