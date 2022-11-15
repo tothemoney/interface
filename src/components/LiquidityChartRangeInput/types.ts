@@ -47,7 +47,6 @@ export interface LiquidityChartRangeInputProps {
       }
     }
   }
-
   dimensions: Dimensions
   margins: Margins
 

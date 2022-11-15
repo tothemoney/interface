@@ -5,8 +5,6 @@ import { sendEvent } from 'components/analytics'
 import { AutoColumn, ColumnCenter } from 'components/Column'
 import Loader from 'components/Loader'
 import { format } from 'd3'
-import { useColor } from 'hooks/useColor'
-import { saturate } from 'polished'
 import React, { ReactNode, useCallback, useMemo } from 'react'
 import { BarChart2, CloudOff, Inbox } from 'react-feather'
 import { batch } from 'react-redux'
@@ -47,7 +45,6 @@ const ZOOM_LEVELS: Record<FeeAmount, ZoomLevels> = {
 
 const ChartWrapper = styled.div`
   position: relative;
-
   justify-content: center;
   align-content: center;
 `
@@ -89,9 +86,6 @@ export default function LiquidityChartRangeInput({
   interactive: boolean
 }) {
   const theme = useTheme()
-
-  const tokenAColor = useColor(currencyA?.wrapped)
-  const tokenBColor = useColor(currencyB?.wrapped)
 
   const isSorted = currencyA && currencyB && currencyA?.wrapped.sortsBefore(currencyB?.wrapped)
 
@@ -189,12 +183,12 @@ export default function LiquidityChartRangeInput({
             margins={{ top: 10, right: 2, bottom: 20, left: 0 }}
             styles={{
               area: {
-                selection: theme.deprecated_blue1,
+                selection: theme.rainbow,
               },
               brush: {
                 handle: {
-                  west: saturate(0.1, tokenAColor) ?? theme.deprecated_red1,
-                  east: saturate(0.1, tokenBColor) ?? theme.deprecated_blue1,
+                  west: theme.rainbow,
+                  east: theme.rainbow,
                 },
               },
             }}

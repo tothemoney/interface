@@ -4,13 +4,10 @@ import usePrevious from 'hooks/usePrevious'
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import styled from 'styled-components/macro'
 
-const Handle = styled.path<{ color: string }>`
+const Handle = styled.path<{ theme: string }>`
   cursor: ew-resize;
   pointer-events: none;
-
   stroke-width: 3;
-  stroke: ${({ color }) => color};
-  fill: ${({ color }) => color};
 `
 
 const HandleAccent = styled.path`

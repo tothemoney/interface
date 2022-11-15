@@ -264,7 +264,7 @@ function getTheme(darkMode: boolean, isNewColorsEnabled: boolean): DefaultTheme 
     },
 
     //shadows
-    shadow1: darkMode ? '#000' : '#2F80ED',
+    shadow1: darkMode ? '#000' : '#000',
 
     // media queries
     mediaWidth: mediaWidthTemplates,

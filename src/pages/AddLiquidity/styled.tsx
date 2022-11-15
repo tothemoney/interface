@@ -65,7 +65,6 @@ export const ResponsiveTwoColumns = styled.div<{ wide: boolean }>`
   grid-template-columns: ${({ wide }) => (wide ? '1fr 1fr' : '1fr')};
   grid-template-rows: max-content;
   grid-auto-flow: row;
-
   padding-top: 20px;
 
   border-top: 1px solid ${({ theme }) => theme.deprecated_bg2};
@@ -109,6 +108,7 @@ export const HideMedium = styled.div`
   display: none;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
+  
     display: block;
   `};
 `
