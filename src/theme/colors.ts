@@ -206,9 +206,9 @@ export interface Palette {
   accentTextDarkSecondary: Color
   accentTextDarkTertiary: Color
 
-  accentTextLightPrimary: Color
-  accentTextLightSecondary: Color
-  accentTextLightTertiary: Color
+  // accentTextLightPrimary: Color
+  // accentTextLightSecondary: Color
+  // accentTextLightTertiary: Color
 
   white: Color
   black: Color
@@ -232,65 +232,65 @@ export interface Palette {
   deepShadow: Color
 }
 
-export const colorsLight: Palette = {
-  userThemeColor: colors.magentaVibrant,
-  unRainbow: colors.rainbow,
-  backgroundBackdrop: colors.white,
-  backgroundSurface: colors.white,
-  backgroundModule: colors.gray50,
-  backgroundInteractive: opacify(6, colors.gray700),
-  backgroundFloating: opacify(8, colors.white),
-  backgroundOutline: opacify(24, colors.gray500),
-  backgroundScrim: opacify(60, colors.gray900),
+// export const colorsLight: Palette = {
+//   userThemeColor: colors.magentaVibrant,
+//   unRainbow: colors.rainbow,
+//   backgroundBackdrop: colors.white,
+//   backgroundSurface: colors.white,
+//   backgroundModule: colors.gray50,
+//   backgroundInteractive: opacify(6, colors.gray700),
+//   backgroundFloating: opacify(8, colors.white),
+//   backgroundOutline: opacify(24, colors.gray500),
+//   backgroundScrim: opacify(60, colors.gray900),
 
-  textPrimary: colors.gray900,
-  textSecondary: colors.gray500,
-  textTertiary: colors.gray300,
+//   textPrimary: colors.gray900,
+//   textSecondary: colors.gray500,
+//   textTertiary: colors.gray300,
 
-  accentAction: colors.pink400,
-  accentActive: colors.blue400,
-  accentSuccess: colors.green400,
-  accentWarning: colors.gold200,
-  accentFailure: colors.red400,
-  accentCritical: colors.red400,
+//   accentAction: colors.pink400,
+//   accentActive: colors.blue400,
+//   accentSuccess: colors.green400,
+//   accentWarning: colors.gold200,
+//   accentFailure: colors.red400,
+//   accentCritical: colors.red400,
 
-  accentActionSoft: opacify(12, colors.pink400),
-  accentActiveSoft: opacify(12, colors.blue400),
-  accentSuccessSoft: opacify(12, colors.green400),
-  accentWarningSoft: opacify(12, colors.gold200),
-  accentFailureSoft: opacify(12, colors.red400),
+//   accentActionSoft: opacify(12, colors.pink400),
+//   accentActiveSoft: opacify(12, colors.blue400),
+//   accentSuccessSoft: opacify(12, colors.green400),
+//   accentWarningSoft: opacify(12, colors.gold200),
+//   accentFailureSoft: opacify(12, colors.red400),
 
-  accentTextDarkPrimary: opacify(80, colors.black),
-  accentTextDarkSecondary: opacify(60, colors.black),
-  accentTextDarkTertiary: opacify(24, colors.black),
+//   accentTextDarkPrimary: opacify(80, colors.black),
+//   accentTextDarkSecondary: opacify(60, colors.black),
+//   accentTextDarkTertiary: opacify(24, colors.black),
 
-  accentTextLightPrimary: colors.white,
-  accentTextLightSecondary: opacify(60, colors.white),
-  accentTextLightTertiary: opacify(12, colors.white),
+//   accentTextLightPrimary: colors.white,
+//   accentTextLightSecondary: opacify(60, colors.white),
+//   accentTextLightTertiary: opacify(12, colors.white),
 
-  white: colors.white,
-  black: colors.black,
+//   white: colors.white,
+//   black: colors.black,
 
-  chain_1: colors.networkEthereum,
-  chain_3: colors.yellow400,
-  chain_4: colors.pink400,
-  chain_5: colors.green400,
-  chain_10: colors.networkOptimism,
-  chain_137: colors.networkPolygon,
-  chain_42: colors.networkArbitrum,
-  chain_69: colors.networkOptimism,
-  chain_42161: colors.networkEthereum,
-  chain_421611: colors.networkEthereum,
-  chain_80001: colors.networkPolygon,
-  chain_137_background: colors.purple900,
-  chain_10_background: colors.red900,
-  chain_42161_background: colors.blue900,
+//   chain_1: colors.networkEthereum,
+//   chain_3: colors.yellow400,
+//   chain_4: colors.pink400,
+//   chain_5: colors.green400,
+//   chain_10: colors.networkOptimism,
+//   chain_137: colors.networkPolygon,
+//   chain_42: colors.networkArbitrum,
+//   chain_69: colors.networkOptimism,
+//   chain_42161: colors.networkEthereum,
+//   chain_421611: colors.networkEthereum,
+//   chain_80001: colors.networkPolygon,
+//   chain_137_background: colors.purple900,
+//   chain_10_background: colors.red900,
+//   chain_42161_background: colors.blue900,
 
-  flyoutDropShadow:
-    '0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.12);',
-  deepShadow:
-    '8px 12px 20px rgba(51, 53, 72, 0.04), 4px 6px 12px rgba(51, 53, 72, 0.02), 4px 4px 8px rgba(51, 53, 72, 0.04);',
-}
+//   flyoutDropShadow:
+//     '0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.12);',
+//   deepShadow:
+//     '8px 12px 20px rgba(51, 53, 72, 0.04), 4px 6px 12px rgba(51, 53, 72, 0.02), 4px 4px 8px rgba(51, 53, 72, 0.04);',
+// }
 
 export const colorsDark: Palette = {
   userThemeColor: colors.magentaVibrant,
@@ -323,9 +323,9 @@ export const colorsDark: Palette = {
   accentTextDarkSecondary: opacify(60, colors.black),
   accentTextDarkTertiary: opacify(24, colors.black),
 
-  accentTextLightPrimary: colors.white,
-  accentTextLightSecondary: opacify(72, colors.white),
-  accentTextLightTertiary: opacify(12, colors.white),
+  // accentTextLightPrimary: colors.white,
+  // accentTextLightSecondary: opacify(72, colors.white),
+  // accentTextLightTertiary: opacify(12, colors.white),
 
   white: colors.white,
   black: colors.black,

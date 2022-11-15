@@ -2051,7 +2051,7 @@ input:checked+.slider:before {
 
 .tabs .tab-anchor.active {
   color: #191919;
-  background: #fff;
+  background: rgba(21, 22, 29, 1.5);
   border-color: #fff;
 }
 

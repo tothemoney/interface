@@ -1,5 +1,5 @@
 {
-  "background_color": "#fff",
+  "background_color": "rgba(21,22,29,1.5) !important",
   "display": "standalone",
   "homepage_url": "https://app.uniswap.org",
   "providedBy": { "name": "Uniswap", "url": "https://uniswap.org" },

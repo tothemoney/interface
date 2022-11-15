@@ -33,7 +33,7 @@ export interface ThemeColors {
   accentTextDarkSecondary: Color
   accentTextDarkTertiary: Color
 
-  accentTextLightPrimary: Color
+  accentTextDarkPrimary: Color
   accentTextLightSecondary: Color
   accentTextLightTertiary: Color
 

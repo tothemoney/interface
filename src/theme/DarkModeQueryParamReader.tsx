@@ -22,8 +22,8 @@ export default function DarkModeQueryParamReader(): null {
 
     if (typeof theme !== 'string') return
 
-    if (theme.toLowerCase() === 'light') {
-      dispatch(updateUserDarkMode({ userDarkMode: false }))
+    if (theme.toLowerCase() === 'dark') {
+      dispatch(updateUserDarkMode({ userDarkMode: true }))
     } else if (theme.toLowerCase() === 'dark') {
       dispatch(updateUserDarkMode({ userDarkMode: true }))
     }
