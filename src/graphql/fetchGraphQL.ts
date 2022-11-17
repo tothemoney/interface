@@ -36,7 +36,7 @@ const fetchQuery = (params: RequestParameters, variables: Variables): Observable
 
   const subgraphUrl =
     chainId && CHAIN_SUBGRAPH_URL[chainId]
-      ? CHAIN_SUBGRAPH_URL[chainId] 
+      ? CHAIN_SUBGRAPH_URL[chainId]
       : CHAIN_SUBGRAPH_URL[SupportedChainId.TMY_MAINNET]
 
   const body = JSON.stringify({
