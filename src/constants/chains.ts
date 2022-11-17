@@ -36,7 +36,7 @@ export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.ARBITRUM_RINKEBY]: 'arbitrum_rinkeby',
   [SupportedChainId.OPTIMISM]: 'optimism',
   [SupportedChainId.OPTIMISTIC_KOVAN]: 'optimistic_kovan',
-  [SupportedChainid.TMY_MAINNET]: 'tmy',
+  [SupportedChainId.TMY_MAINNET]: 'tmy',
 }
 
 /**
