@@ -46,13 +46,6 @@ export const USDC_OPTIMISM = new Token(
   'USDC',
   'USD//C'
 )
-export const USDC_OPTIMISM_GOERLI = new Token(
-  SupportedChainId.OPTIMISM_GOERLI,
-  '0x7E07E15D2a87A24492740D16f5bdF58c16db0c4E',
-  6,
-  'USDC',
-  'USD//C'
-)
 export const USDC_ARBITRUM = new Token(
   SupportedChainId.ARBITRUM_ONE,
   '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
