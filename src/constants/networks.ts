@@ -26,5 +26,5 @@ export const RPC_URLS: { [key in SupportedChainId]: string } = {
   [SupportedChainId.POLYGON_MUMBAI]: `https://polygon-mumbai.infura.io/v3/${INFURA_KEY}`,
   [SupportedChainId.CELO]: `https://forno.celo.org`,
   [SupportedChainId.CELO_ALFAJORES]: `https://alfajores-forno.celo-testnet.org`,
-  [SupportedChainId.TMY_MAINNET]: `https://node2.tmychain.org/rpc`,
+  [SupportedChainId.TMY_MAINNET]: `https://node1.tmyblockchain.org/rpc`,
 }
