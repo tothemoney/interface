@@ -36,7 +36,7 @@ const DEFAULT_QUERY_PARAMS = {
 export const routingApi = createApi({
   reducerPath: 'routingApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://r7bpsmocgc.execute-api.us-east-1.amazonaws.com/prod/',
+    baseUrl: '',
   }),
   endpoints: (build) => ({
     getQuote: build.query<
