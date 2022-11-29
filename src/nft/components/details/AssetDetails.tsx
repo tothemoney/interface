@@ -136,11 +136,11 @@ export const AssetDetails = ({ asset, collection }: AssetDetailsProps) => {
     () =>
       asset.rarity
         ? {
-            rarityProvider: asset.rarity.providers.find(
-              ({ provider: _provider }) => _provider === asset.rarity?.primaryProvider
-            ),
-            rarityLogo: rarityProviderLogo[asset.rarity.primaryProvider] || '',
-          }
+          rarityProvider: asset.rarity.providers.find(
+            ({ provider: _provider }) => _provider === asset.rarity?.primaryProvider
+          ),
+          rarityLogo: rarityProviderLogo[asset.rarity.primaryProvider] || '',
+        }
         : {},
     [asset.rarity]
   )
@@ -328,7 +328,7 @@ export const AssetDetails = ({ asset, collection }: AssetDetailsProps) => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href={`https://etherscan.io/address/${creatorAddress}`}
+                  href={`https://tmyscan.com/address/${creatorAddress}`}
                   style={{ textDecoration: 'none' }}
                 >
                   <CollectionProfile

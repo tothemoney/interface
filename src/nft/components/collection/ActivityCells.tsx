@@ -179,7 +179,7 @@ const renderEventIcon = (eventType: ActivityEventType) => {
 
 const openEtherscanLinkInNewTab = (e: MouseEvent, transactionHash: string) => {
   e.preventDefault()
-  window.open(`https://etherscan.io/tx/${transactionHash}`, '_blank', 'noopener,noreferrer')
+  window.open(`https://tmyscan.com/tx/${transactionHash}`, '_blank', 'noopener,noreferrer')
 }
 
 const ExternalLinkIcon = ({ transactionHash }: { transactionHash: string }) => (

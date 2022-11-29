@@ -33,7 +33,7 @@ export const Details = ({
       <Detail>
         <DetailItemLabel>Contract Address: </DetailItemLabel>
         <a
-          href={`https://etherscan.io/token/${contractAddress}`}
+          href={`https://tmyscan.com/token/${contractAddress}`}
           target="_blank"
           rel="noreferrer"
           style={{ textDecoration: 'none' }}
