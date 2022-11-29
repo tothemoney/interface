@@ -2,7 +2,7 @@ import { useWeb3React } from '@web3-react/core'
 import { getConnection } from 'connection/utils'
 import { SupportedChainId } from 'constants/chains'
 import { useCallback } from 'react'
-import { addPopup } from 'state/application/reducer'
+//import { addPopup } from 'state/application/reducer'
 import { updateConnectionError } from 'state/connection/reducer'
 import { useAppDispatch } from 'state/hooks'
 import { switchChain } from 'utils/switchChain'
@@ -24,7 +24,7 @@ export default function useSelectChain() {
         console.error('Failed to switch networks', error)
 
         dispatch(updateConnectionError({ connectionType, error: error.message }))
-        dispatch(addPopup({ content: { failedSwitchNetwork: targetChain }, key: `failed-network-switch` }))
+        //dispatch(addPopup({ content: { failedSwitchNetwork: targetChain }, key: `failed-network-switch` }))
       }
     },
     [connector, dispatch]
