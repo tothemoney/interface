@@ -36,7 +36,7 @@ const DEFAULT_QUERY_PARAMS = {
 export const routingApi = createApi({
   reducerPath: 'routingApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: '',
+    baseUrl: '/api',
   }),
   endpoints: (build) => ({
     getQuote: build.query<
