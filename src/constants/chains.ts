@@ -42,7 +42,7 @@ export const CHAIN_IDS_TO_NAMES = {
 /**
  * Array of all the supported chain IDs
  */
- export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = Object.values(SupportedChainId).filter(
+export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = Object.values(SupportedChainId).filter(
   (id) => typeof id === 'number' && id === SupportedChainId.TMY_MAINNET
 ) as SupportedChainId[]
 
