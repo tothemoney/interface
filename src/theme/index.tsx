@@ -314,6 +314,9 @@ export const ThemedText = {
   DeprecatedBlack(props: TextProps) {
     return <TextWrapper fontWeight={500} color={'deprecated_text1'} {...props} />
   },
+  DeprecatedOnlyBlack(props: TextProps) {
+    return <TextWrapper fontWeight={500} color={'black'} {...props} />
+  },
   DeprecatedWhite(props: TextProps) {
     return <TextWrapper fontWeight={500} color={'deprecated_white'} {...props} />
   },

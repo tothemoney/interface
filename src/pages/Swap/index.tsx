@@ -689,9 +689,9 @@ export default function Swap() {
                       </ButtonPrimary>
                     ) : routeNotFound && userHasSpecifiedInputOutput && !routeIsLoading && !routeIsSyncing ? (
                       <GreyCard style={{ textAlign: 'center' }}>
-                        <ThemedText.DeprecatedBlack mb="4px">
+                        <ThemedText.DeprecatedOnlyBlack mb="4px">
                           <Trans>Insufficient liquidity for this trade.</Trans>
-                        </ThemedText.DeprecatedBlack>
+                        </ThemedText.DeprecatedOnlyBlack>
                       </GreyCard>
                     ) : showApproveFlow ? (
                       <AutoRow style={{ flexWrap: 'nowrap', width: '100%' }}>
