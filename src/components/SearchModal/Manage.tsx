@@ -35,7 +35,7 @@ const ToggleOption = styled.div<{ active?: boolean }>`
   border-radius: 12px;
   font-weight: 600;
   background-color: ${({ theme, active }) => (active ? theme.deprecated_bg1 : theme.deprecated_bg3)};
-  color: ${({ theme, active }) => (active ? theme.deprecated_text1 : theme.deprecated_text2)};
+  color: ${({ theme, active }) => (active ? theme.deprecated_text1 : theme.black)};
   user-select: none;
 
   :hover {

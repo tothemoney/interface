@@ -121,7 +121,7 @@ export const ButtonLight = styled(BaseButton)<{ redesignFlag?: boolean }>`
 
 export const ButtonGray = styled(BaseButton)`
   background-color: ${({ theme }) => theme.deprecated_bg1};
-  color: ${({ theme }) => theme.deprecated_text2};
+  color: ${({ theme }) => theme.black};
   font-size: 16px;
   font-weight: 500;
 
