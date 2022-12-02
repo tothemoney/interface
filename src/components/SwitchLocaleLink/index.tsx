@@ -35,7 +35,7 @@ export function SwitchLocaleLink() {
   const { to, onClick } = useLocationLinkProps(targetLocale)
 
   if (!targetLocale || !to) return null
-  console.log(LOCALE_LABEL[targetLocale], targetLocale, activeLocale);
+  console.log(LOCALE_LABEL[targetLocale], targetLocale, activeLocale)
   return (
     <Container>
       <Trans>
