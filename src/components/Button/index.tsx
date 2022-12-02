@@ -7,7 +7,7 @@ import { RowBetween } from '../Row'
 
 type ButtonProps = Omit<ButtonPropsOriginal, 'css'>
 
-export const BaseButton = styled(RebassButton) <
+export const BaseButton = styled(RebassButton)<
   {
     padding?: string
     width?: string
@@ -50,7 +50,7 @@ export const BaseButton = styled(RebassButton) <
   }
 `
 
-export const ButtonPrimary = styled(BaseButton) <{ redesignFlag?: boolean }>`
+export const ButtonPrimary = styled(BaseButton)<{ redesignFlag?: boolean }>`
   background-color: ${({ theme }) => darken(0.05, theme.deprecated_bg2)};
   font-size: ${({ redesignFlag }) => redesignFlag && '20px'};
   font-weight: ${({ redesignFlag }) => redesignFlag && '600'};
@@ -69,9 +69,9 @@ export const ButtonPrimary = styled(BaseButton) <{ redesignFlag?: boolean }>`
   }
   &:disabled {
     background-color: ${({ theme, altDisabledStyle, disabled }) =>
-    altDisabledStyle ? (disabled ? theme.deprecated_primary1 : theme.deprecated_bg2) : theme.deprecated_bg2};
+      altDisabledStyle ? (disabled ? theme.deprecated_primary1 : theme.deprecated_bg2) : theme.deprecated_bg2};
     color: ${({ altDisabledStyle, disabled, theme }) =>
-    altDisabledStyle ? (disabled ? theme.deprecated_white : theme.deprecated_text2) : theme.deprecated_text2};
+      altDisabledStyle ? (disabled ? theme.deprecated_white : theme.deprecated_text2) : theme.deprecated_text2};
     cursor: auto;
     box-shadow: none;
     border: 1px solid transparent;
@@ -79,7 +79,7 @@ export const ButtonPrimary = styled(BaseButton) <{ redesignFlag?: boolean }>`
   }
 `
 
-export const ButtonLight = styled(BaseButton) <{ redesignFlag?: boolean }>`
+export const ButtonLight = styled(BaseButton)<{ redesignFlag?: boolean }>`
   background-color: transparent;
   color: white;
   font-size: ${({ redesignFlag }) => (redesignFlag ? '20px' : '16px')};
