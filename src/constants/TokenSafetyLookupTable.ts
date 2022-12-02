@@ -2,6 +2,7 @@ import store from '../state'
 import { UNI_EXTENDED_LIST, UNI_LIST } from './lists'
 import brokenTokenList from './tokenLists/broken.tokenlist.json'
 import unsupportedTokenList from './tokenLists/unsupported.tokenlist.json'
+import { TokenInfo } from '@uniswap/token-lists'
 
 export enum TOKEN_LIST_TYPES {
   UNI_DEFAULT = 1,
@@ -16,8 +17,14 @@ class TokenSafetyLookupTable {
 
   createMap() {
     const dict: { [key: string]: TOKEN_LIST_TYPES } = {}
-    let uniDefaultTokens = store.getState().lists.byUrl[UNI_LIST].current?.tokens
-    let uniExtendedTokens = store.getState().lists.byUrl[UNI_EXTENDED_LIST].current?.tokens
+    let uniDefaultTokens: TokenInfo[] | undefined = []
+    let uniExtendedTokens: TokenInfo[] | undefined = []
+
+    try {
+      uniDefaultTokens = store.getState().lists.byUrl[UNI_LIST].current?.tokens
+      uniExtendedTokens = store.getState().lists.byUrl[UNI_EXTENDED_LIST].current?.tokens
+    } catch (e) {}
+
     const brokenTokens = brokenTokenList.tokens
     const unsupportTokens = unsupportedTokenList.tokens
 
