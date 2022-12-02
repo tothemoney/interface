@@ -124,7 +124,7 @@ function oldColors(darkMode: boolean): Colors {
 
     // text
     deprecated_text1: darkMode ? '#FFF' : '#FFF',
-    deprecated_text2: darkMode ? '#33353A' : '#33353A',
+    deprecated_text2: darkMode ? '#C3C5CB' : '#C3C5CB',
     deprecated_text3: darkMode ? '#8F96AC' : '#6E727D',
     deprecated_text4: darkMode ? '#B2B9D2' : '#C3C5CB',
     deprecated_text5: darkMode ? '#2C2F36' : '#EDEEF2',
@@ -139,7 +139,7 @@ function oldColors(darkMode: boolean): Colors {
     // backgrounds / greys
     deprecated_bg0: darkMode ? 'rgba(21, 22, 29, 1.5)' : 'rgba(21, 22, 29, 1.5)',
     deprecated_bg1: darkMode ? '#212429' : '#212429',
-    deprecated_bg2: darkMode ? '#b4b9be' : '#b4b9be',
+    deprecated_bg2: darkMode ? '#2C2F36' : '#212429',
     deprecated_bg3: darkMode ? '#40444F' : '#CED0D9',
     deprecated_bg4: darkMode ? '#565A69' : '#888D9B',
     deprecated_bg5: darkMode ? '#6C7284' : '#888D9B',
