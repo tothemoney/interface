@@ -300,7 +300,7 @@ const TextWrapper = styled(Text)<{ color: keyof AllColors }>`
  */
 export const ThemedText = {
   DeprecatedMain(props: TextProps) {
-    return <TextWrapper fontWeight={500} color={'black'} {...props} />
+    return <TextWrapper fontWeight={500} color={'deprecated_text2'} {...props} />
   },
   DeprecatedLink(props: TextProps) {
     return <TextWrapper fontWeight={500} color={'deprecated_primary1'} {...props} />
