@@ -124,7 +124,7 @@ function oldColors(darkMode: boolean): Colors {
 
     // text
     deprecated_text1: darkMode ? '#FFF' : '#FFF',
-    deprecated_text2: darkMode ? '#C3C5CB' : '#C3C5CB',
+    deprecated_text2: darkMode ? '#33353A' : '#33353A',
     deprecated_text3: darkMode ? '#8F96AC' : '#6E727D',
     deprecated_text4: darkMode ? '#B2B9D2' : '#C3C5CB',
     deprecated_text5: darkMode ? '#2C2F36' : '#EDEEF2',
