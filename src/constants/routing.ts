@@ -24,11 +24,13 @@ import {
   rETH2,
   sETH2,
   SWISE,
+  TMY_SMT,
   TRIBE,
   USDC_ARBITRUM,
   USDC_MAINNET,
   USDC_OPTIMISM,
   USDC_POLYGON,
+  USDC_TMY,
   USDT,
   USDT_ARBITRUM_ONE,
   USDT_OPTIMISM,
@@ -184,6 +186,12 @@ export const COMMON_BASES: ChainCurrencyList = {
     nativeOnChain(SupportedChainId.CELO_ALFAJORES),
     CUSD_CELO_ALFAJORES,
     CEUR_CELO_ALFAJORES,
+  ],
+  [SupportedChainId.TMY_MAINNET]: [
+    nativeOnChain(SupportedChainId.TMY_MAINNET),
+    USDC_TMY,
+    TMY_SMT,
+    WRAPPED_NATIVE_CURRENCY[SupportedChainId.TMY_MAINNET] as Token,
   ],
 }
 

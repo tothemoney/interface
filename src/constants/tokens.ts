@@ -67,6 +67,13 @@ export const USDC_TMY = new Token(
   'USDC',
   'USDC_TMY'
 )
+export const TMY_SMT = new Token(
+  SupportedChainId.TMY_MAINNET,
+  '0xb23617F1478f7Cf925a5a35De9cde20b0976526b',
+  18,
+  'SMT',
+  'TMY_SMT'
+)
 export const USDC_POLYGON = new Token(
   SupportedChainId.POLYGON,
   '0x2791bca1f2de4661ed88a30c99a7a9449aa84174',
@@ -398,10 +405,10 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
   ),
   [SupportedChainId.TMY_MAINNET]: new Token(
     SupportedChainId.TMY_MAINNET,
-    '0xb5bd9471ee91Ade13AC33B10aeF25Bd8e49131A9',
+    '0x74F179D135Fd7ab1Fd344D418fDD01Dc112D620C',
     18,
-    'WETH',
-    'WETH9'
+    'WTMY',
+    'WTMY'
   ),
 }
 
