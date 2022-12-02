@@ -1938,7 +1938,7 @@ msgid " TMY Swap Labs' Terms of Service"
 msgstr "Условия предоставления услуг  TMY Swap Labs"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "TMY Swap available in: <0>{0}</0>"
+msgid "TMY DEX available in: <0>{0}</0>"
 msgstr "TMY Swap доступен на языке <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
