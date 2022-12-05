@@ -486,7 +486,7 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
   } else if (isCelo(chainId)) {
     nativeCurrency = getCeloNativeCurrency(chainId)
   } else if (chainId === SupportedChainId.TMY_MAINNET) {
-    nativeCurrency = new ExtendedNative(SupportedChainId.TMY_MAINNET, 18, 'TMY', 'ToTheMoney')
+    nativeCurrency = new ExtendedNative(SupportedChainId.TMY_MAINNET, 18, 'TMY', 'TMY Chain')
   } else {
     nativeCurrency = ExtendedEther.onChain(chainId)
   }

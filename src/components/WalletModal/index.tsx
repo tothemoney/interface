@@ -346,7 +346,6 @@ export default function WalletModal({
         {injectedOption}
         {coinbaseWalletOption}
         {walletConnectionOption}
-        {fortmaticOption}
       </>
     )
   }
@@ -389,9 +388,9 @@ export default function WalletModal({
           <ThemedText.BodySecondary fontSize={12}>
             <Trans>
               By connecting a wallet, you agree to TMY Swap Labs’{' '}
-              <ExternalLink href="https://uniswap.org/terms-of-service/">Terms of Service</ExternalLink> and acknowledge
+              <ExternalLink href="https://tmychain.org/terms-of-service/">Terms of Service</ExternalLink> and acknowledge
               that you have read and understand the TMY Swap{' '}
-              <ExternalLink href="https://uniswap.org/disclaimer/">Protocol Disclaimer</ExternalLink>.
+              <ExternalLink href="https://tmychain.org/disclaimer/">Protocol Disclaimer</ExternalLink>.
             </Trans>
           </ThemedText.BodySecondary>
         </AutoRow>
@@ -401,11 +400,11 @@ export default function WalletModal({
             <ThemedText.DeprecatedBody fontSize={12}>
               <Trans>
                 By connecting a wallet, you agree to TMY Swap Labs’{' '}
-                <ExternalLink style={{ textDecoration: 'underline' }} href="https://uniswap.org/terms-of-service/">
+                <ExternalLink style={{ textDecoration: 'underline' }} href="https://tmychain.org/terms-of-service/">
                   Terms of Service
                 </ExternalLink>{' '}
                 and acknowledge that you have read and understand the TMY Swap{' '}
-                <ExternalLink style={{ textDecoration: 'underline' }} href="https://uniswap.org/disclaimer/">
+                <ExternalLink style={{ textDecoration: 'underline' }} href="https://tmychain.org/disclaimer/">
                   Protocol Disclaimer
                 </ExternalLink>
                 .
