@@ -388,8 +388,8 @@ export default function WalletModal({
           <ThemedText.BodySecondary fontSize={12}>
             <Trans>
               By connecting a wallet, you agree to TMY Swap Labs’{' '}
-              <ExternalLink href="https://tmychain.org/terms-of-service/">Terms of Service</ExternalLink> and acknowledge
-              that you have read and understand the TMY Swap{' '}
+              <ExternalLink href="https://tmychain.org/terms-of-service/">Terms of Service</ExternalLink> and
+               acknowledge that you have read and understand the TMY Swap{' '}
               <ExternalLink href="https://tmychain.org/disclaimer/">Protocol Disclaimer</ExternalLink>.
             </Trans>
           </ThemedText.BodySecondary>

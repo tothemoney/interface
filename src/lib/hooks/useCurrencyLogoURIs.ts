@@ -58,7 +58,7 @@ function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedC
 
   if (chainId == SupportedChainId.TMY_MAINNET) {
     if (address === nativeOnChain(chainId).wrapped.address) {
-      return 'https://raw.githubusercontent.com/tothemoney/interface/TMY_redesign/public/fav/android-icon-48x48.png'
+      return 'https://raw.githubusercontent.com/tothemoney/interface/TMY_redesign/src/assets/images/tmy.png'
     }
   }
 }

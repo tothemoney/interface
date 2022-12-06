@@ -224,7 +224,7 @@ const CHAIN_INFO: ChainInfoMap = {
     explorer: 'https://tmyscan.com/',
     infoLink: 'https://tmychain.org',
     label: 'TMY',
-    logoUrl: 'https://tmychain.org/images/landing/tmy.svg',
+    logoUrl: 'https://raw.githubusercontent.com/tothemoney/interface/TMY_redesign/src/assets/images/tmy.png',
     nativeCurrency: { name: 'TMY Chain', symbol: 'TMY', decimals: 18 },
     defaultListUrl: TMY_LIST,
   },
