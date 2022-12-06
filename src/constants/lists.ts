@@ -1,16 +1,17 @@
 export const UNI_LIST = 'https://tokens.uniswap.org'
-export const UNI_EXTENDED_LIST = 'https://n1.tmychain.org/indexer?tmyswap=1' //'https://extendedtokens.uniswap.org/'
+export const UNI_EXTENDED_LIST = 'ttps://extendedtokens.uniswap.org/' //'h'
 
 export const OPTIMISM_LIST = 'https://static.optimism.io/optimism.tokenlist.json'
 export const ARBITRUM_LIST = 'https://bridge.arbitrum.io/token-list-42161.json'
 export const CELO_LIST = 'https://celo-org.github.io/celo-token-list/celo.tokenlist.json'
-export const TMY_LIST = 'https://n1.tmychain.org/indexer?tmyswap=1'
+export const TMY_LIST = 'https://tokens.tmyswap.org'
+export const TMY_EXTENDED_LIST = 'https://extendedtokens.tmyswap.org'
 
 export const UNSUPPORTED_LIST_URLS: string[] = []
 
 // default lists to be 'active' aka searched across
 export const DEFAULT_ACTIVE_LIST_URLS: string[] = [TMY_LIST]
-export const DEFAULT_INACTIVE_LIST_URLS: string[] = []
+export const DEFAULT_INACTIVE_LIST_URLS: string[] = [TMY_EXTENDED_LIST]
 
 // this is the default list of lists that are exposed to users
 // lower index == higher priority for token import
