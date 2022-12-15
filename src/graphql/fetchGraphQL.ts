@@ -21,7 +21,7 @@ const CHAIN_SUBGRAPH_URL: Record<number, string> = {
   [SupportedChainId.POLYGON]: 'https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-v3-polygon',
 
   [SupportedChainId.CELO]: 'https://api.thegraph.com/subgraphs/name/jesse-sawa/uniswap-celo',
-  [SupportedChainId.TMY_MAINNET]: 'https://node6.tmychain.org/graph/rpc',
+  [SupportedChainId.TMY_MAINNET]: 'https://graph.tmyswap.org/infov3',
 }
 
 const headers = {
